@@ -1,0 +1,109 @@
+@import "../../styles/variables.scss";
+@import "../../styles/breakpoints.scss";
+
+.accordion__container {
+  padding: 80px 16px;
+  @media screen and (max-width: $breakpoint-md) {
+    padding: 60px 16px;
+  }
+
+  .faq__title {
+    font-family: $font-family-poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    margin-bottom: 50px;
+
+    @media screen and (max-width: $breakpoint-md) {
+      margin-bottom: 30px;
+      line-height: 36px;
+      font-size: 30px;
+    }
+  }
+
+  @media screen and (max-width: $breakpoint-md) {
+    height: auto;
+  }
+}
+
+.faq__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+
+  @media screen and (max-width: $breakpoint-md) {
+    margin-top: 30px;
+  }
+
+  button {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+
+    color: #ffffff;
+    padding: 13px 35px 13px 35px !important;
+
+    &:hover {
+      color: $white100;
+    }
+
+    &:active {
+      color: $white100 !important;
+    }
+  }
+}
+
+.accordion__body {
+  font-family: $font-family-raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  // color: $brand-color4;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+
+  p {
+    padding-bottom: 12px;
+    margin-bottom: 0px !important;
+  }
+  p:last-child {
+    padding-bottom: 0px;
+  }
+  @media screen and (max-width: $breakpoint-lg) {
+    padding: 12px;
+  }
+  @media screen and (max-width: $breakpoint-md) {
+    padding: 0px 0px 0px 30px;
+    p {
+      padding-bottom: 0px;
+      padding-top: 20px;
+    }
+  }
+  .accordion-collapse.collapse.show {
+    border: none !important;
+  }
+}
+
+.accordion__item {
+  border-radius: 0px;
+  border-top: 0.5px solid $black1;
+
+  @media screen and (max-width: $breakpoint-md) {
+    h2 {
+      margin: 0;
+    }
+    button {
+      padding: 0px 10px 0px 0px;
+      gap: 10px;
+    }
+    padding: 20px 0px;
+  }
+}

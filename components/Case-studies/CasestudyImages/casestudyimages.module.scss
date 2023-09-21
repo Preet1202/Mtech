@@ -1,0 +1,28 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/breakpoints.scss";
+
+.inner_container {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: $breakpoint-md) {
+    padding: 0px 16px;
+    gap: 30px;
+    display: grid;
+  }
+
+  h2 {
+    font-family: $font-family-poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    color: $brand-color4;
+    margin: 0;
+    @media screen and (max-width: $breakpoint-md) {
+      font-size: 30px;
+      line-height: 36px;
+    }
+  }
+}

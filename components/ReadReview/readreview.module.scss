@@ -1,0 +1,214 @@
+@import "../../styles/breakpoints.scss";
+@import "../../styles/variables.scss";
+
+.primary {
+  height: 318px;
+
+  background: linear-gradient(
+    to top,
+    $white100 0%,
+    $white100 50%,
+    $brand-color2 50%,
+    $brand-color2 100%
+  );
+  position: relative;
+  padding-top: 90px;
+
+  // @media screen and (max-width: $breakpoint-md-767) {
+  //     height: 50em;
+  // }
+  @media screen and (max-width: $breakpoint-sm) {
+    height: 50em;
+  }
+}
+
+.violet {
+  height: 318px;
+
+  background: linear-gradient(
+    to top,
+    $white100 0%,
+    $white100 50%,
+    $brand-color2 50%,
+    $brand-color2 100%
+  );
+  position: relative;
+  padding-top: 90px;
+
+  @media screen and (max-width: $breakpoint-sm) {
+    height: 50em;
+  }
+}
+
+.violet__bottom {
+  height: 318px;
+
+  background: linear-gradient(
+    to top,
+    $brand-color4 0%,
+    $brand-color4 50%,
+    $white100 50%,
+    $white100 100%
+  );
+  position: relative;
+  padding-top: 90px;
+
+  @media screen and (max-width: $breakpoint-sm) {
+    height: 50em;
+    background: linear-gradient(
+      to top,
+      $white100 0%,
+      $white100 50%,
+      $brand-color4 50%,
+      $brand-color4 100%
+    );
+  }
+
+  @media screen and (min-width: 1300px) {
+    margin-bottom: -2px;
+  }
+}
+
+.red {
+  height: 318px;
+
+  background: linear-gradient(
+    to top,
+    $white100 0%,
+    $white100 50%,
+    $brand-color1 50%,
+    $brand-color1 100%
+  );
+  position: relative;
+  padding-top: 90px;
+
+  @media screen and (max-width: $breakpoint-sm) {
+    height: 50em;
+  }
+}
+
+.review__box {
+  background-color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 158px;
+  box-shadow: 0px 2px 5px rgb(0 0 0 / 10%);
+
+  // @media screen and (max-width: $breakpoint-md-767) {
+  //     background-color: transparent;
+  //     display: flex;
+  //     flex-direction: column;
+  //     align-items: center;
+  //     justify-content: center;
+  //     gap: 8px;
+  // }
+  @media screen and (max-width: $breakpoint-lg) {
+    gap: 12px;
+    padding: 10px;
+    box-shadow: none;
+  }
+
+  @media screen and (max-width: $breakpoint-sm) {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: auto !important;
+    margin-bottom: 8px;
+  }
+
+  .review__col {
+    padding: 0px;
+
+    div {
+      display: block !important;
+    }
+
+    // @media screen and (max-width: $breakpoint-md-767) {
+    //     padding: 0px !important;
+    //     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    // }
+    @media screen and (max-width: $breakpoint-sm) {
+      padding: 0px !important;
+    }
+  }
+}
+
+.rating__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  @media screen and (max-width: $breakpoint-md) {
+    width: calc(130px + 2em);
+  }
+
+  @media screen and (max-width: $breakpoint-sm) {
+    background: $white100;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    width: 179px !important;
+    display: flex;
+    height: 130px;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 10px;
+  }
+}
+
+.title {
+  font-family: $font-family-raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: clamp(16px, 3.2vh, 28px);
+  line-height: 35px;
+  color: #262531;
+  width: 130px;
+  height: 70px;
+  display: block;
+
+  @media screen and (max-width: $breakpoint-xl) {
+    width: 150px;
+    padding-left: 10px;
+  }
+
+  @media screen and (max-width: $breakpoint-md) {
+    width: 150px;
+    font-size: 16px !important;
+  }
+
+  @media screen and (max-width: $breakpoint-lg) {
+    width: 130px;
+    font-size: 16px !important;
+  }
+
+  // @media screen and (max-width: $breakpoint-md-767) {
+  //     font-family: $font-family-raleway;
+  //     font-style: normal;
+  //     font-weight: 600;
+  //     font-size: 30px;
+  //     line-height: 35px;
+  //     width: auto;
+  //     color: $white100;
+  // }
+  @media screen and (max-width: $breakpoint-sm) {
+    font-family: $font-family-raleway;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px !important;
+    line-height: 35px;
+    width: auto;
+    color: $white100;
+  }
+}

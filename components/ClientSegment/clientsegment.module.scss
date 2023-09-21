@@ -1,0 +1,221 @@
+@import "../../styles/variables.scss";
+@import "../../styles/breakpoints.scss";
+
+.cs__orangewhite {
+  background: linear-gradient(
+    to top,
+    $brand-color1 0%,
+    $brand-color1 50%,
+    #fff 50%,
+    #fff 100%
+  );
+
+  height: auto;
+  padding: 80px 0px;
+
+  h2 {
+    font-family: $font-family-poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    color: $brand-color4;
+
+    padding-bottom: 50px;
+    margin: 0px;
+    @media screen and (max-width: $breakpoint-md) {
+      line-height: 36px;
+      padding-bottom: 30px;
+      font-size: 30px;
+    }
+  }
+  .cs__row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  @media screen and (max-width: $breakpoint-xl) {
+    height: calc(660px + 8em);
+  }
+
+  @media screen and (max-width: $breakpoint-lg) {
+    height: auto;
+    background: $brand-color1;
+
+    h2 {
+      color: $white100;
+    }
+  }
+
+  @media screen and (max-width: $breakpoint-md) {
+    background: $brand-color1;
+    height: auto;
+
+    padding-bottom: 3em;
+
+    h2 {
+      color: $white100 !important;
+    }
+  }
+
+  @media screen and (max-width: $breakpoint-md) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.cs__orange {
+  background: $brand-color1;
+  margin-top: 80px;
+  padding-bottom: 80px;
+  height: 850px;
+
+  @media screen and (max-width: $breakpoint-xl) {
+    // height: calc(660px + 8em);
+    height: auto;
+  }
+
+  @media screen and (max-width: $breakpoint-lg) {
+    // height: calc(660px + 8em);
+    height: auto;
+  }
+
+  @media screen and (max-width: $breakpoint-md) {
+    background: $brand-color1;
+    height: auto;
+    padding-bottom: 3em;
+  }
+
+  h2 {
+    font-family: $font-family-poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: clamp(26px, 6vw, 36px);
+    line-height: 54px;
+    text-align: center;
+    color: $white100;
+    padding-bottom: 30px;
+
+    @media screen and (max-width: $breakpoint-lg) {
+      padding-top: 80px;
+    }
+
+    @media screen and (max-width: $breakpoint-md) {
+      padding-top: 60px;
+    }
+  }
+
+  .cs__row {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }
+}
+
+.cs__white {
+  background: $white100;
+  margin-top: 80px;
+  padding-bottom: 80px;
+  height: 850px;
+
+  h2 {
+    font-family: $font-family-poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: clamp(26px, 6vw, 36px);
+    line-height: 54px;
+    text-align: center;
+    color: $brand-color1;
+    padding-bottom: 30px;
+
+    @media screen and (max-width: $breakpoint-lg) {
+      padding-top: 80px;
+    }
+
+    @media screen and (max-width: $breakpoint-md) {
+      padding-top: 60px;
+    }
+  }
+
+  .cs__row {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  @media screen and (max-width: $breakpoint-xl) {
+    height: calc(660px + 12em);
+    // height: auto;
+  }
+
+  @media screen and (max-width: $breakpoint-lg) {
+    // height: calc(660px + 8em);
+    height: auto;
+  }
+
+  @media screen and (max-width: $breakpoint-md) {
+    background: $white100;
+    height: auto;
+    padding-bottom: 3em;
+
+    h2 {
+      color: #262531 !important;
+    }
+  }
+}
+
+.cs__box {
+  padding: 30px;
+  width: 400px;
+  height: auto;
+  background: #262531;
+  border-radius: 6px;
+
+  @media screen and (max-width: $breakpoint-lg) {
+    width: calc(300px + 3em);
+    // height: calc(400px + 1em);
+  }
+
+  @media screen and (max-width: $breakpoint-sm-380) {
+    width: calc(280px + 3em);
+    height: auto;
+  }
+
+  @media screen and (max-width: $breakpoint-sm-340) {
+    width: calc(250px + 0.6em);
+    height: auto;
+    padding: 20px;
+  }
+
+  h3 {
+    font-family: $font-family-poppins;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 35px;
+    color: #ffffff;
+    border-bottom: 6px solid $brand-color1;
+    padding-bottom: 14px;
+    width: 165px;
+    margin-bottom: 16px;
+  }
+
+  .cs__box__desc {
+    font-family: $font-family-raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px !important;
+    line-height: 24px;
+    color: $white100;
+
+    ul {
+      padding-left: 0.8rem;
+
+      li {
+        padding-bottom: 10px;
+      }
+    }
+  }
+}

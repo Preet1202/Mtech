@@ -1,0 +1,100 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/breakpoints.scss";
+
+.inner_container {
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: $breakpoint-md) {
+    padding: 0px 16px;
+    display: grid;
+    gap: 30px;
+  }
+
+  h2 {
+    font-family: $font-family-poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    margin: 0;
+    color: $black1;
+    @media screen and (max-width: $breakpoint-md) {
+      font-size: 30px;
+      line-height: 36px;
+    }
+  }
+}
+
+.section_content {
+  align-items: center;
+  gap: 100px;
+
+  &.reverse_img {
+    flex-direction: row-reverse;
+  }
+
+  @media screen and (max-width: $breakpoint-md) {
+    display: grid;
+    gap: 30px;
+  }
+}
+.description_box {
+  align-items: center;
+  flex: 1;
+
+  @media screen and (max-width: $breakpoint-md) {
+    order: 1;
+  }
+}
+.description {
+  font-family: $font-family-raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  margin: 0;
+  color: $brand-color4;
+  flex: 1;
+
+  p:last-child {
+    margin: 0;
+  }
+}
+
+.section_button {
+  button {
+    margin: 0;
+  }
+}
+.imgbox {
+  flex: 1;
+}
+
+.violet_bg,
+.orange_bg {
+  h2,
+  .description {
+    color: $white100;
+  }
+}
+
+.yellow_bg {
+  button:hover {
+    color: $brand-color4;
+  }
+}
+.orange_bg {
+  button {
+    border-color: $white100 !important;
+    color: $brand-color1;
+
+    &:hover {
+      color: $white100;
+    }
+
+    &:after {
+      background: $white100 !important;
+    }
+  }
+}

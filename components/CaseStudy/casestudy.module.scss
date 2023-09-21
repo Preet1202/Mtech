@@ -1,0 +1,258 @@
+@import "../../styles/variables.scss";
+@import "../../styles/breakpoints.scss";
+
+.secondary_blog_card {
+  width: 41.607396870554766vw;
+  height: 20.62588904694168vw;
+  border-radius: 5px;
+  margin-bottom: 2.844950213371266vw;
+  background-size: cover !important;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 2rem;
+
+  @media screen and (min-width: $breakpoint-xl-1406) {
+    width: 585px;
+    height: 290px;
+    margin-bottom: 15px;
+  }
+
+  @media screen and (max-width: $breakpoint-lg) {
+    width: 345px;
+    height: 180px;
+  }
+
+  @media screen and (max-width: $breakpoint-md-767) {
+    width: 380px;
+    height: 204px;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (max-width: $breakpoint-sm-450) {
+    width: 84.388889vw;
+    height: 45.27777777777778vw;
+    margin-bottom: 5.555555555555555vw;
+  }
+}
+
+.case_study_title {
+  font-size: 36px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  font-family: $font-family-poppins;
+  font-weight: $font-weight700;
+  color: #262531;
+  line-height: 61px;
+
+  @media only screen and (min-width: $breakpoint-xl-1406) {
+    font-size: 36px;
+    font-weight: 700;
+  }
+
+  @media only screen and (max-width: $breakpoint-sm-450) {
+    font-size: 24px;
+    font-weight: 700;
+  }
+}
+
+.row_container {
+  margin: 0;
+  width: 100%;
+}
+
+.blog_card {
+  width: 42.607396870554766vw;
+  height: 20.62588904694168vw;
+  border-radius: 5px;
+  margin-bottom: 2.844950213371266vw;
+  background-size: cover !important;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+
+  @media screen and (min-width: $breakpoint-xl-1406) {
+    width: 585px;
+    height: 290px;
+    margin-bottom: 40px;
+  }
+
+  @media screen and (max-width: 1200px) {
+    width: 39.607396870554766vw;
+  }
+
+  @media screen and (max-width: 1100px) {
+    width: 41.607396870554766vw;
+  }
+
+  @media screen and (max-width: 1024px) {
+    width: 44.607397vw;
+  }
+
+  @media screen and (max-width: 992px) {
+    width: 34.607397vw;
+  }
+
+  @media screen and (max-width: 900px) {
+    width: 39.607397vw;
+  }
+
+  @media screen and (max-width: 769px) {
+    width: 43.607397vw;
+  }
+
+  @media screen and (max-width: $breakpoint-md-767) {
+    width: 380px;
+    height: 204px;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (max-width: $breakpoint-sm-450) {
+    width: 84.388889vw;
+    height: 45.27777777777778vw;
+    margin-bottom: 5.555555555555555vw;
+  }
+
+  @media screen and (max-width: $breakpoint-md-767) {
+    width: 380px;
+    height: 204px;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (max-width: $breakpoint-sm-450) {
+    width: 84.388889vw;
+    height: 45.27777777777778vw;
+    margin-bottom: 5.555555555555555vw;
+  }
+
+  &:hover {
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.resource_title_wrapper {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background: url("https://cdn-gcp.new.marutitech.com/blog_shadow3_897acf958b.png") no-repeat 0px -4.978662873399715vw transparent !important;
+  background-color: transparent !important;
+  background-size: cover !important;
+
+  @media screen and (min-width: $breakpoint-xl-1406) {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background: url(https://cdn-gcp.new.marutitech.com/blog_shadow3_897acf958b.png) no-repeat 0px -70px transparent !important;
+    background-color: transparent !important;
+    background-size: cover !important;
+  }
+
+  @media screen and (max-width: $breakpoint-md-767) {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background: url(https://cdn-gcp.new.marutitech.com/blog_shadow3_897acf958b.png) no-repeat 0px 0px transparent !important;
+    background-color: transparent !important;
+    background-size: cover !important;
+  }
+}
+
+.blog_card_title {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2802275960170697vw;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+  padding-left: 1.7780938833570414vw;
+  padding-bottom: 1.422475106685633vw;
+  padding-right: 5.689900426742532vw;
+  padding-top: 1.422475106685633vw;
+
+  @media screen and (min-width: $breakpoint-xl-1406) {
+    font-size: 18px;
+    padding-left: 25px;
+    padding-bottom: 20px;
+    padding-right: 80px;
+    padding-top: 20px;
+  }
+
+  @media screen and (max-width: $breakpoint-md-767) {
+    font-family: "Poppins", sans-serif;
+    font-size: 17.5px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.44;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+    padding-left: 14px;
+    padding-bottom: 15px;
+    padding-top: 60px;
+  }
+
+  @media screen and (max-width: $breakpoint-sm-450) {
+    font-size: 3.888888888888889vw;
+    padding-left: 3.888888888888889vw;
+    padding-bottom: 4.166666666666666vw;
+    padding-top: 16.666666666666664vw;
+  }
+}
+
+.case_study_image {
+  position: relative;
+
+  img {
+    border-radius: 5px;
+  }
+
+  @media screen and (max-width: $breakpoint-md-767) {
+    width: 380px;
+    height: 204px;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (max-width: $breakpoint-sm-450) {
+    width: 84.388889vw;
+    height: 45.27777777777778vw;
+    margin-bottom: 5.555555555555555vw;
+  }
+}
+
+.titlewrapper {
+  position: absolute;
+  bottom: 6px;
+  color: $white100;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 8px 12px 10px 12px;
+  // background: rgb(0, 0, 0);
+  // background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  // background: url("/casestudyblogshadow.png");
+  box-shadow: inset 3px -47px 28px -10px rgb(0 0 0 / 91%);
+
+  @media only screen and (max-width: $breakpoint-sm-450) {
+    font-size: clamp(12px, 1.5vw, 14px);
+    font-weight: 400;
+    line-height: 20px;
+  }
+}

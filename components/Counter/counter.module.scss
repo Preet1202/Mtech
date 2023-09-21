@@ -1,0 +1,415 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+@import "../../styles/breakpoints.scss";
+
+.counter {
+  background: $white100;
+  background-image: url(https://cdn-gcp.new.marutitech.com/counternewleftimage_b5ac554be1.png),
+    url(https://cdn-gcp.new.marutitech.com/rightside_leaf_fdc6bd9af0.png);
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
+  // position: absolute;
+  // z-index: 1;
+  height: auto;
+  padding: 80px 0px;
+
+  @media only screen and (max-width: $breakpoint-md) {
+    padding: 60px 0px;
+  }
+
+  .title {
+    font-family: $primary-font, sans-serif;
+    font-size: clamp(1.4em, 2.4vw, 36px);
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: $primary-color-black;
+    text-align: center;
+    // padding-top: 5.689900426742532vw;
+    // @include titleFonts();
+
+    @media only screen and (min-width: $breakpoint-xl-1406) {
+      // padding-top: 80px;
+      font-size: 36px;
+    }
+
+    @media only screen and (max-width: $breakpoint-lg) {
+      font-family: "Poppins", sans-serif;
+      font-size: 2.635431918008785vw;
+      font-weight: 600;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #000;
+      text-align: center;
+    }
+
+    @media only screen and (max-width: $breakpoint-md-767) {
+      font-family: "Poppins", sans-serif;
+      font-size: 35px;
+      font-weight: 600;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #2d2e2d;
+      text-align: left;
+    }
+
+    @media only screen and (max-width: $breakpoint-sm-450) {
+      font-size: 7.777777777777778vw;
+    }
+  }
+
+  .desc {
+    font-size: 1.7569546120058566vw;
+    font-family: $secondary-font, sans-serif;
+    // font-size: clamp(25px, 1.7vw, 25px);
+    font-weight: 200;
+    line-height: 1.43;
+    color: $primary-color-black;
+    padding-top: 1.4641288433382138vw;
+    text-align: center;
+    max-width: 1166px;
+    margin: 0 auto;
+
+    @media only screen and (min-width: $breakpoint-xl-1406) {
+      font-family: "Raleway", sans-serif;
+      font-size: 24px;
+      padding-top: 20px;
+      font-weight: 200;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.43;
+      letter-spacing: normal;
+      color: #000;
+      text-align: center;
+      max-width: 1306px;
+    }
+
+    @media only screen and (max-width: $breakpoint-lg) {
+      font-family: "Raleway", sans-serif;
+      font-size: 1.7569546120058566vw;
+      font-weight: 200;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.43;
+      letter-spacing: normal;
+      color: #000;
+      padding-top: 1.4641288433382138vw;
+      text-align: center;
+    }
+
+    @media only screen and (max-width: $breakpoint-md-767) {
+      font-family: "Raleway", sans-serif;
+      font-size: 17.5px;
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.43;
+      letter-spacing: normal;
+      color: #444444;
+      padding-top: 10px;
+      text-align: left;
+    }
+
+    @media only screen and (max-width: $breakpoint-sm-450) {
+      font-size: 3.888888888888889vw;
+      padding-top: 2.7777777777777777vw;
+    }
+  }
+}
+
+.darkblue__section {
+  background-color: $brand-color4;
+  color: $white100 !important;
+  background-image: url(https://cdn-gcp.new.marutitech.com/Rectangle_41932cd700.png),
+    url(https://cdn-gcp.new.marutitech.com/background/ai-plant.svg);
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
+}
+
+.darkblue_title {
+  color: $white100 !important;
+
+  // text-align: left !important;
+  @media only screen and (max-width: $breakpoint-md-767) {
+    text-align: left !important;
+  }
+
+  @media only screen and (max-width: $breakpoint-sm-450) {
+    text-align: center !important;
+  }
+}
+
+.darkblue_desc {
+  color: $white100 !important;
+  font-size: 1.15vw !important;
+
+  @media only screen and (max-width: $breakpoint-xl-1400) {
+    font-size: 1.2vw !important;
+  }
+
+  @media only screen and (max-width: $breakpoint-xl) {
+    width: 900px;
+  }
+
+  @media only screen and (max-width: $breakpoint-lg) {
+    width: 700px;
+  }
+
+  @media only screen and (max-width: $breakpoint-md-767) {
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    text-align: left !important;
+    width: auto;
+  }
+
+  @media only screen and (max-width: $breakpoint-sm-460) {
+    font-weight: 500 !important;
+    font-size: 4vw !important;
+    text-align: left !important;
+  }
+
+  @media only screen and (max-width: $breakpoint-sm) {
+    font-weight: 500 !important;
+  }
+}
+
+.darkblue_description {
+  padding: 0 143px;
+  font-size: clamp(10.99651px, 3.8vw, 16px);
+
+  @media only screen and (max-width: $breakpoint-md-767) {
+    padding: 0;
+    text-align: center;
+  }
+}
+
+.noimage__container {
+  background-color: $brand-color4;
+  color: $white100 !important;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.noimage__row {
+  margin: 0;
+}
+
+.noimage__title {
+  font-family: $font-family-poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: clamp(1.4em, 2.4vw, 36px);
+  line-height: 54px;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 1.5em;
+
+  @media only screen and (min-width: $breakpoint-xl-1406) {
+    padding-top: 80px;
+    font-size: 36px;
+    padding-bottom: 20px;
+  }
+
+  @media only screen and (max-width: $breakpoint-lg) {
+    font-family: "Poppins", sans-serif;
+    font-size: 2.635431918008785vw;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+
+    text-align: center;
+  }
+
+  @media only screen and (max-width: $breakpoint-md-767) {
+    font-family: "Poppins", sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+
+    text-align: left;
+  }
+
+  @media only screen and (max-width: $breakpoint-sm-450) {
+    font-size: 7.777777777777778vw;
+    text-align: center;
+    padding-top: 1.2em;
+    padding-bottom: 1.2em;
+  }
+}
+
+.noimage__desc {
+  font-family: $font-family-raleway;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.companystat {
+  height: auto;
+  background-image: url(https://cdn-gcp.new.marutitech.com/Rectangle_41932cd700.png),
+      url(https://cdn-gcp.new.marutitech.com/ai_pngplant_900c2db3d5.png);
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
+  display: flex;
+  align-items: center;
+  padding: 100px 0px;
+  padding-bottom: 164px;
+  position: relative;
+  // margin-top: 80px;
+
+  @media screen and (max-width: $breakpoint-sm-450) {
+    padding: 60px 0px;
+  }
+}
+
+.companystat__row {
+  align-items: center;
+}
+
+.companystat__boxwrapper {
+  position: relative;
+  display: grid;
+  width: 400px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.companystat__mobile__div {
+  display: none;
+}
+
+.companystat__mobile {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 280px;
+
+  @media screen and (max-width: $breakpoint-sm-450) {
+    width: 200px;
+    gap: 10px;
+  }
+
+  .mobile__box {
+    // background: #D9D9D9;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    height: 180px;
+    width: 180px;
+    background-size: 200px;
+
+    @media screen and (max-width: $breakpoint-sm) {
+      height: 150px;
+      width: 150px;
+    }
+
+    @media screen and (max-width: $breakpoint-sm-450) {
+      height: calc(134px + 2em);
+      width: calc(134px + 2em);
+      padding-left: 16px;
+      padding-right: 16px;
+      background-size: 11.2em;
+    }
+
+    @media screen and (max-width: $breakpoint-sm-365) {
+      height: calc(110px);
+      width: calc(110px);
+      background-size: 9em;
+    }
+  }
+}
+
+@media screen and (max-width: 991.5px) {
+  .companystat__mobile__div {
+    display: block;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .companystat__boxwrapper {
+    display: none;
+  }
+
+  .companystat__row {
+    max-width: 450px;
+    margin: 0 auto;
+  }
+
+  .companystat {
+    padding-top: 60px;
+  }
+}
+
+@media screen and (max-width: $breakpoint-md) {
+  .companystat__row {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: $breakpoint-sm-450) {
+  .companystat__mobile__div {
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 0px;
+    padding-bottom: 30px;
+  }
+
+  .companystat__img_col {
+    padding: 0px 16px;
+  }
+}
+
+@media screen and (max-width: 365px) {
+  .companystat__mobile__div {
+    max-width: 84%;
+  }
+}
+
+.box {
+  // background: #D9D9D9;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: block;
+  filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.1));
+
+  @media screen and (min-width: $breakpoint-xl-1400) {
+    height: 300px;
+    width: 300px;
+    background-size: 310px;
+  }
+
+  @media screen and (min-width: $breakpoint-lg) and (max-width: 1399px) {
+    height: 220px;
+    width: 220px;
+    background-size: 230px;
+  }
+}
+
+.item2 {
+  position: relative;
+  top: 4rem;
+}
+
+.item4 {
+  position: relative;
+  top: 4rem;
+}

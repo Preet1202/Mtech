@@ -1,0 +1,102 @@
+@import "../../styles/variables.scss";
+@import "../../styles/breakpoints.scss";
+.testimonial__container {
+  height: 900px;
+  padding-top: 2rem;
+  .testimonial__title {
+    margin-bottom: 2rem;
+    text-align: center;
+    color: $white100;
+    font-weight: $font-weight600;
+    font-family: $primary-font, sans-serif;
+    padding-top: 40px;
+    // font-size: clamp(18px, 2.5vw, 38px);
+    font-size: 2.5604551920341394vw;
+    @media only screen and (min-width: $breakpoint-xl-1406) {
+      font-size: 36px;
+      font-weight: 600;
+    }
+    @media only screen and (max-width: $breakpoint-md) {
+      font-size: 35px;
+      font-weight: 600;
+    }
+    @media only screen and (max-width: $breakpoint-sm-450) {
+      font-size: 7.777777777777778vw;
+      font-weight: 600;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    height: 800px;
+  }
+}
+.testimonial__row {
+  margin: 0;
+  margin-top: 5rem;
+}
+.client__wrapper {
+  padding: 10px;
+  .client__box {
+    height: 370px;
+    width: 290px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    box-shadow: 0 6px 10px 0 rgb(0 0 0 / 16%);
+    position: relative;
+    margin: 5rem auto 1rem auto;
+    background-color: white;
+
+    .client__image {
+      position: absolute;
+      top: -80px;
+      left: 50%;
+      transform: translateX(-50%);
+      img {
+        border-radius: 50%;
+        height: 130px;
+        width: 130px;
+      }
+    }
+    .client__quote {
+      position: absolute;
+      top: 55px;
+      left: 30px;
+    }
+    .client__message {
+      font-size: 13px;
+      font-family: $secondary-font;
+      margin-top: 100px;
+      font-family: $secondary-font, sans-serif;
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.56;
+      letter-spacing: 1.2px;
+      color: $grey600;
+      padding: 0px 40px;
+    }
+    .client__footer {
+      position: absolute;
+      bottom: 0;
+      // padding-left: 30px;
+      left: 2.2rem;
+      padding-bottom: 1.5rem;
+
+      .client__name {
+        margin-bottom: 0;
+        font-size: 14px;
+        font-family: $secondary-font;
+        color: $grey600;
+        font-weight: 600;
+      }
+      .client__designation {
+        margin-bottom: 0;
+        font-size: 14px;
+        font-family: $secondary-font;
+        color: $grey200;
+      }
+      .company_img {
+        padding-top: 0.2rem;
+      }
+    }
+  }
+}

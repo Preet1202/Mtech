@@ -1,0 +1,819 @@
+@import "../../styles/variables.scss";
+@import "../../styles/breakpoints.scss";
+
+nav.navbar.navbar-expand-lg.navbar-light {
+  padding-top: 0;
+}
+
+.header {
+  padding-top: 12px;
+  background-color: transparent;
+  position: relative;
+  top: -6px;
+
+  a {
+    color: $primary-color-black !important;
+    text-decoration: none;
+  }
+
+  .header_sub {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.menubar {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+
+  ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin-bottom: 0px !important;
+
+    .menubar__list {
+      padding-right: 13px;
+      padding-left: 13px;
+      font-family: $primary-font;
+      font-size: 16px;
+      font-weight: $font-weight400;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: 0.5px;
+      color: $primary-color-black;
+      border: none;
+
+      @media only screen and (max-width: $breakpoint-xl) {
+        padding-right: 15px;
+        padding-left: 0px;
+      }
+
+      i,
+      .drop_down_icon {
+        background-image: url("https://cdn-gcp.new.marutitech.com/blackarrow_26d57434ef.svg");
+        height: 8px;
+        width: 8px;
+        padding-left: 0px !important;
+        display: inline-block;
+        background-repeat: no-repeat;
+      }
+
+      .drop_down_right_icon {
+        // background-image: url("https://marutitech.com/wp-content/uploads/2019/04/arrow-right.svg");
+        height: 8px;
+        width: 8px;
+        padding-left: 0px !important;
+        display: inline-block;
+        background-repeat: no-repeat;
+      }
+
+      ul > li {
+        i,
+        .drop_down_icon {
+          background-image: url("https://cdn-gcp.new.marutitech.com/blackarrow_26d57434ef.svg");
+          height: 8px;
+          width: 8px;
+          padding-left: 0px !important;
+          display: inline-block;
+          background-repeat: no-repeat;
+          padding-left: 6px;
+        }
+      }
+    }
+
+    // button {
+    //   border-color: $brand-color1 !important;
+    //   color: $brand-color1;
+    //   border-radius: 6px !important;
+    //   border: solid 1px $brand-color1 !important;
+    //   cursor: pointer;
+    //   font-size: 14px;
+    //   padding: 6px 14px !important;
+    //   background-color: $brand-color1;
+    //   position: relative;
+    //   z-index: 11;
+    //   overflow: hidden;
+    //   transition: color 200ms ease-in-out;
+
+    //   &:hover {
+    //     color: $white100;
+    //   }
+    //   &::before {
+    //     content: "";
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     right: 0;
+    //     bottom: 0;
+    //     background-color: $white100;
+    //     z-index: -1;
+    //     border-radius: 50%;
+    //     transform: scale(1.5);
+    //     transition: transform 200ms ease-in-out;
+    //   }
+    //   &:hover::before {
+    //     transform: scale(0);
+    //     color: $white100;
+    //   }
+    // }
+  }
+}
+
+.list_active {
+  color: $brand-color1 !important;
+}
+
+.drop_down_icon_active {
+  height: 8px;
+  width: 8px;
+  background-image: url("https://cdn-gcp.new.marutitech.com/arrow_orange_361c0b0da4.svg") !important;
+  background-repeat: no-repeat;
+}
+
+.navbar_toggle {
+  border: none;
+  box-shadow: none !important;
+  font-weight: 1000;
+  // background: url("https://marutitech.com/wp-content/uploads/2019/04/Mobile-menu-hemburger-icon.svg") !important;
+  // background-repeat: no-repeat;
+}
+
+//dropdown menu for Product UL LI
+.dropdown_menu_product {
+  display: none;
+}
+
+.menubar__dropdown__menu {
+  display: none;
+}
+
+.menubar__dropdown__menu__hide {
+  display: none;
+}
+
+.dropdown_submenu {
+  display: none;
+}
+
+//dropdown menu for About UL LI
+.menubar__dropdown__aboutmenu {
+  display: none;
+}
+
+//dropdown menu for Resource UL LI
+.menubar__dropdown__resourcemenu {
+  display: none;
+}
+
+.icondiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  height: 42px;
+
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  // padding: 0px 0px 0px 12px;
+  padding: 6px;
+  padding-left: 24px;
+
+  &:hover {
+    & > .drop_down_right_icon {
+      height: 8px;
+      width: 8px;
+      background-image: url("https://cdn-gcp.new.marutitech.com/arrow_orange_361c0b0da4.svg") !important;
+      background-repeat: no-repeat;
+      transform: rotate(270deg);
+    }
+  }
+}
+
+//mobile menu scss
+.active {
+  color: $brand-color1;
+}
+
+.drop_title_div {
+  display: flex;
+  justify-content: space-between;
+  height: 20px;
+  align-items: center;
+
+  p {
+    font-size: 20px;
+    font-weight: $font-weight500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    font-family: $primary-font;
+
+    color: $grey600;
+
+    &:active {
+      color: $brand-color1;
+    }
+  }
+
+  .drop_title_p {
+    padding-left: 2rem;
+    font-size: 14px;
+    font-weight: $font-weight500 !important;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: $grey600;
+
+    &:active {
+      color: $brand-color1;
+
+      & + .drop_down_icon {
+        height: 8px;
+        width: 8px;
+        background-image: url("https://cdn-gcp.new.marutitech.com/arrow_orange_361c0b0da4.svg") !important;
+        background-repeat: no-repeat;
+      }
+    }
+
+    &:hover {
+      color: $brand-color1;
+
+      & + .drop_down_icon {
+        height: 8px;
+        width: 8px;
+        background-image: url("https://cdn-gcp.new.marutitech.com/arrow_orange_361c0b0da4.svg") !important;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+
+  &:active {
+    color: $brand-color1;
+
+    & > .drop_down_icon {
+      height: 8px;
+      width: 8px;
+      background-image: url("https://cdn-gcp.new.marutitech.com/arrow_orange_361c0b0da4.svg") !important;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &:hover {
+    color: $brand-color1;
+
+    & > .drop_down_icon {
+      height: 8px;
+      width: 8px;
+      background-image: url("https://cdn-gcp.new.marutitech.com/arrow_orange_361c0b0da4.svg") !important;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .drop_down_icon {
+    background-image: url("https://cdn-gcp.new.marutitech.com/blackarrow_26d57434ef.svg");
+    height: 8px;
+    width: 8px;
+    padding-left: 0px !important;
+    display: inline-block;
+    background-repeat: no-repeat;
+  }
+}
+
+.subnav {
+  padding-left: 4rem;
+  color: $grey400 !important;
+  font-size: 14px;
+  font-weight: $font-weight500 !important;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+
+  &:hover {
+    background-color: transparent;
+    color: $brand-color1 !important;
+  }
+
+  &:active {
+    color: $brand-color1 !important;
+  }
+}
+
+.subnav2 {
+  // padding-left: 2rem;
+  padding: 20px 33px 0px 2rem !important;
+  font-size: 14px;
+  font-weight: $font-weight500 !important;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: $grey600 !important;
+
+  &:active {
+    color: $brand-color1 !important;
+  }
+
+  &:hover {
+    background-color: transparent;
+  }
+}
+
+.navlink {
+  padding: 0px;
+  text-decoration: none !important;
+
+  a {
+    color: $primary-color-black;
+    display: block;
+    width: 100%;
+
+    &::after {
+      content: none;
+    }
+
+    &:hover {
+      // color: $primary-color-black;
+      color: $brand-color1;
+
+      p {
+        color: $brand-color1;
+      }
+    }
+
+    &:active {
+      background-color: transparent;
+      color: $brand-color1;
+
+      p {
+        color: $brand-color1;
+      }
+    }
+  }
+
+  div {
+    border: none;
+  }
+}
+
+// career and get in touch mobile nav scss
+.nav_career {
+  padding: 0px 2px 2px 0px;
+  font-size: 20px;
+  font-weight: $font-weight500;
+  font-family: $primary-font;
+  color: $grey600;
+}
+
+.dropdown-menu {
+  a {
+    padding-left: 2rem;
+  }
+}
+
+@media only screen and (max-width: $breakpoint-lg-991px) {
+  .menubar {
+    display: none;
+  }
+
+  .header {
+    max-width: 100%;
+    box-shadow: $box-shadow-1;
+    padding-bottom: 22px !important;
+    padding-top: 22px !important;
+    top: -10px;
+  }
+}
+
+@media only screen and (max-width: $breakpoint-sm) {
+  // @media only screen and (max-width: 420px) {
+  .header {
+    padding-left: 0px;
+    padding-right: 8px;
+  }
+}
+
+.product__submenu {
+  font-family: $secondary-font;
+  font-size: 14px;
+  font-weight: $font-weight100;
+
+  letter-spacing: 0.44px;
+  color: $grey700;
+  display: block;
+  padding: 12px 0px 8px 10px;
+
+  .product__submenu__span {
+    display: block;
+    padding: 12px 0px 0px 0px;
+    font-size: 14px;
+  }
+
+  &:hover {
+    color: $brand-color1;
+  }
+}
+
+// @media only screen and (max-width: 280px) {
+//   .header {
+//     img {
+//       display: block;
+//       width: 60%;
+//     }
+
+// }
+@media only screen and (min-width: $breakpoint-lg) {
+  // @media only screen and(min-width:900px) {
+  .menubar {
+    ul {
+      li {
+        border: 2px solid transparent;
+
+        &:hover {
+          color: $brand-color1;
+          cursor: pointer;
+
+          & > .drop_down_icon {
+            height: 8px;
+            width: 8px;
+            background-image: url("https://cdn-gcp.new.marutitech.com/arrow_orange_361c0b0da4.svg") !important;
+            background-repeat: no-repeat;
+          }
+        }
+      }
+    }
+  }
+
+  .menubar ul li:hover .menubar__dropdown__aboutmenu {
+    display: block;
+    position: absolute;
+    right: 16.5rem;
+    z-index: 11;
+    box-shadow: $box-shadow-1;
+    background: $white100;
+    height: auto;
+    height: 60px;
+    // width: 199px;
+    width: 262px !important;
+
+    ul {
+      display: block;
+
+      li {
+        height: 60px;
+        // width: 199px;
+        width: 262px !important;
+        border: 2px solid transparent;
+
+        object-fit: contain;
+        position: inherit;
+
+        color: $primary-color-black;
+        margin-left: -32px;
+        padding: 6px;
+        padding-left: 12px;
+
+        font-family: $primary-font, sans-serif;
+        font-size: 14px;
+        font-weight: $font-weight300 !important;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: 0.4px;
+
+        &:hover {
+          border-left: 2px solid $brand-color1;
+          background: $white300;
+          color: $brand-color1;
+        }
+      }
+    }
+  }
+
+  .menubar ul li:hover .menubar__dropdown__resourcemenu {
+    display: block;
+    position: absolute;
+    right: 10.5rem;
+    z-index: 11;
+    box-shadow: $box-shadow-1;
+    background: $white100;
+    height: auto;
+    width: 179px;
+
+    ul {
+      display: block;
+
+      li {
+        height: 39px;
+        width: 179px;
+        border: 2px solid transparent;
+
+        object-fit: contain;
+        position: inherit;
+
+        color: $primary-color-black;
+        margin-left: -32px;
+        padding: 6px;
+        padding-left: 12px;
+
+        font-family: "Poppins", sans-serif;
+        font-size: 14px;
+        font-weight: $font-weight300 !important;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: 0.4px;
+
+        &:hover {
+          border-left: 2px solid $brand-color1;
+          background: $white300;
+          color: $brand-color1;
+          width: 180px;
+        }
+      }
+    }
+  }
+
+  .menubar ul li:hover .menubar__dropdown__menu {
+    display: block;
+    position: absolute;
+    // left: 20px;
+    z-index: 11;
+    box-shadow: $box-shadow-1;
+    background: $white100;
+    height: auto;
+    // width: 199px;
+    width: 262px !important;
+    margin-left: -50px;
+
+    ul {
+      display: block;
+
+      li {
+        height: auto;
+        // width: 199px;
+        width: 262px !important;
+        border: 2px solid transparent;
+
+        object-fit: contain;
+        position: inherit;
+
+        color: $primary-color-black;
+        margin-left: -32px;
+        // padding: 6px;
+        // padding-left: 12px;
+
+        font-family: $primary-font;
+        font-size: 14px;
+        font-weight: $font-weight300 !important;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: 0.4px;
+
+        &:hover {
+          border-left: 2px solid $brand-color1;
+          background: $white300;
+          color: $brand-color1;
+
+          .dropdown_submenu {
+            display: block;
+            position: absolute;
+            left: 262px;
+            top: 6px;
+            width: 340px;
+            height: auto;
+            box-shadow: $box-shadow-1;
+            background: $white100;
+            padding-bottom: 12px;
+
+            .subheading {
+              padding: 14px 0px 14px 10px !important;
+              font-family: "Open Sans", sans-serif;
+              font-size: 10px;
+              font-weight: 600 !important;
+              font-style: normal;
+              font-stretch: normal;
+              line-height: normal;
+              letter-spacing: 0.3px;
+              color: #3b3c40;
+            }
+
+            ul {
+              display: block;
+
+              li {
+                position: inherit;
+                border: 2px solid transparent;
+                height: auto;
+                // width: 199px;
+                width: 340px !important;
+
+                padding: 6px;
+                width: auto;
+                color: $primary-color-black;
+
+                &:hover {
+                  border-left: 2px solid $brand-color1;
+                  background: $white300;
+                  color: $brand-color1;
+                  width: auto;
+                }
+
+                span {
+                  font-family: $secondary-font;
+                  font-size: 12px;
+                  font-weight: $font-weight200;
+                  font-stretch: normal;
+                  font-style: normal;
+                  line-height: normal;
+                  letter-spacing: 0.44px;
+                  color: $grey700;
+                  display: block;
+                  height: auto;
+                  padding-top: 2px;
+                }
+              }
+            }
+          }
+        }
+      }
+      li:nth-child(2) {
+        &:hover {
+          .dropdown_submenu {
+            top: 46px;
+          }
+        }
+      }
+      li:nth-child(3) {
+        &:hover {
+          .dropdown_submenu {
+            top: 92px;
+          }
+        }
+      }
+      li:nth-child(4) {
+        &:hover {
+          .dropdown_submenu {
+            top: 138px;
+          }
+        }
+      }
+      li:nth-child(5) {
+        &:hover {
+          .dropdown_submenu {
+            top: 184px;
+          }
+        }
+      }
+      li:nth-child(6) {
+        &:hover {
+          .dropdown_submenu {
+            top: 230px;
+            overflow-y: auto;
+            max-height: calc(96vh - 270px);
+            width: 343px;
+          }
+
+          .dropdown_submenu::-webkit-scrollbar {
+            width: 3px;
+          }
+
+          .dropdown_submenu::-webkit-scrollbar-thumb {
+            background-color: $grey100;
+            border-radius: 4px;
+          }
+        }
+      }
+      li:nth-child(7) {
+        &:hover {
+          .dropdown_submenu {
+            top: 276px;
+          }
+        }
+      }
+    }
+  }
+
+  .menubar ul li:hover .dropdown_menu_product {
+    display: block;
+    position: absolute;
+    z-index: 11;
+    left: 0;
+    box-shadow: $box-shadow-1;
+    background: $white100;
+    // height: 280px;
+    width: 262px;
+
+    ul {
+      display: contents;
+
+      li {
+        border: 2px solid transparent;
+        height: 131px;
+        padding: 10px 25px 5px 20px;
+
+        &:hover {
+          border-left: 2px solid $brand-color1;
+          background: $white300;
+
+          span {
+            width: 225.1px;
+            height: 60px;
+            font-family: $secondary-font;
+            font-size: 14px;
+            font-weight: $font-weight200;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: 0.44px;
+            color: $brand-color1;
+            margin-top: 1rem;
+          }
+        }
+
+        img {
+          width: 119.5px;
+          height: 39px;
+          margin-bottom: 14px;
+          object-fit: contain;
+          margin-left: 0px;
+        }
+
+        span {
+          width: 225.1px;
+          height: 32px;
+          font-family: $secondary-font;
+          font-size: 14px;
+          font-weight: $font-weight200;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: 0.44px;
+          color: $grey700;
+          margin-top: 1rem;
+        }
+
+        a {
+          display: flex;
+          flex-direction: column;
+          align-items: baseline;
+        }
+      }
+    }
+  }
+}
+
+.navbar_active {
+  height: 80px;
+  width: 100%;
+  position: sticky;
+  top: 0px;
+  transition: 0.3s linear;
+  background-color: #ffffff;
+  z-index: 11;
+}
+
+.hidden {
+  z-index: 11;
+  position: sticky;
+  top: -80px;
+  transition: 0.3s linear;
+}
+
+.logo {
+  padding-left: 12px;
+
+  @media only screen and (max-width: $breakpoint-xl) {
+    width: 150px;
+    height: 27px;
+  }
+
+  // padding: 50px;
+}
+
+.about_us_links {
+  text-decoration: none;
+}
+
+.logo_a {
+  display: grid;
+}
+
+.menubar ul li:hover .menubar__dropdown__menu__aboutus {
+  ul {
+    li {
+      padding: 6px;
+      padding-left: 12px;
+    }
+  }
+}

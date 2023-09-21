@@ -1,0 +1,359 @@
+@import "../../styles/variables.scss";
+@import "../../styles/breakpoints.scss";
+
+.brand__primary {
+  background-color: $brand-color4;
+  // margin-top: 4rem;
+  height: auto;
+  // padding: 100px 0px;
+  padding: 80px 0px;
+
+  @media screen and (max-width: $breakpoint-sm) {
+    padding: 60px 0px;
+  }
+}
+
+.extraPaddingAddded {
+  padding: 100px 0px;
+
+  @media screen and (max-width: $breakpoint-sm) {
+    padding: 60px 0px;
+  }
+}
+
+.services__primary {
+  padding-bottom: 15rem;
+}
+
+// services primary variant with skewed background brand-color4 and white
+.violetwhitebg {
+  @media screen and (min-width: $breakpoint-xl-1406) {
+    background: linear-gradient(3deg, #ffffff calc(14% - 1px), #262531 14%);
+  }
+
+  background: linear-gradient(7deg, #ffffff calc(18% - 1px), #262531 18%);
+
+  height: auto;
+  padding-bottom: 15rem;
+}
+
+.violetorangebg {
+  @media screen and (min-width: $breakpoint-xl-1406) {
+    background: linear-gradient(3deg, #f05443 calc(14% - 1px), #262531 14%);
+  }
+
+  background: linear-gradient(7deg, #f05443 calc(18% - 1px), #262531 18%);
+
+  height: auto;
+  padding-bottom: 15rem;
+
+  @media screen and (max-width: $breakpoint-md) {
+    margin-bottom: -180px;
+  }
+}
+
+.services__column {
+  text-align: center;
+}
+
+.services__column__ml {
+  text-align: center;
+  padding-bottom: 2.6rem;
+}
+
+.services__column__2 {
+  text-align: center;
+  margin-right: 1rem;
+}
+
+.brand__secondary {
+  background-color: $orange;
+  padding: 80px 0px;
+
+  @media screen and (max-width: $breakpoint-md) {
+    padding: 60px 0px;
+  }
+}
+
+.brand__container__title {
+  text-align: center;
+  // font-size: 32px;
+  font-size: clamp(19.6643px, 2.6vw, 36px) !important;
+  // font-size: 2.5604551920341394vw;
+  font-weight: $font-weight600;
+  font-family: $primary-font;
+  color: $white100;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  // padding-bottom: clamp(38.236px, 4.98px, 70px);
+  padding-bottom: 40px;
+
+  @media screen and (max-width: 767px) {
+    font-size: 35px !important;
+  }
+
+  @media only screen and (max-width: 450px) {
+    font-size: clamp(0.1rem, 7vw, 35px) !important;
+  }
+
+  @media screen and (min-width: $breakpoint-xl-1406) {
+    font-family: "Poppins", sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+    text-align: center;
+    // padding-bottom: 80px;
+    padding-bottom: 40px;
+  }
+
+  @media screen and (max-width: $breakpoint-md-767) {
+    font-family: "Poppins", sans-serif;
+    font-size: 35px !important;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+
+  @media screen and (max-width: $breakpoint-sm-450) {
+    font-family: "Poppins", sans-serif;
+    // font-size: 7.777777777777778vw !important;
+    font-size: 30px !important;
+    max-width: 300px !important;
+    margin: 0 auto !important;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+    text-align: center;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade {
+  animation: fadeIn 3s;
+}
+
+.image__wrapper {
+  margin: 0 auto;
+  width: clamp(81.922px, 10.68vw, 150px);
+  height: clamp(81.922px, 10.68vw, 150px);
+
+  animation: fadeIn 3s;
+
+  [title] {
+    font-size: 30px;
+    /*optional styling*/
+
+    position: relative;
+    cursor: help;
+  }
+
+  @media screen and (max-width: $breakpoint-md-767) {
+    width: auto;
+    height: auto;
+  }
+}
+
+.tooltip {
+  background-color: #222222;
+  color: $white100;
+  font-size: 13px;
+  font-weight: 400;
+  margin-top: 2rem;
+  margin-left: -4.5rem;
+  border: 1px solid $white100;
+  padding: 4px 8px;
+  pointer-events: none;
+}
+
+.brand__container {
+  .brand__container__row {
+    text-align: center;
+    // max-width: 1020px;
+    margin: 0 50px;
+    align-items: center;
+    justify-content: center;
+    row-gap: 50px;
+
+    @media screen and (max-width: $breakpoint-md-767) {
+      margin: 0 50px;
+    }
+
+    @media screen and (max-width: $breakpoint-sm-450) {
+      margin: 0 clamp(0px, 8vw, 50px) !important;
+      row-gap: 0px;
+
+      .brand__itembox:nth-of-type(1n + 11) {
+        display: none;
+      }
+    }
+  }
+
+  .brand__container__row__services {
+    text-align: center;
+    padding-bottom: 60px;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+
+    @media screen and (min-width: $breakpoint-xl-1406) {
+      padding-bottom: 60px;
+    }
+
+    @media screen and (max-width: $breakpoint-sm-450) {
+      padding-bottom: 0px;
+    }
+  }
+
+  .brand__container__row2 {
+    margin: 0;
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .brand__container__title1 {
+    text-align: center;
+    font-size: 2.5604551920341394vw;
+    font-weight: $font-weight600;
+    font-family: $font-family-poppins;
+    color: $white100;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    line-height: 44px;
+
+    @media only screen and (min-width: $breakpoint-xl-1406) {
+      font-size: 36px;
+    }
+
+    @media only screen and (max-width: $breakpoint-md) {
+      font-size: 30px;
+      padding: 60px 16px 30px 16px;
+      line-height: 36px;
+    }
+  }
+}
+
+.brand__container__primary_other {
+  background-color: $brand-color2;
+  height: auto;
+
+  .brand__container__title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: $font-weight600;
+    font-family: $primary-font;
+    color: $white100;
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+  }
+}
+
+.brand__container__primary_other_white {
+  background-color: $white100;
+  padding-top: 80px;
+}
+
+@media screen and (max-width: $breakpoint-md) {
+  .brand__container__row {
+    // max-width: 406px !important;
+    margin: 0 auto !important;
+  }
+
+  .services__column {
+    padding-bottom: 1rem;
+  }
+}
+
+.images {
+  border-radius: 50%;
+}
+
+.services_brand_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18%;
+
+  @media only screen and (min-width: 1400px) {
+    width: 16%;
+  }
+
+  @media only screen and (max-width: 992px) {
+    width: 22%;
+    margin-bottom: 2rem;
+  }
+
+  @media only screen and (max-width: 800px) {
+    width: 34%;
+    margin-bottom: 2rem;
+  }
+
+  @media only screen and (max-width: 576px) {
+    width: 50%;
+  }
+}

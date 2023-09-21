@@ -1,0 +1,112 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/breakpoints.scss";
+
+.main_container {
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: $breakpoint-md) {
+    background-image: none;
+  }
+  &.yellow_bg {
+    background-image: none;
+  }
+}
+
+.inner_container {
+  align-items: center;
+  @media screen and (max-width: $breakpoint-md) {
+    padding: 0px 16px;
+    gap: 30px;
+  }
+}
+
+.title_desc {
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    font-family: $font-family-poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    color: $primary-color-black;
+    margin: 0;
+    text-align: center;
+    @media screen and (max-width: $breakpoint-md) {
+      font-size: 30px;
+      line-height: 36px;
+    }
+  }
+  .description {
+    font-family: $font-family-raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: $black1;
+    @media screen and (max-width: $breakpoint-md) {
+      line-height: 24px;
+    }
+
+    p:last-child {
+      margin: 0;
+    }
+  }
+}
+
+.statistics_container {
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: $breakpoint-md) {
+    flex-direction: column;
+  }
+}
+
+.statistics_single_item {
+  justify-content: center;
+  align-items: center;
+
+  span {
+    font-family: $font-family-poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 105px;
+    color: $brand-color1;
+  }
+  h4 {
+    font-family: $font-family-raleway;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: $primary-color-black;
+    margin: 0;
+    max-width: 200px;
+  }
+  @media screen and (max-width: $breakpoint-md) {
+    flex: 0 1 100% !important;
+  }
+}
+
+// BG color css
+.violet_bg,
+.orange_bg {
+  h2,
+  .description,
+  span,
+  h4 {
+    color: $white100;
+  }
+}
+
+.yellow_bg {
+  .description,
+  h2,
+  span,
+  h4 {
+    color: $black1;
+  }
+}

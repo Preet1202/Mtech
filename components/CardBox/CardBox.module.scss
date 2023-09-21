@@ -1,0 +1,2089 @@
+@import "../../styles/breakpoints.scss";
+@import "../../styles/variables.scss";
+
+.container {
+  margin-top: 93px;
+}
+
+.for_hide_overflow {
+  @media screen and (max-width: $breakpoint-sm) {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+.cardBoxTitle {
+  font-size: clamp(20.2401px, 2.6vw, 36px) !important;
+  line-height: normal;
+
+  font-family: $primary-font;
+  font-weight: $font-weight600 !important;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 44px;
+  letter-spacing: normal;
+
+  @media screen and (max-width: 767px) {
+    // font-size: 34px !important;
+    font-size: 30px !important;
+    padding: 0px 16px;
+    line-height: 36px;
+  }
+}
+
+.cardBoxDescription {
+  font-size: clamp(8.99651px, 1.1vw, 16px) !important;
+  color: $grey800;
+  font-family: $secondary-font;
+  font-weight: $font-weight500 !important;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.69 !important;
+  letter-spacing: normal;
+
+  @media screen and (max-width: 767px) {
+    // font-size: 34px !important;
+    font-size: 17.5px !important;
+  }
+
+  @media screen and (max-width: 450px) {
+    // font-size: 34px !important;
+    font-size: clamp(1.94px, 3.9vw, 17.5px) !important;
+  }
+}
+
+.columnContent {
+  display: grid;
+  grid-template-rows: minmax(auto-fill, max-content);
+  grid-row-gap: 2rem;
+}
+
+.contentCol1 {
+  @media screen and (max-width: $breakpoint-md) {
+    display: grid;
+    gap: 30px;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.contentCol2 {
+  padding-top: 3rem;
+
+  // padding-left: 0px;
+
+  @media screen and (max-width: $breakpoint-lg) {
+    padding-left: 2rem !important;
+  }
+
+  @media screen and (max-width: $breakpoint-md) {
+    padding-left: 0px !important;
+    padding-top: 0px;
+    display: grid;
+    gap: 30px;
+    width: 100%;
+    justify-content: center;
+    padding-right: 0px !important;
+  }
+}
+
+.image_column {
+  @media screen and (min-width: $breakpoint-md) {
+    padding-top: 4.5rem;
+  }
+}
+
+.ForCardBox {
+  @media screen and (max-width: $breakpoint-md) {
+    order: 1;
+  }
+}
+
+.ForVertical {
+  @media screen and (max-width: $breakpoint-md) {
+    margin: 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+}
+
+//cards css
+
+.card3atag {
+  display: block;
+  margin-left: -3px;
+
+  @media screen and (max-width: $breakpoint-sm-390) {
+    margin-left: 0px;
+  }
+}
+
+.square_card_wrapper_1,
+.square_card_wrapper_3,
+.square_card_wrapper_2 {
+  width: 14rem;
+  margin: 0px;
+  padding: 0px 0px 225px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 13px;
+  position: relative;
+
+  @media screen and (max-width: $breakpoint-xl) {
+    width: 176px;
+    padding: 0px 0px 180px;
+  }
+
+  @media screen and (max-width: $breakpoint-lg) {
+    width: 150px;
+    padding: 0px 0px 150px;
+  }
+
+  @media screen and (max-width: $breakpoint-md) {
+    width: 150px;
+    // padding: 0px 0px 170px;
+    padding: 0px 0px 150px;
+  }
+
+  @media screen and (max-width: 767px) {
+    width: 200px;
+    padding: 0px 0px 200px;
+  }
+
+  @media screen and (max-width: $breakpoint-sm-430) {
+    width: 170px;
+    // padding: 0px 0px 190px;
+    padding: 0px 0px 180px;
+  }
+
+  @media screen and (max-width: $breakpoint-sm-390) {
+    width: 135px;
+    padding: 0px 0px 140px;
+  }
+
+  @media screen and (max-width: $breakpoint-sm-320) {
+    width: 130px;
+    padding: 0px 0px 130px;
+  }
+
+  // @media screen and (max-width: 300px) {
+  //     width: 100px;
+  //     padding : 0px 0px 100px;
+  // }
+  @media screen and (max-width: $breakpoint-sm-270) {
+    width: 60px;
+    padding: 0px 0px 60px;
+  }
+
+  .sq_card_content {
+    position: absolute;
+    color: rgb(74, 74, 74);
+    font-family: $primary-font;
+    font-size: clamp(1.3rem, 2vw, 24px);
+    font-weight: 600 !important;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    top: 4.5rem;
+    left: 1.4rem;
+
+    @media screen and (max-width: 1200px) {
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      top: 4rem;
+      left: 1.5rem;
+    }
+
+    @media screen and (max-width: 992px) {
+      font-size: clamp(1rem, 2vw, 1rem);
+      top: 3rem;
+      left: 1.5rem;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 14px;
+      top: 3.5rem;
+      left: 1.5rem;
+    }
+
+    @media screen and (max-width: 767px) {
+      font-size: clamp(1.3rem, 2vw, 1.3rem);
+      top: 4rem;
+      left: 1.5rem;
+    }
+
+    @media screen and (max-width: 390px) {
+      font-size: clamp(1rem, 2vw, 1rem);
+      top: 3rem;
+      left: 1.5rem;
+    }
+
+    @media screen and (max-width: 320px) {
+      font-size: clamp(0.8rem, 2vw, 1rem);
+      top: 3rem;
+      left: 1.3rem;
+    }
+
+    @media screen and (max-width: 300px) {
+      font-size: clamp(0.6rem, 2vw, 1rem);
+      top: 2rem;
+      left: 1.2rem;
+    }
+
+    @media screen and (max-width: 226px) {
+      font-size: clamp(0.4rem, 2vw, 1rem);
+      top: 1.5rem;
+      left: 0.5rem;
+    }
+  }
+
+  .know_more {
+    display: flex;
+    color: $brand-color1;
+    font-size: clamp(0.5rem, 1.5vw, 1rem);
+    margin-top: 8px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 14px;
+    }
+
+    @media screen and (max-width: 767px) {
+      font-size: clamp(0.3rem, 3.5vw, 1rem);
+      margin-top: 5px;
+    }
+
+    @media screen and (max-width: 226px) {
+      font-size: clamp(0.3rem, 2.5vw, 1rem);
+    }
+
+    // .know_more_text {
+    //   border-bottom: 1px solid $white100;
+    // }
+    .arrow {
+      background-image: url("https://marutitech.com/wp-content/uploads/2019/05/know-more-red-arrow.svg");
+      // background-image: url($redArrow);
+      // position: relative;
+      position: absolute;
+      // left: 0;
+      transition: all 0.3s ease 0s;
+      height: 14px;
+      width: 122px;
+      top: 5.4rem;
+
+      @media screen and (max-width: 1201px) {
+        top: 4.4rem;
+      }
+
+      @media screen and (max-width: 992px) {
+        top: 3.8rem;
+        left: -1rem;
+      }
+
+      @media screen and (max-width: 800px) {
+        top: 3.7rem;
+        left: -1rem;
+      }
+
+      @media screen and (max-width: 767px) {
+        background-image: url($mobile-arrow-red);
+        top: 4.5rem;
+        left: 0;
+      }
+
+      @media screen and (max-width: 390px) {
+        top: 3.5rem;
+        left: -1.5rem;
+      }
+
+      @media screen and (max-width: 321px) {
+        top: 2.8rem;
+      }
+    }
+  }
+}
+
+.square_card_wrapper_4 {
+  width: 13.8rem;
+  margin: 0px;
+  padding: 0px 0px 225px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 13px;
+  position: relative;
+
+  @media screen and (max-width: $breakpoint-xl) {
+    width: 176px;
+    padding: 0px 0px 180px;
+  }
+
+  @media screen and (max-width: $breakpoint-lg) {
+    width: 150px;
+    padding: 0px 0px 150px;
+  }
+
+  @media screen and (max-width: $breakpoint-md) {
+    width: 150px;
+    // padding: 0px 0px 170px;
+    padding: 0px 0px 150px;
+  }
+
+  @media screen and (max-width: 767px) {
+    width: 200px;
+    padding: 0px 0px 200px;
+  }
+
+  @media screen and (max-width: $breakpoint-sm-430) {
+    width: 170px;
+    // padding: 0px 0px 190px;
+    padding: 0px 0px 180px;
+  }
+
+  @media screen and (max-width: $breakpoint-sm-390) {
+    width: 135px;
+    padding: 0px 0px 140px;
+  }
+
+  @media screen and (max-width: $breakpoint-sm-320) {
+    width: 125px;
+    padding: 0px 0px 130px;
+  }
+
+  // @media screen and (max-width: 300px) {
+  //     width: 100px;
+  //     padding : 0px 0px 100px;
+  // }
+  @media screen and (max-width: $breakpoint-sm-270) {
+    width: 60px;
+    padding: 0px 0px 60px;
+  }
+
+  .sq_card_content {
+    position: absolute;
+    color: rgb(74, 74, 74);
+    font-family: $primary-font;
+    font-size: clamp(1.3rem, 2vw, 24px);
+    font-weight: 600 !important;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    top: 4.5rem;
+    left: 1.4rem;
+
+    @media screen and (max-width: 1200px) {
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      top: 4rem;
+      left: 1.5rem;
+    }
+
+    @media screen and (max-width: 992px) {
+      font-size: clamp(1rem, 2vw, 1rem);
+      top: 3rem;
+      left: 1.5rem;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 14px;
+      top: 3.5rem;
+      left: 1.5rem;
+    }
+
+    @media screen and (max-width: 767px) {
+      font-size: clamp(1.3rem, 2vw, 1.3rem);
+      top: 4rem;
+      left: 1.5rem;
+    }
+
+    @media screen and (max-width: 390px) {
+      font-size: clamp(1rem, 2vw, 1rem);
+      top: 3rem;
+      left: 1.5rem;
+    }
+
+    @media screen and (max-width: 320px) {
+      font-size: clamp(0.8rem, 2vw, 1rem);
+      top: 3rem;
+      left: 1.3rem;
+    }
+
+    @media screen and (max-width: 300px) {
+      font-size: clamp(0.6rem, 2vw, 1rem);
+      top: 2rem;
+      left: 1.2rem;
+    }
+
+    @media screen and (max-width: 226px) {
+      font-size: clamp(0.4rem, 2vw, 1rem);
+      top: 1.5rem;
+      left: 0.5rem;
+    }
+  }
+
+  .know_more {
+    display: flex;
+    color: $brand-color1;
+    font-size: clamp(0.5rem, 1.5vw, 1rem);
+    margin-top: 8px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 14px;
+    }
+
+    @media screen and (max-width: 767px) {
+      font-size: clamp(0.3rem, 3.5vw, 1rem);
+      margin-top: 5px;
+    }
+
+    @media screen and (max-width: 226px) {
+      font-size: clamp(0.3rem, 2.5vw, 1rem);
+    }
+
+    // .know_more_text {
+    //   border-bottom: 1px solid $white100;
+    // }
+    .arrow {
+      // background-image: url("https://marutitech.com/wp-content/uploads/2019/05/know-more-red-arrow.svg");
+      background-image: url($redArrow);
+      // position: relative;
+      position: absolute;
+      // left: 0;
+      transition: all 0.3s ease 0s;
+      height: 14px;
+      width: 122px;
+      top: 5.4rem;
+
+      @media screen and (max-width: 1201px) {
+        top: 4.4rem;
+      }
+
+      @media screen and (max-width: 992px) {
+        top: 3.8rem;
+        left: -1rem;
+      }
+
+      @media screen and (max-width: 800px) {
+        top: 3.7rem;
+        left: -1rem;
+      }
+
+      @media screen and (max-width: 767px) {
+        background-image: url($mobile-arrow-red);
+        top: 4.5rem;
+        left: 0;
+      }
+
+      @media screen and (max-width: 390px) {
+        top: 3.5rem;
+        left: -1.5rem;
+      }
+
+      @media screen and (max-width: 321px) {
+        top: 2.8rem;
+      }
+    }
+  }
+}
+
+.dev_card_wrapper_1,
+.dev_card_wrapper_3,
+.dev_card_wrapper_2 {
+  width: 14rem;
+  margin: 0px;
+  padding: 0px 0px 225px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 13px;
+  position: relative;
+
+  @media screen and (max-width: $breakpoint-xl) {
+    width: 176px;
+    padding: 0px 0px 180px;
+    height: 176px;
+  }
+
+  @media screen and (max-width: $breakpoint-lg) {
+    width: 150px;
+    padding: 0px 0px 150px;
+    height: 150px;
+  }
+
+  @media screen and (max-width: $breakpoint-md) {
+    width: 200px;
+    // padding: 0px 0px 170px;
+    padding: 0px 0px 150px;
+    height: 200px;
+  }
+
+  .sq_card_content {
+    position: absolute;
+    color: #262531;
+    font-family: $primary-font;
+    font-size: 42px;
+    font-weight: 600 !important;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    top: 4.5rem;
+    left: 1.4rem;
+
+    .sq_number_title {
+      font-family: $font-family-raleway;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 22px;
+      color: #383838;
+      width: 120px;
+    }
+
+    @media screen and (max-width: 1200px) {
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      top: 4rem;
+      left: 1.5rem;
+    }
+
+    @media screen and (max-width: 992px) {
+      font-size: clamp(1rem, 2vw, 1rem);
+      top: 3rem;
+      left: 1.5rem;
+    }
+
+    @media screen and (max-width: $breakpoint-md) {
+      font-size: 42px;
+      top: 4.5rem;
+      left: 1.4rem;
+    }
+  }
+
+  .know_more {
+    display: flex;
+    color: $brand-color1;
+    font-size: clamp(0.5rem, 1.5vw, 1rem);
+    margin-top: 8px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 14px;
+    }
+
+    @media screen and (max-width: 767px) {
+      font-size: clamp(0.3rem, 3.5vw, 1rem);
+      margin-top: 5px;
+    }
+
+    @media screen and (max-width: 226px) {
+      font-size: clamp(0.3rem, 2.5vw, 1rem);
+    }
+
+    // .know_more_text {
+    //   border-bottom: 1px solid $white100;
+    // }
+    .arrow {
+      // background-image: url("https://marutitech.com/wp-content/uploads/2019/05/know-more-red-arrow.svg");
+      background-image: url($redArrow);
+      // position: relative;
+      position: absolute;
+      // left: 0;
+      transition: all 0.3s ease 0s;
+      height: 14px;
+      width: 122px;
+      top: 5.4rem;
+
+      @media screen and (max-width: 1201px) {
+        top: 4.4rem;
+      }
+
+      @media screen and (max-width: 992px) {
+        top: 3.8rem;
+        left: -1rem;
+      }
+
+      @media screen and (max-width: 800px) {
+        top: 3.7rem;
+        left: -1rem;
+      }
+
+      @media screen and (max-width: 767px) {
+        background-image: url($mobile-arrow-red);
+        top: 4.5rem;
+        left: 0;
+      }
+
+      @media screen and (max-width: 390px) {
+        top: 3.5rem;
+        left: -1.5rem;
+      }
+
+      @media screen and (max-width: 321px) {
+        top: 2.8rem;
+      }
+    }
+  }
+}
+
+.dev_card_wrapper_4 {
+  width: 13.8rem;
+  margin: 0px;
+  padding: 0px 0px 225px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 13px;
+  position: relative;
+
+  @media screen and (max-width: $breakpoint-xl) {
+    width: 176px;
+    padding: 0px 0px 180px;
+    height: 176px;
+  }
+
+  @media screen and (max-width: $breakpoint-lg) {
+    width: 150px;
+    padding: 0px 0px 150px;
+    height: 150px;
+  }
+
+  @media screen and (max-width: $breakpoint-md) {
+    width: 200px;
+    // padding: 0px 0px 170px;
+    padding: 0px 0px 150px;
+    height: 200px;
+  }
+
+  // @media screen and (max-width: $breakpoint-sm-270) {
+  //   width: 60px;
+  //   padding: 0px 0px 60px;
+  // }
+
+  .sq_card_content {
+    position: absolute;
+    color: $black1;
+    font-family: $primary-font;
+    font-size: clamp(1.3rem, 2vw, 24px);
+    font-weight: 600 !important;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    top: 6.5rem;
+    padding-top: 1rem;
+    left: 1.4rem;
+
+    @media screen and (max-width: $breakpoint-md) {
+      padding-top: 6px;
+    }
+
+    @media screen and (max-width: 1200px) {
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      top: 5rem;
+      left: 1.5rem;
+    }
+
+    @media screen and (max-width: 992px) {
+      font-size: clamp(1rem, 2vw, 1rem);
+      top: 4rem;
+      left: 1.2rem;
+    }
+
+    @media screen and (max-width: $breakpoint-md) {
+      font-size: 20px;
+      top: 6.5rem;
+      left: 1.4rem;
+    }
+  }
+
+  .know_more {
+    display: flex;
+    color: $brand-color1;
+    font-size: clamp(0.5rem, 1.5vw, 1rem);
+    margin-top: 8px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 14px;
+    }
+
+    @media screen and (max-width: 767px) {
+      font-size: clamp(0.3rem, 3.5vw, 1rem);
+      margin-top: 5px;
+    }
+
+    @media screen and (max-width: 226px) {
+      font-size: clamp(0.3rem, 2.5vw, 1rem);
+    }
+
+    // .know_more_text {
+    //   border-bottom: 1px solid $white100;
+    // }
+    .arrow {
+      // background-image: url("https://marutitech.com/wp-content/uploads/2019/05/know-more-red-arrow.svg");
+      background-image: url($redArrow);
+      // position: relative;
+      position: absolute;
+      // left: 0;
+      transition: all 0.3s ease 0s;
+      height: 14px;
+      width: 122px;
+      top: 5.4rem;
+
+      @media screen and (max-width: 1201px) {
+        top: 4.4rem;
+      }
+
+      @media screen and (max-width: 992px) {
+        top: 3.8rem;
+        left: -1rem;
+      }
+
+      @media screen and (max-width: 800px) {
+        top: 3.7rem;
+        left: -1rem;
+      }
+
+      @media screen and (max-width: 767px) {
+        background-image: url($mobile-arrow-red);
+        top: 4.5rem;
+        left: 0;
+      }
+
+      @media screen and (max-width: 390px) {
+        top: 3.5rem;
+        left: -1.5rem;
+      }
+
+      @media screen and (max-width: 321px) {
+        top: 2.8rem;
+      }
+    }
+  }
+}
+
+.dev_card_wrapper_1 {
+  background-image: url($card1);
+}
+
+.dev_card_wrapper_1:hover {
+  background-image: url($card1Copy);
+
+  .sq_card_content {
+    position: absolute;
+    color: $white100;
+    font-family: $primary-font;
+    // font-size: clamp(1.3rem, 2vw, 24px);
+    font-size: 42px;
+    font-weight: $font-weight600 !important;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    top: 4.5rem;
+    left: 1.4rem;
+
+    @media screen and (max-width: $breakpoint-xl) {
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      top: 4rem;
+      left: 1.5rem;
+    }
+
+    @media screen and (max-width: $breakpoint-lg) {
+      font-size: clamp(1rem, 2vw, 1rem);
+      top: 3rem;
+      left: 1.5rem;
+    }
+
+    @media screen and (max-width: $breakpoint-md) {
+      font-size: 42px;
+      top: 4.5rem;
+      left: 1.4rem;
+    }
+  }
+
+  .sq_number_title {
+    color: #ffffff;
+  }
+
+  .know_more {
+    display: flex;
+    color: $white100;
+    font-size: clamp(0.5rem, 1.5vw, 1rem);
+    margin-top: 8px;
+
+    @media screen and (max-width: $breakpoint-md) {
+      font-size: 14px;
+    }
+
+    @media screen and (max-width: 767px) {
+      font-size: clamp(0.3rem, 3.5vw, 1rem);
+      margin-top: 5px;
+    }
+
+    @media screen and (max-width: $breakpoint-sm-270) {
+      font-size: clamp(0.3rem, 2.5vw, 1rem);
+    }
+
+    .know_more_text {
+      border-bottom: 1px solid $white100;
+    }
+
+    .arrow {
+      // background-image: url("https://marutitech.com/wp-content/uploads/2019/05/know-more-white-arrow.svg");
+      background-image: url($whiteArrow);
+      position: absolute;
+      transition: all 0.3s ease 0s;
+      height: 14px;
+      width: 122px;
+      top: 5.4rem;
+      left: 10px;
+
+      @media screen and (max-width: 1201px) {
+        top: 4.4rem;
+      }
+
+      @media screen and (max-width: 992px) {
+        top: 3.8rem;
+        left: -8px;
+      }
+
+      @media screen and (max-width: 800px) {
+        top: 3.7rem;
+        left: -8px;
+      }
+
+      @media screen and (max-width: 767px) {
+        background-image: url($mobile-arrow-white);
+        top: 4.5rem;
+        left: 3px;
+      }
+
+      @media screen and (max-width: $breakpoint-sm-390) {
+        top: 3.5rem;
+        left: -1.35rem;
+      }
+
+      @media screen and (max-width: 321px) {
+        top: 2.8rem;
+      }
+    }
+  }
+}
+
+.dev_card_wrapper_1_autoselected {
+  background-image: url($card1Copy);
+
+  .sq_card_content {
+    position: absolute;
+    color: $white100;
+    font-family: $primary-font;
+    // font-size: clamp(1.3rem, 2vw, 24px);
+    font-size: 42px;
+    font-weight: $font-weight600 !important;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    top: 4.5rem;
+    left: 1.4rem;
+
+    @media screen and (max-width: $breakpoint-xl) {
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      top: 4rem;
+      left: 1.5rem;
+    }
+
+    @media screen and (max-width: $breakpoint-lg) {
+      font-size: clamp(1rem, 2vw, 1rem);
+      top: 3rem;
+      left: 1.5rem;
+    }
+
+    @media screen and (max-width: $breakpoint-md) {
+      font-size: 42px;
+      top: 4.5rem;
+      left: 1.4rem;
+    }
+  }
+
+  .sq_number_title {
+    color: #ffffff !important;
+  }
+
+  .know_more {
+    display: flex;
+    color: $white100;
+    font-size: clamp(0.5rem, 1.5vw, 1rem);
+    margin-top: 8px;
+
+    @media screen and (max-width: $breakpoint-md) {
+      font-size: 14px;
+    }
+
+    @media screen and (max-width: 767px) {
+      font-size: clamp(0.3rem, 3.5vw, 1rem);
+      margin-top: 5px;
+    }
+
+    @media screen and (max-width: $breakpoint-sm-270) {
+      font-size: clamp(0.3rem, 2.5vw, 1rem);
+    }
+
+    .know_more_text {
+      border-bottom: 1px solid $white100;
+    }
+
+    .arrow {
+      // background-image: url("https://marutitech.com/wp-content/uploads/2019/05/know-more-white-arrow.svg");
+      background-image: url($whiteArrow);
+      position: absolute;
+      transition: all 0.3s ease 0s;
+      height: 14px;
+      width: 122px;
+      top: 5.4rem;
+      left: 10px;
+
+      @media screen and (max-width: 1201px) {
+        top: 4.4rem;
+      }
+
+      @media screen and (max-width: 992px) {
+        top: 3.8rem;
+        left: -8px;
+      }
+
+      @media screen and (max-width: 800px) {
+        top: 3.7rem;
+        left: -8px;
+      }
+
+      @media screen and (max-width: 767px) {
+        background-image: url($mobile-arrow-white);
+        top: 4.5rem;
+        left: 3px;
+      }
+
+      @media screen and (max-width: $breakpoint-sm-390) {
+        top: 3.5rem;
+        left: -1.35rem;
+      }
+
+      @media screen and (max-width: 321px) {
+        top: 2.8rem;
+      }
+    }
+  }
+}
+
+.dev_card_wrapper_2 {
+  background-image: url($card2);
+
+  .know_more {
+    .arrow {
+      top: 3rem;
+
+      @media screen and (max-width: 1201px) {
+        top: 2.6rem;
+      }
+
+      @media screen and (max-width: 992px) {
+        top: 2.3rem;
+        left: -1rem;
+      }
+
+      @media screen and (max-width: 800px) {
+        top: 2.2rem;
+        left: -8px;
+      }
+
+      @media screen and (max-width: 767px) {
+        background-image: url($mobile-arrow-red);
+        top: 2.6rem;
+        left: 0;
+      }
+
+      @media screen and (max-width: $breakpoint-sm-390) {
+        top: 2rem;
+        left: -1.5rem;
+      }
+
+      @media screen and (max-width: 321px) {
+        top: 1.6rem;
+      }
+    }
+  }
+}
+
+.dev_card_wrapper_2:hover {
+  background-image: url($card2Copy);
+
+  .sq_number_title {
+    color: #ffffff;
+  }
+
+  .sq_card_content {
+    position: absolute;
+    color: $white100;
+    font-family: $primary-font;
+    // font-size: clamp(1.3rem, 2vw, 24px);
+    font-size: 42px;
+    font-weight: $font-weight600 !important;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    top: 4.5rem;
+    left: 1.4rem;
+
+    @media screen and (max-width: $breakpoint-xl) {
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      top: 4rem;
+      left: 1.5rem;
+    }
+
+    @media screen and (max-width: $breakpoint-lg) {
+      font-size: clamp(1rem, 2vw, 1rem);
+      top: 3rem;
+      left: 1.5rem;
+    }
+
+    @media screen and (max-width: $breakpoint-md) {
+      font-size: 42px;
+      top: 4.5rem;
+      left: 1.4rem;
+    }
+  }
+
+  .know_more {
+    display: flex;
+    color: $white100;
+    font-size: clamp(0.5rem, 1.5vw, 1rem);
+    margin-top: 8px;
+
+    @media screen and (max-width: $breakpoint-md) {
+      font-size: 14px;
+    }
+
+    @media screen and (max-width: 767px) {
+      font-size: clamp(0.3rem, 3.5vw, 1rem);
+      margin-top: 5px;
+    }
+
+    @media screen and (max-width: $breakpoint-sm-270) {
+      font-size: clamp(0.3rem, 2.5vw, 1rem);
+    }
+
+    .know_more_text {
+      border-bottom: 1px solid $white100;
+    }
+
+    .arrow {
+      // background-image: url("https://marutitech.com/wp-content/uploads/2019/05/know-more-white-arrow.svg");
+      background-image: url($whiteArrow);
+      position: absolute;
+      transition: all 0.3s ease 0s;
+      height: 14px;
+      width: 122px;
+      // top: 3.1rem;
+      top: 3rem;
+      left: 10px;
+
+      @media screen and (max-width: 1201px) {
+        top: 2.6rem;
+      }
+
+      @media screen and (max-width: 992px) {
+        top: 2.3rem;
+        left: -8px;
+      }
+
+      @media screen and (max-width: 800px) {
+        top: 2.2rem;
+        left: -8px;
+      }
+
+      @media screen and (max-width: 767px) {
+        background-image: url($mobile-arrow-white);
+        top: 2.6rem;
+        left: 3px;
+      }
+
+      @media screen and (max-width: $breakpoint-sm-390) {
+        top: 2rem;
+        left: -1.35rem;
+      }
+
+      @media screen and (max-width: 321px) {
+        top: 1.6rem;
+      }
+    }
+  }
+}
+
+.dev_card_wrapper_3 {
+  background-image: url($card3);
+}
+
+.dev_card_wrapper_3:hover {
+  background-image: url($card3Copy);
+
+  .sq_number_title {
+    color: #ffffff;
+  }
+
+  .sq_card_content {
+    position: absolute;
+    color: $white100;
+    font-family: $primary-font;
+    // font-size: clamp(1.3rem, 2vw, 24px);
+    font-size: 42px;
+    font-weight: $font-weight600 !important;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    top: 4.5rem;
+    left: 1.4rem;
+
+    @media screen and (max-width: $breakpoint-xl) {
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      top: 4rem;
+      left: 1.5rem;
+    }
+
+    @media screen and (max-width: $breakpoint-lg) {
+      font-size: clamp(1rem, 2vw, 1rem);
+      top: 3rem;
+      left: 1.5rem;
+    }
+
+    @media screen and (max-width: $breakpoint-md) {
+      font-size: 42px;
+      top: 4.5rem;
+      left: 1.4rem;
+    }
+  }
+
+  .know_more {
+    display: flex;
+    color: $white100;
+    font-size: clamp(0.5rem, 1.5vw, 1rem);
+    margin-top: 8px;
+
+    @media screen and (max-width: $breakpoint-md) {
+      font-size: clamp(0.3rem, 3.5vw, 1rem);
+      margin-top: 5px;
+    }
+
+    @media screen and (max-width: $breakpoint-sm-270) {
+      font-size: clamp(0.3rem, 2.5vw, 1rem);
+    }
+
+    .know_more_text {
+      border-bottom: 1px solid $white100;
+    }
+
+    .arrow {
+      background-image: url($whiteArrow);
+      position: absolute;
+      transition: all 0.3s ease 0s;
+      height: 14px;
+      width: 122px;
+      top: 5.4rem;
+      left: 10px;
+
+      @media screen and (max-width: 1201px) {
+        top: 4.4rem;
+      }
+
+      @media screen and (max-width: 992px) {
+        top: 3.8rem;
+        left: -8px;
+      }
+
+      @media screen and (max-width: 800px) {
+        top: 3.7rem;
+        left: -8px;
+      }
+
+      @media screen and (max-width: 767px) {
+        background-image: url($mobile-arrow-white);
+        top: 4.5rem;
+        left: 3px;
+      }
+
+      @media screen and (max-width: $breakpoint-sm-390) {
+        top: 3.5rem;
+        // left: 3px;
+        left: -1.35rem;
+      }
+
+      @media screen and (max-width: 321px) {
+        // left: 1px;
+        top: 2.8rem;
+      }
+    }
+  }
+}
+
+.dev_card_wrapper_4 {
+  background-image: url($card4);
+}
+
+.dev_card_wrapper_4:hover {
+  background-image: url($card4Copy);
+
+  .sq_number_title {
+    color: #ffffff;
+  }
+
+  .sq_card_content {
+    position: absolute;
+    color: $white100;
+    font-family: $primary-font;
+    font-size: clamp(1.3rem, 2vw, 24px);
+
+    font-weight: $font-weight600 !important;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    top: 6.5rem;
+    left: 1.4rem;
+
+    @media screen and (max-width: $breakpoint-xl) {
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      top: 5rem;
+      left: 1.5rem;
+    }
+
+    @media screen and (max-width: $breakpoint-lg) {
+      font-size: clamp(1rem, 2vw, 1rem);
+      top: 3rem;
+      left: 1.5rem;
+    }
+
+    @media screen and (max-width: $breakpoint-md) {
+      font-size: clamp(1.3rem, 2vw, 24px);
+      top: 6.5rem;
+      left: 1.4rem;
+    }
+  }
+
+  .know_more {
+    display: flex;
+    color: $white100;
+    font-size: clamp(0.5rem, 1.5vw, 1rem);
+    margin-top: 8px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 14px;
+    }
+
+    @media screen and (max-width: 767px) {
+      font-size: clamp(0.3rem, 3.5vw, 1rem);
+      margin-top: 5px;
+    }
+
+    @media screen and (max-width: 226px) {
+      font-size: clamp(0.3rem, 2.5vw, 1rem);
+    }
+
+    .know_more_text {
+      border-bottom: 1px solid $white100;
+    }
+
+    .arrow {
+      background-image: url($whiteArrow);
+      position: absolute;
+      transition: all 0.3s ease 0s;
+      height: 14px;
+      width: 122px;
+      top: 5.4rem;
+      left: 10px;
+
+      @media screen and (max-width: 1201px) {
+        top: 4.4rem;
+      }
+
+      @media screen and (max-width: 992px) {
+        top: 3.8rem;
+        left: -8px;
+      }
+
+      @media screen and (max-width: 800px) {
+        top: 3.7rem;
+        left: -8px;
+      }
+
+      @media screen and (max-width: 767px) {
+        background-image: url($mobile-arrow-white);
+        top: 4.5rem;
+        left: 3px;
+      }
+
+      @media screen and (max-width: $breakpoint-sm-390) {
+        top: 3.5rem;
+        // left: 3px;
+        left: -1.35rem;
+      }
+
+      @media screen and (max-width: 321px) {
+        // left: 1px;
+        top: 2.8rem;
+      }
+    }
+  }
+}
+
+.square_card_wrapper_1 {
+  background-image: url($card1);
+}
+
+.square_card_wrapper_1:hover {
+  background-image: url($card1Copy);
+
+  .sq_card_content {
+    position: absolute;
+    color: $white100;
+    font-family: $primary-font;
+    font-size: clamp(1.3rem, 2vw, 24px);
+
+    font-weight: $font-weight600 !important;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    top: 4.5rem;
+    left: 1.4rem;
+
+    @media screen and (max-width: $breakpoint-xl) {
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      top: 4rem;
+      left: 1.5rem;
+    }
+
+    @media screen and (max-width: $breakpoint-lg) {
+      font-size: clamp(1rem, 2vw, 1rem);
+      top: 3rem;
+      left: 1.5rem;
+    }
+
+    @media screen and (max-width: $breakpoint-md) {
+      font-size: 14px;
+      top: 3.5rem;
+      left: 1.5rem;
+    }
+
+    @media screen and (max-width: 767px) {
+      font-size: clamp(1.3rem, 2vw, 1.3rem);
+      top: 4rem;
+      left: 1.5rem;
+    }
+
+    @media screen and (max-width: $breakpoint-sm-390) {
+      font-size: clamp(1rem, 2vw, 1rem);
+      top: 3rem;
+      left: 1.5rem;
+    }
+
+    @media screen and (max-width: $breakpoint-sm-320) {
+      font-size: clamp(0.8rem, 2vw, 1rem);
+      top: 3rem;
+      left: 1.3rem;
+    }
+
+    @media screen and (max-width: 300px) {
+      font-size: clamp(0.6rem, 2vw, 1rem);
+      top: 2rem;
+      left: 1.2rem;
+    }
+
+    @media screen and (max-width: $breakpoint-sm-270) {
+      font-size: clamp(0.4rem, 2vw, 1rem);
+      top: 1.5rem;
+      left: 0.5rem;
+    }
+  }
+
+  .know_more {
+    display: flex;
+    color: $white100;
+    font-size: clamp(0.5rem, 1.5vw, 1rem);
+    margin-top: 8px;
+
+    @media screen and (max-width: $breakpoint-md) {
+      font-size: 14px;
+    }
+
+    @media screen and (max-width: 767px) {
+      font-size: clamp(0.3rem, 3.5vw, 1rem);
+      margin-top: 5px;
+    }
+
+    @media screen and (max-width: $breakpoint-sm-270) {
+      font-size: clamp(0.3rem, 2.5vw, 1rem);
+    }
+
+    .know_more_text {
+      border-bottom: 1px solid $white100;
+    }
+
+    .arrow {
+      // background-image: url("https://marutitech.com/wp-content/uploads/2019/05/know-more-white-arrow.svg");
+      background-image: url($whiteArrow);
+      position: absolute;
+      transition: all 0.3s ease 0s;
+      height: 14px;
+      width: 122px;
+      top: 5.4rem;
+      left: 10px;
+
+      @media screen and (max-width: 1201px) {
+        top: 4.4rem;
+      }
+
+      @media screen and (max-width: 992px) {
+        top: 3.8rem;
+        left: -8px;
+      }
+
+      @media screen and (max-width: 800px) {
+        top: 3.7rem;
+        left: -8px;
+      }
+
+      @media screen and (max-width: 767px) {
+        background-image: url($mobile-arrow-white);
+        top: 4.5rem;
+        left: 3px;
+      }
+
+      @media screen and (max-width: $breakpoint-sm-390) {
+        top: 3.5rem;
+        left: -1.35rem;
+      }
+
+      @media screen and (max-width: 321px) {
+        top: 2.8rem;
+      }
+    }
+  }
+}
+
+.square_card_wrapper_2 {
+  background-image: url($card2);
+
+  .know_more {
+    .arrow {
+      top: 3rem;
+
+      @media screen and (max-width: 1201px) {
+        top: 2.6rem;
+      }
+
+      @media screen and (max-width: 992px) {
+        top: 2.3rem;
+        left: -1rem;
+      }
+
+      @media screen and (max-width: 800px) {
+        top: 2.2rem;
+        left: -8px;
+      }
+
+      @media screen and (max-width: 767px) {
+        background-image: url($mobile-arrow-red);
+        top: 2.6rem;
+        left: 0;
+      }
+
+      @media screen and (max-width: $breakpoint-sm-390) {
+        top: 2rem;
+        left: -1.5rem;
+      }
+
+      @media screen and (max-width: 321px) {
+        top: 1.6rem;
+      }
+    }
+  }
+}
+
+.square_card_wrapper_2:hover {
+  background-image: url($card2Copy);
+
+  .sq_card_content {
+    position: absolute;
+    color: $white100;
+    font-family: $primary-font;
+    font-size: clamp(1.3rem, 2vw, 24px);
+    font-weight: $font-weight600 !important;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    top: 4.5rem;
+    left: 1.4rem;
+
+    @media screen and (max-width: $breakpoint-xl) {
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      top: 4rem;
+      left: 1.5rem;
+    }
+
+    @media screen and (max-width: $breakpoint-lg) {
+      font-size: clamp(1rem, 2vw, 1rem);
+      top: 3rem;
+      left: 1.5rem;
+    }
+
+    @media screen and (max-width: $breakpoint-md) {
+      font-size: 14px;
+      top: 3.5rem;
+      left: 1.5rem;
+    }
+
+    @media screen and (max-width: 767px) {
+      font-size: clamp(1.3rem, 2vw, 1.3rem);
+      top: 4rem;
+      left: 1.5rem;
+    }
+
+    @media screen and (max-width: $breakpoint-sm-390) {
+      font-size: clamp(1rem, 2vw, 1rem);
+      top: 3rem;
+      left: 1.5rem;
+    }
+
+    @media screen and (max-width: $breakpoint-sm-320) {
+      font-size: clamp(0.8rem, 2vw, 1rem);
+      top: 3rem;
+      left: 1.3rem;
+    }
+
+    @media screen and (max-width: 300px) {
+      font-size: clamp(0.6rem, 2vw, 1rem);
+      top: 2rem;
+      left: 1.2rem;
+    }
+
+    @media screen and (max-width: $breakpoint-sm-270) {
+      font-size: clamp(0.4rem, 2vw, 1rem);
+      top: 1.5rem;
+      left: 0.5rem;
+    }
+  }
+
+  .know_more {
+    display: flex;
+    color: $white100;
+    font-size: clamp(0.5rem, 1.5vw, 1rem);
+    margin-top: 8px;
+
+    @media screen and (max-width: $breakpoint-md) {
+      font-size: 14px;
+    }
+
+    @media screen and (max-width: 767px) {
+      font-size: clamp(0.3rem, 3.5vw, 1rem);
+      margin-top: 5px;
+    }
+
+    @media screen and (max-width: $breakpoint-sm-270) {
+      font-size: clamp(0.3rem, 2.5vw, 1rem);
+    }
+
+    .know_more_text {
+      border-bottom: 1px solid $white100;
+    }
+
+    .arrow {
+      // background-image: url("https://marutitech.com/wp-content/uploads/2019/05/know-more-white-arrow.svg");
+      background-image: url($whiteArrow);
+      position: absolute;
+      transition: all 0.3s ease 0s;
+      height: 14px;
+      width: 122px;
+      // top: 3.1rem;
+      top: 3rem;
+      left: 10px;
+
+      @media screen and (max-width: 1201px) {
+        top: 2.6rem;
+      }
+
+      @media screen and (max-width: 992px) {
+        top: 2.3rem;
+        left: -8px;
+      }
+
+      @media screen and (max-width: 800px) {
+        top: 2.2rem;
+        left: -8px;
+      }
+
+      @media screen and (max-width: 767px) {
+        background-image: url($mobile-arrow-white);
+        top: 2.6rem;
+        left: 3px;
+      }
+
+      @media screen and (max-width: $breakpoint-sm-390) {
+        top: 2rem;
+        left: -1.35rem;
+      }
+
+      @media screen and (max-width: 321px) {
+        top: 1.6rem;
+      }
+    }
+  }
+}
+
+.square_card_wrapper_2_autoselected {
+  background-image: url($card2Copy);
+
+  .sq_card_content {
+    position: absolute;
+    color: $white100;
+    font-family: $primary-font;
+    font-size: clamp(1.3rem, 2vw, 24px);
+
+    font-weight: $font-weight600 !important;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    top: 4.5rem;
+    left: 1.4rem;
+
+    @media screen and (max-width: $breakpoint-xl) {
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      top: 4rem;
+      left: 1.5rem;
+    }
+
+    @media screen and (max-width: $breakpoint-lg) {
+      font-size: clamp(1rem, 2vw, 1rem);
+      top: 3rem;
+      left: 1.5rem;
+    }
+
+    @media screen and (max-width: $breakpoint-md) {
+      font-size: 14px;
+      top: 3.5rem;
+      left: 1.5rem;
+    }
+
+    @media screen and (max-width: 767px) {
+      font-size: clamp(1.3rem, 2vw, 1.3rem);
+      top: 4rem;
+      left: 1.5rem;
+    }
+
+    @media screen and (max-width: $breakpoint-sm-390) {
+      font-size: clamp(1rem, 2vw, 1rem);
+      top: 3rem;
+      left: 1.5rem;
+    }
+
+    @media screen and (max-width: $breakpoint-sm-320) {
+      font-size: clamp(0.8rem, 2vw, 1rem);
+      top: 3rem;
+      left: 1.3rem;
+    }
+
+    @media screen and (max-width: 300px) {
+      font-size: clamp(0.6rem, 2vw, 1rem);
+      top: 2rem;
+      left: 1.2rem;
+    }
+
+    @media screen and (max-width: $breakpoint-sm-270) {
+      font-size: clamp(0.4rem, 2vw, 1rem);
+      top: 1.5rem;
+      left: 0.5rem;
+    }
+  }
+
+  .know_more {
+    display: flex;
+    color: $white100;
+    font-size: clamp(0.5rem, 1.5vw, 1rem);
+    margin-top: 8px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 14px;
+    }
+
+    @media screen and (max-width: 767px) {
+      font-size: clamp(0.3rem, 3.5vw, 1rem);
+      margin-top: 5px;
+    }
+
+    @media screen and (max-width: 226px) {
+      font-size: clamp(0.3rem, 2.5vw, 1rem);
+    }
+
+    .arrow {
+      // background-image: url("https://marutitech.com/wp-content/uploads/2019/05/know-more-white-arrow.svg");
+      background-image: url($whiteArrow);
+      // position: relative;
+      position: absolute;
+      // left: 0;
+      transition: all 0.3s ease 0s;
+      height: 14px;
+      width: 122px;
+      top: 3rem;
+
+      @media screen and (max-width: 1201px) {
+        top: 2.6rem;
+      }
+
+      @media screen and (max-width: 992px) {
+        top: 2.3rem;
+        left: -1rem;
+      }
+
+      @media screen and (max-width: 800px) {
+        top: 2.2rem;
+        left: -1rem;
+      }
+
+      @media screen and (max-width: 767px) {
+        background-image: url($mobile-arrow-white);
+        top: 2.6rem;
+        left: 0;
+      }
+
+      @media screen and (max-width: 390px) {
+        top: 2rem;
+        left: -26px;
+      }
+
+      @media screen and (max-width: 321px) {
+        top: 1.6rem;
+      }
+    }
+  }
+}
+
+.square_card_wrapper_3 {
+  background-image: url($card3);
+}
+
+.square_card_wrapper_3:hover {
+  background-image: url($card3Copy);
+
+  .sq_card_content {
+    position: absolute;
+    color: $white100;
+    font-family: $primary-font;
+    font-size: clamp(1.3rem, 2vw, 24px);
+
+    font-weight: $font-weight600 !important;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    top: 4.5rem;
+    left: 1.4rem;
+
+    @media screen and (max-width: $breakpoint-xl) {
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      top: 4rem;
+      left: 1.5rem;
+    }
+
+    @media screen and (max-width: $breakpoint-lg) {
+      font-size: clamp(1rem, 2vw, 1rem);
+      top: 3rem;
+      left: 1.5rem;
+    }
+
+    @media screen and (max-width: $breakpoint-md) {
+      font-size: 14px;
+      top: 3.5rem;
+      left: 1.5rem;
+    }
+
+    @media screen and (max-width: 767px) {
+      font-size: clamp(1.3rem, 2vw, 1.3rem);
+      top: 4rem;
+      left: 1.5rem;
+    }
+
+    @media screen and (max-width: $breakpoint-sm-390) {
+      font-size: clamp(1rem, 2vw, 1rem);
+      top: 3rem;
+      left: 1.5rem;
+    }
+
+    @media screen and (max-width: $breakpoint-sm-320) {
+      font-size: clamp(0.8rem, 2vw, 1rem);
+      top: 3rem;
+      left: 1.3rem;
+    }
+
+    @media screen and (max-width: 300px) {
+      font-size: clamp(0.6rem, 2vw, 1rem);
+      top: 2rem;
+      left: 1.2rem;
+    }
+
+    @media screen and (max-width: $breakpoint-sm-270) {
+      font-size: clamp(0.4rem, 2vw, 1rem);
+      top: 1.5rem;
+      left: 0.5rem;
+    }
+  }
+
+  .know_more {
+    display: flex;
+    color: $white100;
+    font-size: clamp(0.5rem, 1.5vw, 1rem);
+    margin-top: 8px;
+
+    @media screen and (max-width: $breakpoint-md) {
+      font-size: clamp(0.3rem, 3.5vw, 1rem);
+      margin-top: 5px;
+    }
+
+    @media screen and (max-width: $breakpoint-sm-270) {
+      font-size: clamp(0.3rem, 2.5vw, 1rem);
+    }
+
+    .know_more_text {
+      border-bottom: 1px solid $white100;
+    }
+
+    .arrow {
+      background-image: url($whiteArrow);
+      position: absolute;
+      transition: all 0.3s ease 0s;
+      height: 14px;
+      width: 122px;
+      top: 5.4rem;
+      left: 10px;
+
+      @media screen and (max-width: 1201px) {
+        top: 4.4rem;
+      }
+
+      @media screen and (max-width: 992px) {
+        top: 3.8rem;
+        left: -8px;
+      }
+
+      @media screen and (max-width: 800px) {
+        top: 3.7rem;
+        left: -8px;
+      }
+
+      @media screen and (max-width: 767px) {
+        background-image: url($mobile-arrow-white);
+        top: 4.5rem;
+        left: 3px;
+      }
+
+      @media screen and (max-width: $breakpoint-sm-390) {
+        top: 3.5rem;
+        // left: 3px;
+        left: -1.35rem;
+      }
+
+      @media screen and (max-width: 321px) {
+        // left: 1px;
+        top: 2.8rem;
+      }
+    }
+  }
+}
+
+.square_card_wrapper_4 {
+  background-image: url($card4);
+}
+
+.square_card_wrapper_4:hover {
+  background-image: url($card4Copy);
+
+  .sq_card_content {
+    position: absolute;
+    color: $white100;
+    font-family: $primary-font;
+    font-size: clamp(1.3rem, 2vw, 24px);
+
+    font-weight: $font-weight600 !important;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    top: 4.5rem;
+    left: 1.4rem;
+
+    @media screen and (max-width: $breakpoint-xl) {
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      top: 4rem;
+      left: 1.5rem;
+    }
+
+    @media screen and (max-width: $breakpoint-lg) {
+      font-size: clamp(1rem, 2vw, 1rem);
+      top: 3rem;
+      left: 1.5rem;
+    }
+
+    @media screen and (max-width: $breakpoint-md) {
+      font-size: 14px;
+      top: 3.5rem;
+      left: 1.5rem;
+    }
+
+    @media screen and (max-width: 767px) {
+      font-size: clamp(1.3rem, 2vw, 1.3rem);
+      top: 4rem;
+      left: 1.5rem;
+    }
+
+    @media screen and (max-width: $breakpoint-sm-390) {
+      font-size: clamp(1rem, 2vw, 1rem);
+      top: 3rem;
+      left: 1.5rem;
+    }
+
+    @media screen and (max-width: $breakpoint-sm-320) {
+      font-size: clamp(0.8rem, 2vw, 1rem);
+      top: 3rem;
+      left: 1.3rem;
+    }
+
+    @media screen and (max-width: 300px) {
+      font-size: clamp(0.6rem, 2vw, 1rem);
+      top: 2rem;
+      left: 1.2rem;
+    }
+
+    @media screen and (max-width: $breakpoint-sm-270) {
+      font-size: clamp(0.4rem, 2vw, 1rem);
+      top: 1.5rem;
+      left: 0.5rem;
+    }
+  }
+
+  .know_more {
+    display: flex;
+    color: $white100;
+    font-size: clamp(0.5rem, 1.5vw, 1rem);
+    margin-top: 8px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 14px;
+    }
+
+    @media screen and (max-width: 767px) {
+      font-size: clamp(0.3rem, 3.5vw, 1rem);
+      margin-top: 5px;
+    }
+
+    @media screen and (max-width: 226px) {
+      font-size: clamp(0.3rem, 2.5vw, 1rem);
+    }
+
+    .know_more_text {
+      border-bottom: 1px solid $white100;
+    }
+
+    .arrow {
+      background-image: url($whiteArrow);
+      position: absolute;
+      transition: all 0.3s ease 0s;
+      height: 14px;
+      width: 122px;
+      top: 5.4rem;
+      left: 10px;
+
+      @media screen and (max-width: 1201px) {
+        top: 4.4rem;
+      }
+
+      @media screen and (max-width: 992px) {
+        top: 3.8rem;
+        left: -8px;
+      }
+
+      @media screen and (max-width: 800px) {
+        top: 3.7rem;
+        left: -8px;
+      }
+
+      @media screen and (max-width: 767px) {
+        background-image: url($mobile-arrow-white);
+        top: 4.5rem;
+        left: 3px;
+      }
+
+      @media screen and (max-width: $breakpoint-sm-390) {
+        top: 3.5rem;
+        // left: 3px;
+        left: -1.35rem;
+      }
+
+      @media screen and (max-width: 321px) {
+        // left: 1px;
+        top: 2.8rem;
+      }
+    }
+  }
+}
+
+// Expertise of our developer css styles - component 23 in figma
+.devs__container {
+  padding: 80px 0px;
+
+  @media screen and (max-width: $breakpoint-md) {
+    padding: 60px 0px;
+  }
+}
+
+.devsbox__description {
+  font-family: $font-family-raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  padding-top: 20px;
+
+  @media screen and (max-width: $breakpoint-sm) {
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-bottom: 50px;
+  }
+}
+
+.devs__secondrow {
+  margin-top: 80px;
+
+  @media screen and (max-width: $breakpoint-sm) {
+    margin-top: 0px;
+  }
+
+  h2 {
+    font-family: $font-family-poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: clamp(8px, 7.6vw, 36px);
+    line-height: 46px;
+    text-align: center;
+    display: block;
+    margin-bottom: 60px;
+  }
+
+  .devs__box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    gap: 20px;
+
+    h6 {
+      font-family: $font-family-poppins;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .sq_number_title {
+    font-size: clamp(0.6rem, 2vw, 1rem) !important;
+    width: 65% !important;
+  }
+}

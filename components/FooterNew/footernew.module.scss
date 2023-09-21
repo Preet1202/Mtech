@@ -1,0 +1,283 @@
+@import "../../styles/breakpoints.scss";
+@import "../../styles/variables.scss";
+
+.newfooter__container__desktop {
+  background: linear-gradient(to top,
+      $brand-color4 0%,
+      $brand-color4 80%,
+      $white100 62.5%,
+      $white100 100%);
+  padding: 80px 0px;
+  display: block;
+
+  @media screen and (max-width: $breakpoint-lg) {
+    height: auto;
+  }
+}
+
+.extraPaddingAddded {
+  padding: 100px 0px;
+}
+
+.inner__container {
+  background: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  height: auto;
+
+  .firstrow {
+    padding: 50px 35px 30px 35px;
+    margin: 0px;
+
+    .main__title {
+      font-family: $font-family-raleway;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 35px;
+      padding-bottom: 10px;
+      color: #383838;
+    }
+
+    ul {
+      padding-left: 0px;
+      display: grid;
+      row-gap: 10px;
+
+      li {
+        padding-left: 0px;
+        list-style: none;
+        font-family: $font-family-raleway;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        color: $brand-color4;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .secondrow {
+    border-top: 1px solid #c3c3c3;
+    margin: 0px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 35px 50px 55px;
+  }
+
+  .secondrow_logo {
+    padding-left: 0;
+    cursor: pointer;
+  }
+
+  .ouroffices {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 35px;
+    text-align: center;
+    color: #383838;
+  }
+
+  .usa__address {
+    font-family: $font-family-raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #383838;
+  }
+
+  .india__address {
+    font-family: $font-family-raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #383838;
+    width: 340px;
+  }
+
+  @media screen and (max-width: $breakpoint-lg) {
+    .secondrow {
+      justify-content: left;
+    }
+  }
+
+  @media screen and (max-width: $breakpoint-md) {
+    .ouroffices {
+      text-align: left;
+    }
+  }
+}
+
+.thirdrow {
+  padding-top: 20px;
+  margin: 0px;
+
+  .socialicons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 20px;
+  }
+
+  .footertext {
+    font-family: $font-family-raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #ffffff;
+    margin-top: 20px;
+  }
+
+  @media screen and (max-width: $breakpoint-md) {
+    .socialicons {
+      justify-content: flex-start;
+    }
+  }
+}
+
+// mobile footer css starts here
+.newfooter__container__mobile {
+  display: none;
+}
+
+.accordion__item {
+  border-radius: 0px;
+
+  background-color: transparent;
+  box-shadow: none;
+  border-bottom: 1px solid #c3c3c3;
+
+  button {
+    padding: 10px 0px !important;
+    color: $black1 !important;
+  }
+}
+
+.accordion__body {
+  ul {
+    padding-left: 16px;
+
+    li {
+      list-style: none;
+      font-family: $font-family-raleway;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 24px;
+      color: $brand-color4;
+      cursor: pointer;
+    }
+
+    @media screen and (max-width: $breakpoint-sm) {
+      margin-bottom: 10px;
+      row-gap: 5px;
+      display: grid;
+    }
+  }
+
+  .accordion-collapse.collapse.show {
+    border: none !important;
+  }
+}
+
+.footercompany__details {
+  padding: 30px 0px 0px 0px;
+  margin: 0px;
+}
+
+.footer__moboffice {
+  font-family: $font-family-raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 35px;
+  text-align: left;
+  color: #383838;
+  margin-bottom: 10px;
+}
+
+.usa__address {
+  font-family: $font-family-raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: $brand-color4;
+
+  p {
+    margin: 0;
+  }
+
+  @media screen and (max-width: $breakpoint-sm) {
+    margin-bottom: 10px;
+  }
+}
+
+.india__address {
+  font-family: $font-family-raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: $brand-color4;
+  width: 340px;
+
+  p {
+    margin: 0;
+  }
+}
+
+.footer__firms {
+  padding: 30px 0px;
+
+  div:nth-child(1),
+  div:nth-child(2) {
+    width: 49%;
+    height: 66px;
+  }
+}
+
+.footer__socialicons_mobile {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+}
+
+.footertext__mobile {
+  font-family: $font-family-raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #383838;
+  margin: 0px;
+  text-align: center;
+  padding: 30px 30px 0px 30px;
+}
+
+@media screen and (max-width: $breakpoint-sm) {
+  .newfooter__container__desktop {
+    display: none;
+  }
+
+  .newfooter__container__mobile {
+    display: block;
+    border-bottom: 1px solid #c3c3c3;
+    padding: 60px 16px;
+  }
+}
+
+.footerthird__reviewplat__image {
+  filter: grayscale(1);
+  cursor: pointer;
+
+  &:hover {
+    filter: grayscale(0);
+  }
+}

@@ -1,0 +1,1473 @@
+@import "../../styles/variables.scss";
+@import "../../styles/breakpoints.scss";
+
+.banner__primary {
+  background-image: url($banner-primary);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 290px;
+
+  @media screen and (max-width: $breakpoint-md) {
+    height: auto;
+  }
+
+  .banner__div {
+    padding-top: clamp(2.3rem, 1.3vw, 3rem);
+    // position: absolute;
+    // z-index: 1;
+  }
+
+  .banner_image_div {
+    position: relative;
+    height: 290px;
+
+    @media screen and (max-width: $breakpoint-md) {
+      height: calc(4em + 290px);
+    }
+
+    @media screen and (max-width: $breakpoint-sm) {
+      height: calc(6em + 330px);
+    }
+
+    @media screen and (max-width: $breakpoint-sm-365) {
+      height: calc(5em + 290px);
+    }
+  }
+
+  .banner__title {
+    font-family: $primary-font, sans-serif;
+    font-size: clamp(1.4em, 3.9vw, 34px);
+    font-weight: 600 !important;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: $white100;
+    text-align: center;
+    padding: clamp(6px, 0.4em, 8px);
+
+    @media only screen and (min-width: $breakpoint-xl-1406) {
+      font-size: 36px;
+    }
+
+    @media only screen and (max-width: $breakpoint-md) {
+      font-family: "Poppins", sans-serif;
+      color: #ffffff;
+      font-size: 28px;
+      font-weight: 600;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.43;
+      letter-spacing: normal;
+      text-align: center;
+      padding-top: 50px;
+    }
+
+    @media only screen and (max-width: $breakpoint-sm-450) {
+      font-family: "Poppins", sans-serif;
+      color: #ffffff;
+      font-size: 6.61vw;
+      font-weight: 600;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.43;
+      letter-spacing: normal;
+      text-align: center;
+      padding-top: 13.444444vw;
+    }
+  }
+
+  .banner__desc {
+    font-family: $secondary-font, sans-serif;
+    font-size: clamp(1.1em, 2vw, 18px);
+    font-weight: normal !important;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.69 !important;
+    letter-spacing: normal;
+    color: $white100;
+    padding: 1rem 0rem;
+    max-width: 890px;
+    margin: 0 auto;
+
+    p {
+      text-align: center;
+    }
+
+    @media only screen and (min-width: $breakpoint-xl-1406) {
+      font-size: 14.4773px;
+    }
+
+    @media only screen and (max-width: $breakpoint-md) {
+      padding: 8px;
+      font-family: "Raleway", sans-serif;
+      font-size: 18px;
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.57;
+      letter-spacing: normal;
+      text-align: center;
+      color: #ffffff;
+      padding-top: 30px;
+      padding-bottom: 50px;
+    }
+
+    @media only screen and (max-width: $breakpoint-sm-450) {
+      font-family: "Raleway", sans-serif;
+      font-size: 3.888888888888889vw;
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.57;
+      letter-spacing: normal;
+      text-align: center;
+      color: #ffffff;
+      padding-top: 5.555555555555555vw;
+      padding-bottom: 6.888889vw;
+    }
+  }
+}
+
+.banner__primary__with_button {
+  background: #262531;
+  background-image: url(https://cdn-gcp.new.marutitech.com/background/get-in-touch-left-leaf.svg),
+    url(https://cdn-gcp.new.marutitech.com/background/get-in-touch-right-leaf.svg);
+  // background-size: 100px 100px;
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
+  color: $white100;
+  // padding-bottom: 3rem;
+  height: 220px;
+
+  .banner__div {
+    padding-top: clamp(10px, 4.123vw, 58px);
+
+    @media screen and (max-width: $breakpoint-md) {
+      // padding-top: 62.25px;
+      padding-top: clamp(2.3rem, 1.3vw, 3rem);
+    }
+  }
+
+  .banner__title {
+    font-family: $primary-font, sans-serif;
+    font-size: clamp(22px, 3.9vw, 34px);
+    font-weight: 600 !important;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: $white100;
+    text-align: center;
+    padding: clamp(6px, 0.4em, 8px);
+  }
+
+  .banner__desc {
+    font-family: $secondary-font, sans-serif;
+    font-size: 16px;
+    font-weight: normal !important;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.69 !important;
+    letter-spacing: normal;
+    color: $white100;
+    margin-top: 1.4rem;
+    max-width: 890px;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+
+    p {
+      text-align: center;
+    }
+  }
+
+  @media screen and (max-width: $breakpoint-xl-1406) {
+    height: clamp(100px, 15.792vw, 221.859px);
+  }
+
+  @media screen and (max-width: $breakpoint-md-767) {
+    padding-left: 2rem;
+    background-size: 190px 200px;
+    height: auto !important;
+    padding-bottom: 3rem;
+  }
+
+  @media screen and (max-width: $breakpoint-sm) {
+    padding-left: 2rem;
+    background-size: 130px 213px, 150px 170px;
+    height: auto;
+  }
+}
+
+.blog__banner__primary__with_button {
+  background: #ffffff;
+  background-image: url(https://cdn-gcp.new.marutitech.com/background/white-left-leaf-contact.png),
+    url(https://cdn-gcp.new.marutitech.com/background/white-right-leaf-contact.png);
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
+  color: $primary-color-black;
+  padding-bottom: 3rem;
+
+  .banner__div {
+    padding-top: clamp(2.3rem, 1.3vw, 3rem);
+  }
+
+  .banner__title {
+    font-family: $primary-font, sans-serif;
+    font-size: clamp(22px, 3.9vw, 34px);
+    font-weight: 600 !important;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: $primary-color-black;
+    text-align: center;
+    padding: clamp(6px, 0.4em, 8px);
+  }
+
+  .banner__desc {
+    font-family: $secondary-font, sans-serif;
+    font-size: 16px;
+    font-weight: normal !important;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.69 !important;
+    letter-spacing: normal;
+    color: $primary-color-black;
+    margin-top: 1.4rem;
+    max-width: 890px;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+
+    p {
+      text-align: center;
+    }
+  }
+
+  @media screen and (max-width: $breakpoint-md) {
+    // padding-left: 2rem; does not look good as per the website
+    background-size: 190px 200px;
+  }
+
+  @media screen and (max-width: $breakpoint-sm) {
+    // padding-left: 2rem;
+    background-size: 130px 213px, 150px 170px;
+  }
+}
+
+.banner__secondary {
+  background: $white100;
+  background-image: url(https://cdn-gcp.new.marutitech.com/left_vg_8a23421c82.png),
+    url(https://cdn-gcp.new.marutitech.com/right_vg_9033a4f0cd.png);
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
+  // position: absolute;
+  z-index: 1;
+  // margin-left: -2px;
+  height: clamp(100px, 13.65vw, 192px);
+
+  // background-size: contain;
+  @media screen and (max-width: $breakpoint-md-767) {
+    height: auto;
+  }
+
+  .banner__secondary__title {
+    font-size: clamp(19px, 2.559vw, 36px);
+    font-weight: 600;
+    color: $grey500;
+    display: flex;
+    justify-content: center;
+    padding-top: clamp(28px, 3.77vw, 53px);
+    padding-bottom: clamp(46px, 6vw, 84px);
+    margin-bottom: 0px;
+    // padding-left: 266px;
+    // padding-right: 266px;
+    height: auto !important;
+    font-family: "Poppins", sans-serif;
+
+    @media screen and (max-width: $breakpoint-md-767) {
+      font-size: clamp(19px, 7.78vw, 35px);
+      padding-top: 53px;
+      padding-bottom: 84px;
+    }
+  }
+}
+
+.banner__blog {
+  background: $white100;
+  background-image: url(https://cdn-gcp.new.marutitech.com/left_vg_8a23421c82.png),
+    url(https://cdn-gcp.new.marutitech.com/background/01.png);
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
+  // position: absolute;
+  z-index: 1;
+  // margin-left: -2px;
+  height: auto;
+  // background-size: contain;
+
+  .banner__blog__title {
+    position: relative;
+    font-size: 2.5604551920341394vw;
+    font-weight: 600;
+    color: $grey500;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 53px;
+    padding-bottom: 84px;
+    margin-bottom: 0px;
+    height: auto !important;
+    font-family: "Poppins", sans-serif;
+    padding-left: 18.91891891891892vw;
+    padding-right: 18.91891891891892vw;
+    padding-top: 3.769559032716927vw;
+    padding-bottom: 5.974395448079658vw;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+
+    @media screen and (min-width: $breakpoint-xl-1406) {
+      font-size: 36px;
+      font-weight: 600;
+      color: #444444;
+      padding-top: 53px;
+      padding-bottom: 84px;
+      margin-bottom: 0px;
+      padding-left: 200px;
+      padding-right: 200px;
+    }
+
+    @media screen and (max-width: $breakpoint-md-767) {
+      font-size: 35px;
+      font-weight: 600;
+      color: #4a4a4a;
+      padding-top: 10vw;
+      padding-bottom: 10vw;
+      margin-left: 5.666667vw;
+      margin-right: 5.666667vw;
+      text-align: center;
+    }
+
+    @media screen and (max-width: $breakpoint-sm-450) {
+      font-size: 7.777777777777778vw;
+      font-weight: 600;
+      color: #4a4a4a;
+      padding-left: 0px;
+      padding-right: 0px;
+      padding-top: 11.11111111111111vw;
+      padding-bottom: 41.66666666666667vw;
+      margin-left: 5.666667vw;
+      margin-right: 5.666667vw;
+      text-align: center;
+    }
+
+    .banner_title {
+      padding-top: 53px;
+      font-weight: 600;
+      font-size: 36px;
+    }
+  }
+}
+
+.resources_back_link {
+  position: absolute;
+  left: 4.5rem;
+  top: 6.5rem;
+  color: $orange;
+  font-weight: $font-weight600;
+
+  a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: $orange;
+    font-weight: $font-weight500;
+
+    .back_to_resources_text {
+      font-family: $font-family-poppins;
+      font-size: 0.995732574679943vw;
+      color: $orange;
+      font-weight: $font-weight500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: 0.4px;
+
+      @media screen and (min-width: $breakpoint-xl-1406) {
+        font-size: 14px;
+      }
+    }
+  }
+
+  @media screen and (min-width: $breakpoint-md-767) {
+    display: block;
+  }
+
+  @media screen and (max-width: $breakpoint-md-767) {
+    display: none;
+  }
+}
+
+.back_link>.back_to_resources_text:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.back_link:hover>.arrow {
+  width: 1.045519vw;
+
+  @media screen and (min-width: $breakpoint-xl-1406) {
+    width: 15px;
+  }
+
+  transform: translate(-3px);
+}
+
+.arrow {
+  color: $orange;
+  font-size: 18px;
+  font-weight: $font-weight600;
+  transition: all 0.3s;
+  width: 1.045519vw;
+
+  @media screen and (min-width: $breakpoint-xl-1406) {
+    width: 15px;
+  }
+}
+
+.banner__secondary_with_button {
+  position: relative;
+  // background: $white100;
+  // background-image: url($banner-secondary);
+  // background-repeat: no-repeat;
+
+  // background-size: cover;
+  // background-position: left;
+  // height: 224px;
+  background: $white100;
+  background-image: url(https://cdn-gcp.new.marutitech.com/leafleftside_689bb87842.png),
+    url(https://cdn-gcp.new.marutitech.com/background/white-right-leaf-contact.png);
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
+  height: auto;
+  padding: 80px 120px;
+
+  @media screen and (max-width: $breakpoint-md) {
+    // padding-left: 2rem !important;
+    // background-size: 190px 200px;
+    height: auto !important;
+    // padding-bottom: 3rem;
+    padding: 60px 16px;
+  }
+
+  @media screen and (max-width: $breakpoint-md) {
+    background-size: 130px 213px, 150px 170px;
+    background-image: url(https://cdn-gcp.new.marutitech.com/background/white-right-leaf-contact.png);
+    background-position: bottom right;
+    background-size: 20%;
+  }
+
+  .banner__secondary_with_button_div {
+    p {
+      font-family: $font-family-poppins;
+      font-size: clamp(16.0171px, 1.7vw, 24px) !important;
+      font-weight: $font-weight500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 35px;
+      letter-spacing: normal;
+      margin-bottom: 0px;
+
+      color: #262531;
+
+      @media screen and (max-width: 767px) {
+        font-size: 24px !important;
+      }
+
+      @media screen and (max-width: $breakpoint-md) {
+        text-align: center;
+      }
+
+      // @media only screen and (max-width: 450px) {
+      //   font-size: clamp(2px, 4.445vw, 20px) !important;
+      // }
+    }
+
+    @media screen and (max-width: $breakpoint-md) {
+      height: auto !important;
+      gap: 30px;
+      display: grid;
+    }
+
+    @media screen and (max-width: $breakpoint-md) {
+      // p {
+      //   padding: 0px 10px !important;
+      // }
+
+      .button {
+        padding: 0px 10px !important;
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+.banner__red {
+  background-color: $orange;
+  height: 288px;
+  padding-top: 2rem;
+
+  @media screen and (max-width: $breakpoint-md) {
+    height: auto;
+  }
+
+  .banner__red__title {
+    font-size: clamp(8px, 7.6vw, 36px);
+    font-family: $primary-font, sans-serif;
+    font-weight: $font-weight600;
+    color: $white100;
+  }
+
+  .banner__red__desc {
+    font-weight: normal;
+    font-family: $secondary-font, sans-serif;
+    color: $white100;
+    font-size: clamp(2px, 3.9vw, 17.5px);
+    padding: 2rem 0rem;
+    max-width: 1000px;
+  }
+
+  .banner__div {
+    padding-top: clamp(2.3rem, 1.3vw, 3rem);
+  }
+}
+
+//job opening section in careers page
+.banner__darkblue {
+  background-color: $brand-color4;
+  height: 306px !important;
+  padding-top: 2rem;
+  background-image: url(https://cdn-gcp.new.marutitech.com/background/job-oppening-v1.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+
+  @media screen and (max-width: $breakpoint-lg) {
+    height: 260px !important;
+  }
+
+  @media screen and (max-width: $breakpoint-md) {
+    height: auto !important;
+    padding-top: 1rem;
+  }
+
+  .banner__darkblue__title {
+    // font-size: 36px;
+    font-family: $primary-font, sans-serif;
+    font-weight: $font-weight600;
+    color: $white100;
+    font-size: clamp(20.2401px, 2.6vw, 36px) !important;
+
+    @media screen and (max-width: 767px) {
+      font-size: clamp(8px, 7.6vw, 35px) !important;
+    }
+
+    @media only screen and (max-width: 195px) {
+      font-size: clamp(0.1rem, 7vw, 15.1667px) !important;
+    }
+  }
+
+  .banner__darkblue__desc {
+    font-weight: $font-weight500;
+    font-family: $secondary-font, sans-serif;
+    color: $white100;
+    font-size: clamp(2px, 3.9vw, 17.5px);
+    padding: 1rem 0rem;
+
+    max-width: 1103px;
+    font-size: clamp(8.99651px, 1.1vw, 16px) !important;
+
+    @media screen and (max-width: 1400px) {
+      max-width: 950px;
+    }
+
+    @media screen and (max-width: 1200px) {
+      max-width: 800px;
+    }
+
+    @media screen and (max-width: 992px) {
+      max-width: 600px;
+    }
+
+    @media screen and (width: 768px) {
+      max-width: 600px;
+      padding-bottom: 5rem;
+    }
+
+    @media screen and (max-width: 767px) {
+      font-size: 16px !important;
+      padding-bottom: 5rem;
+      //  font-size: clamp(1.94px, 3.9vw, 18px) !important;
+    }
+
+    @media screen and (max-width: 450px) {
+      font-size: 34px !important;
+      font-size: clamp(1.94px, 3.9vw, 18px) !important;
+    }
+  }
+
+  .banner__div {
+    padding-top: clamp(2.3rem, 1.3vw, 3rem);
+  }
+}
+
+.banner__white {
+  background-color: $white100;
+  height: 288px;
+  padding-top: 2rem;
+
+  @media screen and (max-width: $breakpoint-md) {
+    height: auto;
+  }
+
+  .banner__white__title {
+    font-size: clamp(8px, 7.6vw, 36px);
+    font-family: $primary-font, sans-serif;
+    font-weight: $font-weight600;
+    color: $primary-color-black;
+  }
+
+  .banner__white__desc {
+    font-weight: normal;
+    font-family: $secondary-font, sans-serif;
+    color: $primary-color-black;
+    font-size: clamp(2px, 3.9vw, 17.5px);
+
+    max-width: 1000px;
+    padding: 2rem 0rem;
+  }
+
+  .banner__div {
+    padding-top: clamp(2.3rem, 1.3vw, 3rem);
+  }
+}
+
+@media screen and (max-width: $breakpoint-sm) {
+  .banner__title {
+    padding: 12px;
+  }
+
+  .banner__desc {
+    padding: 8px;
+    margin-top: 1rem !important;
+  }
+
+  .banner__primary {
+    height: auto;
+  }
+}
+
+//current opening section in careers page
+
+.banner__center {
+  background-color: $white100;
+  height: 290.438px;
+  // padding-top: 2rem;
+  align-items: center;
+  display: flex;
+
+  @media screen and (max-width: 1405px) {
+    height: clamp(100px, 21.4vw, 300.266px);
+  }
+
+  @media screen and (max-width: $breakpoint-md) {
+    height: auto !important;
+  }
+
+  .center__banner__div {
+    text-align: center;
+    padding: 2rem 0rem;
+  }
+
+  .banner__center__title {
+    // font-size: 36px;
+    font-family: $primary-font, sans-serif;
+    font-weight: $font-weight600;
+    color: $primary-color-black;
+    font-size: clamp(20.2401px, 2.6vw, 36px) !important;
+    padding-bottom: 5px;
+
+    @media screen and (max-width: 767px) {
+      font-size: clamp(8px, 7.6vw, 35px) !important;
+    }
+
+    @media only screen and (max-width: 195px) {
+      font-size: clamp(0.1rem, 7vw, 15.1667px) !important;
+    }
+  }
+
+  .banner__center__desc {
+    font-weight: $font-weight400;
+    font-family: $font-family-raleway;
+    color: $black1;
+    line-height: 28px;
+    // font-size: 16px;
+    font-size: clamp(8.99651px, 1.1vw, 16px) !important;
+
+    @media screen and (max-width: 767px) {
+      // font-size: 34px !important;
+      font-size: 17.5px !important;
+    }
+
+    @media screen and (max-width: 450px) {
+      // font-size: 34px !important;
+      font-size: clamp(1.94px, 3.9vw, 17.5px) !important;
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+
+    // max-width: 1000px;
+    // padding: 2rem 0rem;
+  }
+}
+
+.primary_with_button_title {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5647226173541962vw;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+  padding-right: 1.209103840682788vw;
+
+  // margin-bottom: 2rem;
+  @media screen and (min-width: $breakpoint-xl-1406) {
+    font-size: 22px;
+    font-weight: 500;
+  }
+
+  @media screen and (max-width: $breakpoint-md-767) {
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 30px;
+  }
+
+  @media screen and (max-width: $breakpoint-sm-450) {
+    font-size: 4.444444444444445vw;
+    font-weight: 500;
+    padding-bottom: 30px;
+  }
+}
+
+.blog_primary_with_button_title {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5647226173541962vw;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4a4a4a;
+  padding-right: 1.209103840682788vw;
+
+  // margin-bottom: 2rem;
+  @media screen and (min-width: $breakpoint-xl-1406) {
+    font-size: 22px;
+    font-weight: 500;
+  }
+
+  @media screen and (max-width: $breakpoint-md) {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  @media screen and (max-width: $breakpoint-sm-450) {
+    font-size: 4.444444444444445vw;
+    font-weight: 500;
+  }
+}
+
+.banner__contactUs {
+  padding: 0 50px;
+  background: #262531;
+  background-image: url(https://cdn-gcp.new.marutitech.com/background/get-in-touch-left-leaf.svg),
+    url(https://cdn-gcp.new.marutitech.com/background/get-in-touch-right-leaf.svg) !important;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top left, bottom right;
+  height: clamp(192.203px, 25.05vw, 352.125px) !important;
+
+  @media screen and (max-width: $breakpoint-md-767) {
+    background: #262531;
+    background-image: url(https://cdn-gcp.new.marutitech.com/background/get-in-touch-left-leaf.svg) !important;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top left, bottom right;
+    height: 365.25px !important;
+    padding: 0;
+    padding: 0 clamp(4px, 7.5vw, 57.531px) 0 clamp(4px, 7.5vw, 57.531px);
+  }
+
+  @media screen and (max-width: 601px) {
+    height: 418.25px !important;
+  }
+
+  @media screen and (max-width: 601px) {
+    height: 446.938px !important;
+  }
+
+  @media screen and (max-width: $breakpoint-sm-450) {
+    height: clamp(100px, 99.23vw, 446.938px) !important;
+  }
+
+  .banner__div__contactUs {
+    padding: 0;
+  }
+
+  .banner__title__contactUs {
+    font-size: clamp(19.6643px, 2.56vw, 36px);
+    padding: clamp(43.698px, 5.69vw, 80px) 0 clamp(16.387px, 2.129vw, 30px) 0;
+
+    @media screen and (max-width: $breakpoint-md-767) {
+      font-size: 35px;
+      padding: 90px 0px 25px 0px;
+    }
+
+    @media screen and (max-width: $breakpoint-sm-450) {
+      font-size: clamp(10px, 7.78vw, 35px);
+      padding: clamp(18.8px, 20vw, 90px) 0 clamp(5.222px, 5.555vw, 25px) 0 !important;
+    }
+  }
+
+  .banner__desc__contactUs {
+    font-family: $secondary-font, sans-serif;
+    font-size: clamp(1.1em, 2vw, 18px);
+    font-weight: $font-weight400 !important;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.69 !important;
+    letter-spacing: normal;
+    color: $white100;
+    padding: 1rem 0rem;
+    max-width: 890px;
+    margin: 0 auto;
+    padding: 0 0 clamp(16.387px, 2.129vw, 30px) 0 !important;
+    font-size: clamp(8.73969px, 1.14vw, 16px);
+    max-width: clamp(220px, 31.9vw, 405px) !important;
+
+    p {
+      text-align: center;
+      margin: 0px !important;
+    }
+
+    @media screen and (max-width: $breakpoint-md-767) {
+      padding-bottom: 25px !important;
+      font-size: 17.5px;
+      max-width: clamp(50px, 85vw, 651px) !important;
+    }
+
+    @media screen and (max-width: $breakpoint-sm-450) {
+      padding-bottom: clamp(5.222px, 5.555vw, 25px) !important;
+      font-size: clamp(2px, 3.889vw, 17.5px);
+    }
+  }
+
+  .banner__desc__secondary {
+    font-family: $secondary-font, sans-serif;
+    font-size: clamp(8.73969px, 1.14vw, 16px);
+    font-weight: $font-weight400 !important;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.69 !important;
+    letter-spacing: normal;
+    color: $white100;
+
+    p {
+      text-align: center;
+    }
+
+    @media screen and (max-width: $breakpoint-md-767) {
+      font-size: 17.5px;
+    }
+
+    @media screen and (max-width: $breakpoint-sm-450) {
+      font-size: clamp(2px, 3.889vw, 17.5px);
+    }
+  }
+}
+
+.banner_blogDetails_container {
+  height: auto;
+  padding: 0px 150px;
+  background: #262531;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $white100;
+  background-size: cover;
+  background-position: center;
+  // background-position: top left, bottom right;
+
+  @media screen and (max-width: 992px) {
+    height: auto !important;
+    padding: 0px 35px 0px 45px;
+  }
+
+  .blogDetails_bannerDiv {
+    padding: 0;
+  }
+
+  .banner_blogDetails_type {
+    margin-top: 77px;
+    padding: 5px;
+    font-family: $secondary-font;
+    font-size: 14px;
+    font-weight: $font-weight700;
+    line-height: 123%;
+    color: #000000;
+    display: inline-block;
+    background-color: #febe10;
+    border-radius: 3px;
+
+    @media screen and (max-width: 992px) {
+      margin-top: 67px;
+    }
+  }
+
+  .banner_blogDetails_title {
+    margin-top: 10px;
+    font-family: $primary-font;
+    font-size: 36px;
+    font-weight: $font-weight700;
+    line-height: 115%;
+    color: #ffffff;
+    // margin-bottom: 29px;
+
+    @media screen and (max-width: 992px) {
+      margin-top: 20px;
+    }
+  }
+
+  .banner_blogDetails_button {
+    margin-bottom: 77px;
+
+    @media screen and (max-width: 992px) {
+      margin-bottom: 66px;
+    }
+  }
+}
+
+.gptw__container {
+  height: 541px;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (max-width: $breakpoint-md) {
+    height: auto;
+  }
+
+  .gptw__title {
+    font-family: $font-family-poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 54px;
+  }
+}
+
+.gptw__div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 840px;
+  margin: 0 auto;
+  gap: 2.4em;
+
+  // .gptw__img {
+
+  //   display: block;
+  //   position: relative;
+
+  // }
+
+  @media screen and (max-width: 992px) {
+    max-width: 60em;
+    margin: 0 auto;
+    gap: 20px;
+    padding: 12px;
+  }
+
+  @media screen and (max-width: $breakpoint-md) {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1.4em;
+
+    .gptw__title {
+      max-width: 17em;
+      margin: 0 auto;
+      font-size: clamp(25px, 10vw, 1.5rem);
+      text-align: center;
+    }
+  }
+}
+
+.banner__yellow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $yellow2;
+  padding-top: 58px;
+  padding-bottom: 58px;
+
+  @media screen and (max-width: $breakpoint-md) {
+    padding: 60px 0px;
+  }
+
+  h3 {
+    font-family: $font-family-poppins;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 35px;
+    text-align: center;
+    color: $brand-color4;
+    max-width: 1110px;
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.banner__bottom__desc {
+  font-family: $font-family-raleway;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  padding: 0px 16px;
+}
+
+.ForpythonCTA {
+  padding-bottom: 30px;
+  color: $black1;
+
+  p:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+.banner__bottom__btn {
+  text-align: center;
+  padding-top: 50px;
+
+  padding-bottom: 50px;
+
+  .btm__btn {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    // padding: 13px 35px 13px 35px !important;
+    padding: 21px;
+    position: relative;
+    background-color: transparent !important;
+    overflow: hidden;
+    z-index: 1;
+    cursor: pointer;
+    transition: 0.25s ease !important;
+    color: $white100 !important;
+
+    // &:hover {
+    //   color: $white100;
+
+    // }
+
+    // &:active {
+    //   color: $white100 !important;
+    // }
+  }
+}
+
+.ForBottomBannerButon {
+  padding: 0;
+}
+
+.btn__nonanimated {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  padding: 13px 35px 13px 35px !important;
+  background: $orange;
+  color: #ffffff;
+
+  &:hover {
+    color: $white100;
+  }
+
+  &:active {
+    color: $white100 !important;
+  }
+}
+
+.btm__btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: $orange !important;
+  width: 121%;
+  padding-top: 109%;
+  transition: 0.25s ease !important;
+  color: $white100;
+  z-index: -1;
+}
+
+.btm__btn::after {
+  transform: translate(-50%, -50%) !important;
+  left: 50%;
+}
+
+.btm__btn::after {
+  border-radius: 999px;
+  top: 100%;
+}
+
+.btm__btn:hover {
+  color: $orange !important;
+}
+
+.btm__btn:hover:after {
+  top: 300%;
+}
+
+.homebanner_fluid {
+  padding: 0px;
+}
+
+.homebanner__container {
+  background: $brand-color4;
+  height: 343px;
+  border-radius: 10px;
+
+  .homebanner__left {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+
+    button {
+      margin-top: 0px;
+    }
+  }
+
+  .homebanner__title {
+    font-family: $font-family-poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 63px;
+
+    color: $white100;
+    padding-bottom: 10px;
+  }
+
+  .homebanner__desc {
+    font-family: $font-family-raleway;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: $white100;
+    padding-bottom: 30px;
+  }
+
+  .homebanner__right {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: -6px;
+  }
+
+  .homebanner__img {
+    @media screen and (min-width: $breakpoint-xl-1400) {
+      position: absolute;
+      top: -7.7rem;
+    }
+
+    @media screen and (max-width: 1399px) {
+      position: absolute;
+      top: -6.48rem;
+    }
+
+    @media screen and (max-width: 1199.5px) {
+      position: absolute;
+      top: -1.68rem;
+    }
+
+    // @media screen and (max-width:991.5px) {
+    //   img {
+    //     height: 228px;
+    //     width: 345px;
+    //   }
+    // }
+  }
+}
+
+.homebanner__mobile {
+  display: none;
+}
+
+.homebanner__row {
+  margin: 0;
+  margin-top: 120px;
+}
+
+@media screen and (max-width: 991.5px) {
+  .homebanner__container {
+    height: auto;
+  }
+
+  .homebanner__row {
+    display: none;
+  }
+
+  .homebanner__mobile {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 0px;
+  }
+
+  .homebanner__mobileimg {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 60px 15px 30px 15px;
+
+    img {
+      height: 228px;
+      width: 345px;
+    }
+  }
+
+  .homebanner__mobiletitle {
+    font-family: $font-family-poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+
+    color: $white100;
+    padding-bottom: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+  }
+
+  .homebanner__mobiledesc {
+    font-family: $font-family-raleway;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: $white100;
+    padding-bottom: 30px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+  }
+
+  .homebanner__mobilebtn {
+    padding-left: 50px;
+    padding-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: $breakpoint-md) {
+  .homebanner__container {
+    border-radius: 0px;
+  }
+
+  .homebanner__mobiletitle {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 10px;
+  }
+
+  .homebanner__mobiledesc {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 20px;
+  }
+
+  .homebanner__mobilebtn {
+    padding-left: 16px;
+    padding-bottom: 60px;
+
+    button {
+      margin-top: 0px;
+    }
+  }
+}
+
+@media screen and (max-width: $breakpoint-sm-450) {
+  .homebanner__mobileimg {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 0px;
+    max-width: 100%;
+
+    img {
+      height: 200px;
+      width: 300px;
+    }
+  }
+}
+
+// NEW HOMEPAGE CTA STYLES
+.homepagecta__row {
+  margin: 0px;
+  min-height: 465px;
+  align-items: center;
+
+  .homepagecta__title {
+    font-family: $font-family-poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 54px;
+    text-align: left;
+
+    color: $white100;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 80px;
+    margin-bottom: 30px;
+  }
+
+  .homepagecta__button {
+    text-align: left;
+    padding-bottom: 80px;
+
+    button {
+      margin-top: 0px;
+    }
+  }
+
+  .homepagecta__text {
+    padding: 0px;
+  }
+
+  .homepagecta__image {
+    padding: 0px;
+    text-align: center;
+  }
+
+  @media screen and (max-width: $breakpoint-sm) {
+    padding: 60px 10px;
+
+    .homepagecta__title {
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 36px;
+      padding-top: 30px;
+      text-align: center;
+    }
+
+    .homepagecta__button {
+      padding-bottom: 0px;
+      text-align: center;
+    }
+  }
+}
+
+.deliverables__maincontainer {
+  display: flex;
+  padding: 80px 0px;
+
+  @media screen and (max-width: $breakpoint-sm) {
+    padding: 60px 0px;
+  }
+}
+
+.section_white {
+  background-color: $white100;
+  padding: 80px 0px;
+
+  .description__ai {
+    color: $black1;
+  }
+
+  @media screen and (max-width: $breakpoint-md) {
+    padding: 60px 0px;
+  }
+}
+
+.section_orange {
+  background-color: $brand-color1;
+  color: $white100;
+
+  .banner__bottom__title__onlytext {
+    color: $white100;
+  }
+}
+
+.section_Violet {
+  background-color: $brand-color4;
+  padding: 50px 0px;
+
+  @media screen and (max-width: $breakpoint-md) {
+    padding: 60px 0px;
+  }
+}
+
+.RemovePaddingTop {
+  padding-top: 0px;
+}
+
+.banner__bottom__title__onlytext {
+  text-align: center;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 36px;
+  color: $brand-color4;
+  padding-bottom: 30px;
+  line-height: 44px;
+  font-family: $font-family-poppins;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  @media screen and (max-width: $breakpoint-md) {
+    line-height: 36px;
+    font-size: 30px;
+  }
+}
+
+.ForVioletBanner {
+  color: $white100;
+  font-size: 24px;
+  font-family: $font-family-poppins;
+}
+
+.description__ai {
+  font-family: $font-family-raleway;
+  font-weight: 500;
+  padding-top: 0px;
+
+  ul {
+    margin-bottom: 0px;
+  }
+
+  p:last-child {
+    margin-bottom: 0px;
+  }
+}

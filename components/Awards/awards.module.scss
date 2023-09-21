@@ -1,0 +1,336 @@
+@import "../../styles/breakpoints.scss";
+@import "../../styles/variables.scss";
+
+.main {
+  // height: 528px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 14px;
+  padding: 80px 0px;
+
+  @media only screen and (max-width: $breakpoint-md) {
+    height: auto !important;
+  }
+
+  @media only screen and (max-width: $breakpoint-sm-450) {
+    padding: 60px 0px;
+  }
+}
+
+.ForPaddingTop {
+  padding-top: 50px;
+  padding-bottom: 0px;
+
+  @media only screen and (max-width: $breakpoint-md) {
+    padding-top: 30px;
+    padding-bottom: 0px;
+  }
+}
+
+.award__title {
+  font-family: $font-family-poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  margin-bottom: 30px;
+  text-align: center;
+
+  // @media only screen and (max-width: $breakpoint-md) {
+  //     padding-top: 60px;
+  // }
+
+  @media only screen and (max-width: $breakpoint-sm-450) {
+    font-size: 30px;
+    font-weight: 600;
+
+    padding-left: 16px;
+    padding-right: 16px;
+    line-height: 36px;
+  }
+}
+.margin_bottom_carrers {
+  margin-bottom: 50px;
+  @media only screen and (max-width: $breakpoint-md) {
+    margin-bottom: 30px;
+  }
+}
+
+.award__desc {
+  font-family: $font-family-raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px !important;
+  line-height: 28px;
+  margin-bottom: 30px;
+
+  @media only screen and (max-width: $breakpoint-sm) {
+    padding: 0px 16px;
+  }
+}
+
+.award__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 16px;
+
+  @media only screen and (max-width: $breakpoint-sm) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+}
+
+.award__container__horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 34px;
+
+  // margin-top: 1.5rem;
+  @media only screen and (max-width: $breakpoint-sm) {
+    height: 70px;
+    gap: 20px;
+    // width: auto;
+  }
+}
+
+.image__container {
+  // position: relative;
+  // height: 190px;
+  // width: 190px;
+  // display: block;
+
+  @media only screen and (max-width: $breakpoint-sm) {
+    height: auto;
+    width: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.ForImageRow {
+  @media only screen and (max-width: $breakpoint-sm) {
+    height: 70px;
+    width: auto;
+  }
+}
+
+.clutchreview__container {
+  height: auto;
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  @media screen and (max-width: $breakpoint-lg) {
+    height: auto;
+  }
+
+  @media screen and (max-width: $breakpoint-sm-450) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .clutchreview__box__wrapper {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @media screen and (max-width: $breakpoint-sm) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .clutchreview__box {
+    width: 280px;
+    // height: 336px;
+    left: 0px;
+    top: 84px;
+    border-radius: 8px;
+    flex: 1;
+
+    div {
+      img {
+        border-radius: 10px;
+      }
+    }
+  }
+  .clutch_review_description {
+    text-align: center;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 36px;
+    color: $brand-color4;
+    line-height: 44px;
+    font-family: $font-family-poppins;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 40px;
+    font-size: 24px;
+
+    p {
+      margin-bottom: 0px;
+    }
+
+    @media screen and (max-width: $breakpoint-md) {
+      line-height: 36px;
+    }
+  }
+
+  .clutchreview__button {
+    width: 173px;
+    height: 50px;
+    border-radius: 3px;
+    font-family: $font-family-poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #ffffff;
+    border: none;
+    margin-top: 40px;
+
+    @media screen and (max-width: $breakpoint-md) {
+      margin-top: 30px;
+    }
+
+    &:active {
+      color: #ffffff !important;
+    }
+  }
+}
+
+.awardcerti__container {
+  padding: 100px 0px;
+
+  h2 {
+    font-family: $font-family-poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 54px;
+    color: #262531;
+    text-align: center;
+    margin-bottom: 80px;
+
+    @media screen and (max-width: $breakpoint-sm-450) {
+      font-size: 30px;
+      line-height: 36px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .awardcerti__row {
+    margin: 0px;
+    row-gap: 50px;
+
+    @media screen and (max-width: $breakpoint-sm) {
+      row-gap: 10px;
+    }
+  }
+
+  .awardcerti__itemwrapper {
+    display: flex;
+    justify-content: center;
+
+    &.hide_for_mobile {
+      @media screen and (max-width: $breakpoint-md) {
+        display: none;
+      }
+    }
+  }
+
+  .awardcerti__content {
+    font-family: $font-family-raleway;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    width: 212px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // height: 90px;
+
+    div {
+      padding-top: 20px;
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+
+      p {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  .awardcerti__leftimg,
+  .awardcerti__rightimg {
+    margin-top: 10px;
+  }
+
+  @media screen and (max-width: $breakpoint-xl) {
+    max-width: 960px;
+
+    .awardcerti__content {
+      font-size: 17px;
+    }
+  }
+
+  @media screen and (max-width: 950px) {
+    .awardcerti__content {
+      font-size: 16px;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    .awardcerti__content {
+      font-size: 14px;
+    }
+  }
+
+  @media screen and (max-width: 850px) {
+    .awardcerti__content {
+      font-size: 12px;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .awardcerti__content {
+      font-size: 11px;
+    }
+  }
+
+  @media screen and (max-width: $breakpoint-md) {
+    .awardcerti__content {
+      font-size: 20px;
+    }
+
+    .awardcerti__itemwrapper {
+      justify-content: center;
+    }
+  }
+
+  @media screen and (max-width: $breakpoint-sm) {
+    padding: 60px 0px;
+
+    .awardcerti__itemwrapper {
+      height: 190px;
+    }
+  }
+}
+
+.award_title {
+  min-height: 90px;
+  padding-top: 0px !important;
+}

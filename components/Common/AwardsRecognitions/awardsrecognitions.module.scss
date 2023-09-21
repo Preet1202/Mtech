@@ -1,0 +1,46 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/breakpoints.scss";
+
+.inner_container {
+  justify-content: center;
+  align-items: center;
+  h2 {
+    font-size: 36px;
+    font-family: $font-family-poppins;
+    font-weight: 600;
+    line-height: 44px;
+    color: $black1;
+    margin: 0;
+    @media screen and (max-width: $breakpoint-md) {
+      font-size: 30px;
+      line-height: 36px;
+    }
+  }
+  @media screen and (max-width: $breakpoint-md) {
+    padding: 0px 16px;
+  }
+}
+
+.description {
+  font-size: 16px;
+  font-family: $font-family-raleway;
+  font-weight: 500;
+  line-height: 28px;
+  color: $brand-color4;
+
+  p:last-child {
+    margin: 0;
+  }
+  @media screen and (max-width: $breakpoint-md) {
+    line-height: 24px;
+  }
+}
+
+.images_container {
+  @media screen and (max-width: $breakpoint-md) {
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    gap: 30px;
+  }
+}

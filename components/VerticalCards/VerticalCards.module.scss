@@ -1,0 +1,719 @@
+@import "../../styles/variables.scss";
+@import "../../styles/breakpoints.scss";
+@import "../../styles/mixins.scss";
+
+.container_row {
+  @media only screen and (min-width: $breakpoint-md-767) {
+    flex-wrap: nowrap !important;
+  }
+}
+
+.div__primary {
+  position: absolute;
+  // top: 7rem;
+  top: clamp(5.1rem, 6vw, 7rem);
+  border-bottom: 4px solid $grey500;
+  left: 1.3rem;
+  width: 24%;
+}
+
+.div__primary__chatbot {
+  position: absolute;
+  top: 4rem;
+  border-bottom: 4px solid $grey500;
+  left: 1.3rem;
+  width: 24%;
+}
+
+.div__secondary {
+  position: absolute;
+  // top: 7.4rem;
+  top: clamp(4rem, 7vw, 7.4rem);
+  border-bottom: 4px solid $white100;
+  left: 1.3rem;
+  width: 24%;
+}
+
+.verticalCard {
+  height: 430px;
+  width: 230px;
+  border-left: 1px solid $grey100;
+  margin-right: 1rem;
+  position: relative;
+  border-radius: 5px;
+
+  @media only screen and (min-width: $breakpoint-xl-1366) {
+    height: 410px;
+    // width: 239px;
+    width: 234px;
+  }
+
+  @media only screen and (max-width: $breakpoint-xl-1366) {
+    height: clamp(242.881px, 31vw, 431.684px);
+    width: clamp(134.372px, 16vw, 238.825px);
+  }
+
+  @media only screen and (max-width: 1061px) {
+    height: clamp(242.881px, 31vw, 431.684px);
+    width: clamp(134.372px, 18vw, 238.825px);
+  }
+
+  @media only screen and (max-width: 845px) {
+    height: clamp(242.881px, 34vw, 431.684px);
+    width: clamp(134.372px, 18vw, 238.825px);
+  }
+
+  @media only screen and (max-width: $breakpoint-md) {
+    width: 135px;
+  }
+
+  .verticalCard__title {
+    // font-size: 24px;
+    font-size: clamp(3.04539px, 1.5vw, 24px);
+    // @include titleFonts();
+    font-family: $primary-font;
+    color: $grey500;
+    font-weight: $font-weight600;
+
+    position: absolute;
+    border-left: 7px solid $orange;
+    left: -1px;
+    padding-left: 0.75rem;
+    padding-top: 1.5rem;
+    height: 35%;
+
+    div {
+      border-bottom: 4px solid $grey500;
+      margin-right: 34px;
+    }
+  }
+
+  .verticalCard__desc {
+    font-family: $font-family-raleway;
+    position: absolute;
+    top: clamp(8rem, 1vw, 9rem);
+    color: $primary-color-black;
+    font-weight: $font-weight500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.69 !important;
+    letter-spacing: normal;
+    padding-left: 1.1rem;
+    // font-size: clamp(5px, 2vw, 13.9px);
+    font-size: clamp(3.27965px, 1vw, 13.9898px);
+
+    @media only screen and (min-width: $breakpoint-xl-1366) {
+      font-size: 14px;
+    }
+
+    @media only screen and (max-width: 992px) {
+      top: clamp(7rem, 1vw, 9rem);
+    }
+  }
+
+  .verticalCard__desc__chatbot {
+    font-family: $font-family-raleway;
+    position: absolute;
+    top: clamp(6rem, 1vw, 8rem);
+    color: $grey600;
+    font-weight: $font-weight500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.69 !important;
+    letter-spacing: normal;
+    padding-left: 1.1rem;
+    font-size: clamp(3.27965px, 1vw, 13.9898px);
+
+    @media only screen and (min-width: $breakpoint-xl-1366) {
+      font-size: 14px;
+    }
+  }
+
+  .verticalCard__icon {
+    // margin-top: 1rem;
+    position: absolute;
+    top: clamp(14.5rem, 27vw, 23rem);
+    padding-left: 1rem;
+
+    div {
+      color: $orange;
+      font-weight: $font-weight500;
+      display: flex;
+      align-items: center;
+
+      @media only screen and (max-width: $breakpoint-lg) {
+        font-size: 12px;
+      }
+
+      .arrow {
+        // position: absolute;
+        // background-image: url($mobile-arrow-red);
+        // padding-left: 2px !important;
+        // left: 10px;
+        background-image: url("https://cdn-gcp.new.marutitech.com/new_know_more_red_arrow_left_d1f6410e1a.svg");
+        background-repeat: no-repeat;
+        transform: rotate(180deg);
+        height: 14px;
+        width: 17px;
+        font-size: clamp(8.99651px, 1.6vw, 20px) !important;
+        transition: all 0.3s;
+        margin-left: 13px;
+        display: inline-block;
+
+        @media screen and (max-width: $breakpoint-lg) {
+          height: 12px;
+          width: 15px;
+        }
+      }
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+    background-image: url("https://cdn-gcp.new.marutitech.com/bot_development_bg_436a8b3583.webp");
+
+    .verticalCard__title {
+      color: $white100;
+      border-left: 7px solid rgb(253, 167, 161);
+
+      div {
+        border-bottom: 4px solid $white100;
+      }
+    }
+
+    .div__primary {
+      border-bottom: 4px solid $white100;
+    }
+
+    .div__primary__chatbot {
+      border-bottom: 4px solid $white100;
+    }
+
+    .verticalCard__desc {
+      color: $white100;
+    }
+
+    .verticalCard__desc__chatbot {
+      color: $white100;
+    }
+
+    .verticalCard__icon {
+      div {
+        color: $white100;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        display: flex;
+        align-items: center;
+
+        .arrow {
+          // margin-left: 15px;
+          // padding-left: 2px !important;
+          // background-image: url($mobile-arrow-white);
+          // position: absolute;
+          // transform: translate(3px);
+          // padding-left: 2px !important;
+          // margin-left: 20px;
+          // left: 15px;
+          background-image: url($know-more-arrow-white);
+          background-repeat: no-repeat;
+          font-size: clamp(8.99651px, 1.6vw, 20px) !important;
+          transform: translate(5px) rotate(180deg);
+          height: 14px;
+          font-size: clamp(8.99651px, 1.6vw, 20px) !important;
+          width: 17px;
+          margin-left: 13px;
+          display: inline-block;
+
+          @media screen and (max-width: $breakpoint-lg) {
+            height: 12px;
+            width: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.verticalcard_autoselected:first-child {
+  cursor: pointer;
+  background-image: url("https://cdn-gcp.new.marutitech.com/bot_development_bg_436a8b3583.webp");
+
+  .verticalCard__title {
+    color: $white100;
+    border-left: 7px solid rgb(253, 167, 161);
+
+    div {
+      border-bottom: 4px solid $white100;
+    }
+  }
+
+  .div__primary {
+    border-bottom: 4px solid $white100;
+  }
+
+  .div__primary__chatbot {
+    border-bottom: 4px solid $white100;
+  }
+
+  .verticalCard__desc {
+    color: $white100;
+  }
+
+  .verticalCard__desc__chatbot {
+    color: $white100;
+  }
+
+  .verticalCard__icon {
+    div {
+      color: $white100;
+      // text-decoration: underline;
+      // text-underline-offset: 3px;
+      display: flex;
+      align-items: center;
+
+      .arrow {
+        // background-image: url($mobile-arrow-white);
+        // position: absolute;
+        // left: 15px;
+        // margin-left: 15px;
+        // padding-left: 2px !important;
+        // padding-left: 2px !important;
+        background-image: url($know-more-arrow-white);
+        background-repeat: no-repeat;
+        font-size: clamp(8.99651px, 1.6vw, 20px) !important;
+        height: 14px;
+        width: 17px;
+        font-size: clamp(8.99651px, 1.6vw, 20px) !important;
+        margin-left: 13px;
+        display: inline-block;
+
+        @media screen and (max-width: $breakpoint-lg) {
+          height: 12px;
+          width: 15px;
+        }
+      }
+    }
+  }
+}
+
+// Secondar Vertical Card
+.secondary__verticalCard {
+  height: 430px;
+  width: 230px;
+  border-left: 1px solid $grey100;
+  margin-right: 1rem;
+  position: relative;
+  border-radius: 5px;
+
+  @media only screen and (min-width: $breakpoint-xl-1366) {
+    height: 410px;
+    // width: 239px;
+    width: 234px;
+  }
+
+  @media only screen and (max-width: $breakpoint-xl-1366) {
+    height: clamp(242.881px, 31vw, 431.684px);
+    width: clamp(134.372px, 16vw, 238.825px);
+  }
+
+  @media only screen and (max-width: 1061px) {
+    height: clamp(242.881px, 31vw, 431.684px);
+    width: clamp(134.372px, 18vw, 238.825px);
+  }
+
+  @media only screen and (max-width: 845px) {
+    height: clamp(242.881px, 34vw, 431.684px);
+    width: clamp(134.372px, 18vw, 238.825px);
+  }
+
+  @media only screen and (max-width: $breakpoint-md) {
+    width: 135px;
+  }
+
+  .secondary__title {
+    // font-size: 24px;
+    font-size: clamp(3.04539px, 1.5vw, 24px);
+    font-family: $primary-font;
+    color: $white100;
+    font-weight: $font-weight600;
+    position: absolute;
+    border-left: 7px solid $yellow-border;
+    left: -1px;
+    padding-left: 0.75rem;
+    padding-top: 1.5rem;
+    height: 35%;
+  }
+
+  .secondary__desc {
+    position: absolute;
+    top: clamp(8rem, 1vw, 11rem);
+    color: $white100;
+    font-weight: $font-weight400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.69 !important;
+    letter-spacing: normal;
+    padding-left: 1.1rem;
+    font-size: clamp(3.27965px, 1vw, 13.9898px);
+    font-family: $font-family-raleway;
+
+    @media only screen and (min-width: $breakpoint-xl-1366) {
+      font-size: 14px;
+      top: clamp(10rem, 1vw, 11rem);
+    }
+
+    @media only screen and (max-width: 900px) {
+      top: clamp(6.5rem, 1vw, 11rem);
+    }
+  }
+
+  .secondary__icon {
+    // margin-top: 1rem;
+    position: absolute;
+    top: clamp(14.5rem, 28vw, 23rem);
+    padding-left: 1rem;
+
+    div {
+      color: $white100;
+      font-weight: $font-weight500;
+      display: flex;
+      align-items: center;
+
+      @media only screen and (max-width: 992px) {
+        font-size: 12px;
+      }
+
+      .arrow {
+        // // font-size: clamp(8.99651px, 1.09vw, 28px) !important;
+        // padding-left: 2px !important;
+        // font-size: clamp(8.99651px, 1.6vw, 20px) !important;
+        // margin-left: 5px;
+        // transition: all 0.3s;
+        // position: absolute;
+        // left: 10px;
+        // padding-left: 2px !important;
+        background-image: url($know-more-arrow-white);
+        background-repeat: no-repeat;
+        transform: rotate(180deg);
+        height: 14px;
+        width: 17px;
+        font-size: clamp(8.99651px, 1.6vw, 20px) !important;
+        transition: all 0.3s;
+        margin-left: 13px;
+        display: inline-block;
+
+        @media screen and (max-width: $breakpoint-lg) {
+          height: 12px;
+          width: 15px;
+        }
+      }
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+    background: url("https://cdn-gcp.new.marutitech.com/artificial_intelligence_bg_217432c87e.webp");
+
+    .secondary__title {
+      color: $white100;
+      border-left: 7px solid $white100;
+
+      div {
+        border-bottom: 4px solid $white100;
+      }
+    }
+
+    .secondary__desc {
+      color: $white100;
+    }
+
+    .secondary__icon {
+      div {
+        color: $white100;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+
+        .arrow {
+          // // font-size: clamp(8.99651px, 1.09vw, 28px) !important;
+          // padding-left: 2px !important;
+          // font-size: clamp(8.99651px, 1.6vw, 20px) !important;
+          // margin-left: 15px;
+          // margin-left: 15px;
+          // padding-left: 2px !important;
+          // position: absolute;
+          // padding-left: 2px !important;
+          // margin-left: 5px;
+          // left: 15px;
+          background-image: url($know-more-arrow-white);
+          background-repeat: no-repeat;
+          font-size: clamp(8.99651px, 1.6vw, 20px) !important;
+          transform: translate(5px) rotate(180deg);
+          height: 14px;
+          width: 17px;
+          font-size: clamp(8.99651px, 1.6vw, 20px) !important;
+          margin-left: 13px;
+          display: inline-block;
+
+          @media screen and (max-width: $breakpoint-lg) {
+            height: 12px;
+            width: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.secondary__verticalCard_autoselected:first-child {
+  cursor: pointer;
+  background: url("https://cdn-gcp.new.marutitech.com/artificial_intelligence_bg_217432c87e.webp");
+
+  .secondary__title {
+    color: $white100;
+    border-left: 7px solid $white100;
+
+    div {
+      border-bottom: 4px solid $white100;
+    }
+  }
+}
+
+//accordian css
+.accordionItem:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.accordionTitle {
+  font-size: clamp(22px, 4vh, 30px);
+  padding-top: 1vw;
+  // padding-left: 3vw;
+  font-family: $primary-font;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+
+  // margin-left: 20px;
+  @media only screen and (max-width: $breakpoint-sm) {
+    font-size: clamp(22px, 2vh, 32px);
+    margin-left: 2px;
+  }
+
+  // @include titleFonts();
+}
+
+.accordionDetails {
+  max-width: 455px;
+  // margin: 0 auto;
+  // padding-left: 0.5rem;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.79;
+  letter-spacing: normal;
+  color: #ffffff;
+
+  @media only screen and (max-width: 577px) {
+    margin-left: 0;
+  }
+
+  @media only screen and (max-width: $breakpoint-sm-450) {
+    padding-left: 0;
+  }
+}
+
+.accordionHeader1 {
+  background-image: url("https://cdn-gcp.new.marutitech.com/bot_development_bg_436a8b3583.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $white100;
+  outline: none;
+
+  &:focus {
+    box-shadow: none;
+  }
+
+  // border-top-right-radius: 12px !important;
+}
+
+.accordionBody1 {
+  padding: 1.5rem auto;
+  background-image: url("https://cdn-gcp.new.marutitech.com/bot_development_bg_436a8b3583.webp");
+  // background-image: url("https://marutitech.com/wp-content/uploads/home/bot-development-leaf-right.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $white100;
+  outline: none;
+  background-color: #d84c3d;
+
+  &:focus {
+    outline: none;
+    border: none;
+  }
+
+  border-top-right-radius: 12px;
+
+  @media only screen and (max-width: $breakpoint-md) {
+    // margin-top: -4.9rem;
+    margin-top: -3.9rem;
+    padding-top: 5rem;
+  }
+
+  @media only screen and (max-width: $breakpoint-md-579) {
+    // margin-top: -4rem;
+    margin-top: -3.6rem;
+    padding-top: 5rem;
+  }
+
+  @media only screen and (max-width: $breakpoint-sm-427) {
+    margin-top: -3.7rem;
+    padding-top: 5rem;
+  }
+
+  @media only screen and (max-width: $breakpoint-sm-350) {
+    margin-top: -3.3rem;
+    padding-top: 5rem;
+  }
+}
+
+.accordionHeader2 {
+  background-image: url("https://cdn-gcp.new.marutitech.com/artificial_intelligence_bg_217432c87e.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $white100;
+  outline: none;
+
+  &:focus {
+    box-shadow: none;
+  }
+
+  // border-top-right-radius: 14px !important;
+}
+
+.accordionBody2 {
+  padding: 1.5rem auto;
+  // background-image: url("https://marutitech.com/wp-content/uploads/home/ai-right-leaf.png");background-image: url("https://cdn-gcp.marutitech.com/wp-content/uploads/2019/03/artificial-intelligence-bg.png");
+  background-image: url("https://cdn-gcp.new.marutitech.com/artificial_intelligence_bg_217432c87e.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $white100;
+  outline: none;
+  border-top-right-radius: 12px;
+
+  @media only screen and (max-width: $breakpoint-md) {
+    margin-top: -3.9rem;
+    padding-top: 5rem;
+  }
+
+  @media only screen and (max-width: $breakpoint-md-579) {
+    margin-top: -3.6rem;
+    padding-top: 5rem;
+  }
+
+  @media only screen and (max-width: $breakpoint-sm-427) {
+    margin-top: -3.7rem;
+    padding-top: 5rem;
+  }
+
+  @media only screen and (max-width: $breakpoint-sm-350) {
+    margin-top: -3.3rem;
+    padding-top: 5rem;
+  }
+}
+
+.accordionLink {
+  padding-bottom: 1rem;
+  padding-left: 1.2rem;
+}
+
+.sm_red_col_padding {
+  padding: 0;
+}
+
+.sm_yellow_col_padding {
+  padding: 0 4px 0 12px;
+}
+
+.accordionHRLine {
+  width: 77px;
+  height: 5px;
+  background-color: $white100;
+  margin-bottom: 1.2rem;
+  margin-top: -1.25rem;
+
+  @media only screen and (max-width: 768px) {
+    height: 5px;
+  }
+
+  @media only screen and (max-width: $breakpoint-sm) {
+    margin-top: -1.45rem;
+    height: 5px;
+  }
+
+  @media only screen and (max-width: 350px) {
+    margin-top: -2rem;
+  }
+}
+
+.mobile_span {
+  display: flex;
+  align-items: center;
+
+  .arrow {
+    // @media screen and (max-width: 767px) {
+    //   // font-size: clamp(8px, 5.2vw, 16px) !important;
+    //   font-size: 19px !important;
+    // }
+    // transition: all 0.3s;
+    // padding-left: 2px !important;
+    // margin-left: 5px;
+    font-size: clamp(8.99651px, 1.6vw, 20px) !important;
+    // margin-left: 15px;
+    // padding-left: 2px !important;
+
+    background-image: url($know-more-arrow-white);
+    // position: absolute;
+    transform: rotate(180deg);
+    height: 14px;
+    width: 17px;
+    font-size: clamp(8.99651px, 1.6vw, 20px) !important;
+    // padding-left: 2px !important;
+    margin-left: 8px;
+    background-repeat: no-repeat;
+    // left: 15px;
+    display: inline-block;
+  }
+
+  &:hover {
+    color: $white100;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+
+    .arrow {
+      transform: translate(5px) rotate(180deg);
+      background-repeat: no-repeat;
+
+      // @media screen and (max-width: 767px) {
+      //   font-size: 19px !important;
+      // }
+      // margin-left: 15px;
+      // padding-left: 2px !important;
+      font-size: clamp(8.99651px, 1.6vw, 20px) !important;
+      // margin-left: 15px;
+      // padding-left: 2px !important;
+
+      background-image: url($know-more-arrow-white);
+      // position: absolute;
+      height: 14px;
+      width: 17px;
+      font-size: clamp(8.99651px, 1.6vw, 20px) !important;
+      // padding-left: 2px !important;
+      margin-left: 8px;
+      // left: 15px;
+      display: inline-block;
+    }
+  }
+}

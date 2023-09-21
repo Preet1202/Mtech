@@ -1,0 +1,83 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/breakpoints.scss";
+
+.main_container {
+  justify-content: center;
+  align-items: center;
+}
+
+.inner_container {
+  align-items: center;
+  max-width: 932px;
+  padding: 0 16px;
+  @media screen and (max-width: $breakpoint-md) {
+    gap: 30px;
+    padding: 0;
+  }
+  button {
+    margin: 0;
+  }
+}
+
+.content_box {
+  align-items: center;
+  h2 {
+    font-family: $font-family-poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    color: $brand-color4;
+    margin: 0;
+    text-align: center;
+    @media screen and (max-width: $breakpoint-md) {
+      font-size: 30px;
+      line-height: 36px;
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
+}
+
+.images_box {
+  @media screen and (max-width: $breakpoint-md) {
+    display: grid;
+    padding: 0 48px;
+  }
+}
+
+.single_image img {
+  border-radius: 8px;
+}
+// Variant CSS
+.yellow_bg {
+  button {
+    border-color: $brand-color4 !important;
+    &:hover {
+      color: $brand-color4;
+    }
+    &::after {
+      background-color: $brand-color4 !important;
+    }
+  }
+}
+
+.violet_bg,
+.orange_bg {
+  h2 {
+    color: $white100;
+  }
+}
+
+.orange_bg {
+  button {
+    border-color: $white100 !important;
+    color: $brand-color1;
+    &:hover {
+      color: $white100;
+    }
+    &::after {
+      background-color: $white100 !important;
+    }
+  }
+}

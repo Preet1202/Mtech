@@ -1,0 +1,57 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/breakpoints.scss";
+
+.inner_container {
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: $breakpoint-md) {
+    padding: 0px 16px;
+    display: grid;
+  }
+
+  h2 {
+    font-family: $font-family-poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    margin: 0;
+    color: $brand-color4;
+    @media screen and (max-width: $breakpoint-md) {
+      font-size: 30px;
+      line-height: 36px;
+    }
+  }
+}
+.description {
+  font-family: $font-family-raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  margin: 0;
+  color: $black1;
+
+  p:last-child {
+    margin: 0;
+  }
+
+  figure {
+    margin: 0px auto 1rem auto;
+    @media screen and (max-width: $breakpoint-md) {
+      width: 100% !important;
+    }
+  }
+  img {
+    width: 100%;
+  }
+}
+
+.violet_bg,
+.orange_bg {
+  h2,
+  .description {
+    color: $white100;
+  }
+}

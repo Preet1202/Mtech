@@ -1,0 +1,93 @@
+@import "../../styles/breakpoints.scss";
+@import "../../styles/variables.scss";
+
+.dev__violet {
+  background: $brand-color4;
+  padding: 80px 0px;
+
+  @media screen and (max-width: $breakpoint-sm) {
+    padding: 60px 0px;
+  }
+}
+
+.dev__white {
+  background: $white100;
+  padding: 80px 0px;
+
+  @media screen and (max-width: $breakpoint-sm-450) {
+    padding: 60px 0px;
+  }
+}
+
+.title {
+  font-family: $font-family-poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+
+  color: #262531;
+  // max-width: 550px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+
+  @media only screen and (min-width: $breakpoint-xl-1406) {
+    font-size: 36px;
+  }
+
+  @media only screen and (max-width: $breakpoint-md) {
+    font-size: 30px;
+    line-height: 36px;
+    padding: 0 16px 30px 16px;
+  }
+}
+.for_tech_stack_title_padding {
+  padding-bottom: 60px;
+  @media only screen and (max-width: $breakpoint-md) {
+    padding-bottom: 30px;
+  }
+}
+
+.description {
+  font-family: $font-family-raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  color: #383838;
+  padding-bottom: 60px;
+
+  p:last-child {
+    margin-bottom: 0px;
+  }
+
+  @media screen and (min-width: $breakpoint-xl-1406) {
+    font-size: 16px;
+  }
+
+  @media screen and (max-width: $breakpoint-md) {
+    font-size: 16px;
+    // padding-top: 10px;
+    line-height: 24px;
+    padding-bottom: 30px;
+  }
+
+  @media screen and (max-width: $breakpoint-sm) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.imagediv {
+  display: flex;
+  justify-content: center;
+  height: 28em;
+  width: 100%;
+
+  @media screen and (max-width: $breakpoint-md) {
+    padding-left: 16px;
+    padding-right: 16px;
+    height: auto;
+  }
+}

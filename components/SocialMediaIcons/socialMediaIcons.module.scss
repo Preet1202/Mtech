@@ -1,0 +1,41 @@
+@import "../../styles/breakpoints.scss";
+.social_media_icons {
+  margin-top: 10px;
+  display: flex;
+  & > div {
+    margin-right: 16px;
+  }
+}
+
+.social_media_icons {
+  svg {
+    cursor: pointer;
+    &:hover {
+      fill: #f5f6f8;
+    }
+  }
+}
+.social_media_icons_vertical {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  align-items: flex-end;
+  position: sticky;
+  margin-right: 48px;
+  // max-width: 60%;
+  // margin: 0 auto;
+  top: 80px;
+  margin-top: 2rem;
+  svg {
+    &:hover {
+      fill: #f5f6f8;
+    }
+  }
+  & > div {
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  @media screen and (max-width: $breakpoint-lg) {
+    display: none;
+  }
+}

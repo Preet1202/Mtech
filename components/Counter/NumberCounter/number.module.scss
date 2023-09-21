@@ -1,0 +1,196 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/breakpoints.scss";
+
+.number_counter_row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-left: 0px;
+
+  @media only screen and (max-width: $breakpoint-md) {
+    justify-content: space-around;
+  }
+}
+
+.company_state_counter {
+  justify-content: space-between;
+  gap: 0px;
+  margin-left: -12px;
+}
+
+.counter {
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+
+  @media only screen and (max-width: $breakpoint-sm) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 936px) and (max-width: $breakpoint-xl-2560) {
+    width: 189px;
+  }
+
+  .description {
+    font-family: $primary-font, sans-serif;
+    // font-size: 70px;
+    font-size: 5.124450951683748vw;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: $brand-color1;
+    position: relative;
+    justify-content: center;
+
+    @media only screen and (min-width: $breakpoint-xl-1406) {
+      font-size: 70px;
+      // font-size: 3.9vw;
+    }
+
+    // @media only screen and (max-width: $breakpoint-lg ) {
+    //   font-size: 4.124450951683748vw;
+    // }
+
+    @media only screen and (max-width: $breakpoint-md-767) {
+      font-family: "Poppins", sans-serif;
+      font-size: 70px;
+      font-weight: 600;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #f05443;
+      display: inline-block;
+    }
+
+    .addsign {
+      font-size: 2.9282576866764276vw;
+      // font-size: 30px;
+      position: absolute;
+      top: 30px;
+
+      @media only screen and (min-width: $breakpoint-xl-1406) {
+        font-size: 42px;
+      }
+
+      @media only screen and (max-width: $breakpoint-md-767) {
+        font-size: 42px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        // color: #f05443;
+        display: inline-block;
+      }
+    }
+
+    .addsignFor_Responsive {
+      position: absolute;
+      top: 18px;
+
+      @media only screen and (max-width: $breakpoint-md-767) {
+        top: 17px;
+      }
+
+      @media (min-width: 768px) and (max-width: 883px) {
+        top: 12px;
+      }
+
+      @media (min-width: 884px) and (max-width: 991px) {
+        top: 15px;
+      }
+    }
+  }
+
+  .subtitle {
+    font-weight: 500;
+    font-size: 1.1641288433382138vw;
+    line-height: normal;
+    color: #383838;
+    font-family: $font-family-raleway;
+
+    @media only screen and (min-width: 1406px) {
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    @media only screen and (max-width: $breakpoint-md-767) {
+      font-family: $font-family-raleway;
+      font-size: 20px;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 30px;
+      letter-spacing: normal;
+    }
+
+    // @media only screen and (max-width: 450px) {
+    //   font-size: 3.888888888888889vw;
+    // }
+  }
+}
+
+.counter {
+  .darkblue_description {
+    color: $white100 !important;
+    // color: $brand-color1 !important;
+  }
+}
+
+.darkblue_subtitle {
+  font-weight: 500;
+  font-size: 1.1641288433382138vw;
+
+  @media only screen and (min-width: 1406px) {
+    font-size: 20px;
+  }
+
+  line-height: normal;
+  color: $white100 !important;
+
+  @media only screen and (max-width: 767px) {
+    font-family: "Raleway", sans-serif;
+    font-size: 17.5px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+
+  @media only screen and (max-width: $breakpoint-sm-450) {
+    font-size: 3.888888888888889vw;
+  }
+}
+
+.companystat__counter {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 63px;
+  color: #383838;
+  padding-top: 30px;
+}
+
+.companystat__row {
+  @media screen and (max-width: $breakpoint-sm) {
+    max-width: 250px;
+    margin: 0 auto;
+  }
+}
+
+.companystat__title {
+  font-family: $font-family-raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  padding-bottom: 20px;
+  color: $brand-color4;
+  border-bottom: 1px solid #d9d9d9;
+}

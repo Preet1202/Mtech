@@ -1,0 +1,161 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/breakpoints.scss";
+
+.main_container {
+  justify-content: center;
+  align-items: center;
+}
+
+.inner_container {
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: $breakpoint-md) {
+    gap: 30px;
+  }
+  @media screen and (max-width: $breakpoint-sm) {
+    padding: 0px 16px;
+  }
+}
+
+.top_section {
+  align-self: stretch;
+  @media screen and (max-width: $breakpoint-md) {
+    display: grid;
+    gap: 30px;
+  }
+}
+
+.left_box {
+  flex: 1;
+  h2 {
+    font-size: 36px;
+    font-family: $font-family-poppins;
+    font-weight: 600;
+    line-height: 44px;
+    color: $white100;
+    margin: 0;
+    @media screen and (max-width: $breakpoint-md) {
+      font-size: 30px;
+      line-height: 36px;
+    }
+  }
+  .titlepart1 {
+    color: $brand-color1;
+    display: block;
+  }
+}
+
+.left_box_for_homePage {
+  h2 {
+    color: $black1;
+  }
+}
+
+.description {
+  font-size: 16px;
+  font-family: $font-family-raleway;
+  font-weight: 500;
+  line-height: 28px;
+  p:last-child {
+    margin: 0;
+  }
+  @media screen and (max-width: $breakpoint-md) {
+    line-height: 24px;
+  }
+}
+
+.description_for_homePage {
+  color: $brand-color4;
+}
+
+.button_container_desktop {
+  button {
+    margin: 0;
+  }
+  @media screen and (max-width: $breakpoint-md) {
+    display: none;
+  }
+}
+
+.button_container_mobile {
+  display: none;
+  button {
+    margin: 0;
+  }
+  @media screen and (max-width: $breakpoint-md) {
+    display: block;
+    width: 100%;
+    button {
+      width: 100% !important;
+    }
+  }
+}
+
+.right_box {
+  flex: 12%;
+  padding-right: 60px;
+  @media screen and (max-width: $breakpoint-md) {
+    padding: 0;
+  }
+}
+.bottom_section {
+  width: 100%;
+}
+.single_itembox {
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+  height: 675px;
+  background-size: cover;
+  border-radius: 10px;
+  background-repeat: round !important;
+
+  @media screen and (max-width: $breakpoint-lg) {
+    height: 410px;
+  }
+  @media screen and (max-width: $breakpoint-md) {
+    height: 300px;
+  }
+
+  @media screen and (max-width: $breakpoint-sm) {
+    height: 305px;
+    width: calc(100vw - 32px);
+    margin: 0 auto;
+  }
+  @media screen and (max-width: $breakpoint-sm-480) {
+    height: 193px;
+  }
+}
+.play_icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  @media screen and (max-width: $breakpoint-sm) {
+    height: 28px;
+    width: 28px;
+  }
+}
+
+.modal_description {
+  background: $white100;
+  font-size: 16px;
+  font-family: $font-family-raleway;
+  font-weight: 500;
+  line-height: 28px;
+  padding: 16px;
+  border-radius: 5px;
+  p:last-child {
+    margin: 0;
+  }
+  @media screen and (max-width: $breakpoint-md) {
+    line-height: 24px;
+  }
+  @media screen and (max-width: $breakpoint-lg) {
+    overflow-y: auto;
+    height: 400px;
+  }
+  @media screen and (max-width: $breakpoint-md) {
+    height: 300px;
+  }
+}

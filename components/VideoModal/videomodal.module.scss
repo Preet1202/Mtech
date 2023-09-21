@@ -1,0 +1,488 @@
+@import "../../styles/breakpoints.scss";
+@import "../../styles/variables.scss";
+
+.vidcard {
+  position: relative;
+  cursor: pointer;
+  // background: url("https://cdn-gcp.marutitech.com/wp-media/2019/08/8bbd7733-bot-dev.jpg");
+  background-color: lightgrey;
+  height: 290px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  color: $white100;
+
+  box-shadow: inset 2px -38px 7px -4px #28262680;
+  background-color: transparent !important;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 4rem;
+
+  @media screen and (max-width: $breakpoint-md) {
+    margin-bottom: 4.5rem !important;
+  }
+
+  @media screen and (max-width: $breakpoint-sm-450) {
+    margin-bottom: clamp(5px, 15.5vw, 4.8rem) !important;
+  }
+
+  &:hover {
+    box-shadow: 0px 0px 50px #000000;
+  }
+
+  width: 100%;
+  bottom: 0;
+
+  position: relative;
+
+  .vidimage {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  transition: all 0.2s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  // bottom title
+  .titleWithoutDescription {
+    position: absolute;
+    bottom: 0;
+
+    right: 0;
+
+    padding-left: 20px;
+    font-size: 18px;
+
+    font-family: $primary-font, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    box-shadow: inset 2px -38px 7px -4px #28262680;
+
+    background-color: transparent !important;
+    padding-bottom: 10px;
+    width: 100%;
+  }
+
+  .description {
+    position: absolute;
+    top: 255px;
+    padding-left: 10px;
+    z-index: 100;
+    font-size: clamp(9.83px, 1.29vw, 18px) !important;
+
+    @media screen and (max-width: $breakpoint-md-767) {
+      padding-top: 13px !important;
+      font-size: 17.5px !important;
+      padding-bottom: 40px !important;
+      padding-left: 0px !important;
+      position: relative;
+      top: 270px;
+      color: $primary-color-black;
+    }
+
+    @media only screen and (max-width: $breakpoint-sm-450) {
+      font-size: clamp(2px, 3.859vw, 17.5px) !important;
+      padding-top: clamp(1px, 2.8vw, 13px) !important;
+      padding-bottom: clamp(5px, 11.111vw, 50px) !important;
+      padding-left: 0px !important;
+    }
+  }
+}
+
+.resources_vidcard {
+  position: relative;
+  cursor: pointer;
+  // background: url("https://cdn-gcp.marutitech.com/wp-media/2019/08/8bbd7733-bot-dev.jpg");
+  background-color: lightgrey;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  color: $white100;
+
+  box-shadow: inset 2px -38px 7px -4px #28262680;
+  background-color: transparent !important;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 4rem;
+
+  width: 42.607396870554766vw;
+  height: 20.62588904694168vw;
+
+  @media screen and (min-width: $breakpoint-xl-1406) {
+    width: 585px;
+    height: 290px;
+  }
+
+  @media screen and (max-width: 1200px) {
+    width: 39.607396870554766vw;
+  }
+
+  @media screen and (max-width: 1100px) {
+    width: 41.607396870554766vw;
+  }
+
+  @media screen and (max-width: 1024px) {
+    width: 44.607397vw;
+  }
+
+  @media screen and (max-width: 992px) {
+    width: 34.607397vw;
+  }
+
+  @media screen and (max-width: 900px) {
+    width: 39.607397vw;
+  }
+
+  @media screen and (max-width: 769px) {
+    width: 43.607397vw;
+  }
+
+  @media screen and (max-width: $breakpoint-md-767) {
+    width: 380px;
+    height: 204px;
+    margin-bottom: 4.5rem !important;
+  }
+
+  @media screen and (max-width: $breakpoint-sm-450) {
+    width: 84.388889vw;
+    height: 45.27777777777778vw;
+    margin-bottom: clamp(5px, 15.5vw, 4.8rem) !important;
+  }
+
+  &:hover {
+    box-shadow: 0px 0px 50px #000000;
+    transform: scale(1.2);
+    z-index: 2;
+  }
+
+  width: 100%;
+  bottom: 0;
+
+  position: relative;
+
+  .vidimage {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  transition: all 0.2s ease;
+
+  // bottom title
+  .titleWithoutDescription {
+    position: absolute;
+    bottom: 0;
+
+    right: 0;
+
+    padding-left: 20px;
+    font-size: 18px;
+
+    font-family: $primary-font, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    box-shadow: inset 2px -38px 7px -4px #28262680;
+
+    background-color: transparent !important;
+    padding-bottom: 10px;
+    width: 100%;
+  }
+
+  // .description {
+  //   position: absolute;
+  //   top: 255px;
+  //   padding-left: 10px;
+  //   z-index: 100;
+  //   font-size: clamp(9.83px, 1.29vw, 18px) !important;
+
+  //   @media screen and (max-width: $breakpoint-md-767) {
+  //     padding-top: 13px !important;
+  //     font-size: 17.5px !important;
+  //     padding-bottom: 40px !important;
+  //     padding-left: 0px !important;
+  //     position: relative;
+  //     top: 270px;
+  //     color: $primary-color-black;
+  //   }
+
+  //   @media only screen and (max-width: $breakpoint-sm-450) {
+  //     font-size: clamp(2px, 3.859vw, 17.5px) !important;
+  //     padding-top: clamp(1px, 2.8vw, 13px) !important;
+  //     padding-bottom: clamp(5px, 11.111vw, 50px) !important;
+  //     padding-left: 0px !important;
+  //   }
+  // }
+}
+
+.cardText {
+  margin: 0px !important;
+
+  @media screen and (max-width: $breakpoint-md) {
+    padding-bottom: 100px !important;
+  }
+
+  @media only screen and (max-width: $breakpoint-sm-450) {
+    padding-bottom: clamp(5px, 11.111vw, 50px) !important;
+  }
+}
+
+.modal__main {
+  position: relative;
+  transition: all 0.2s ease;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+// .modal__heading {
+//     cursor: pointer;
+//     // background: url("https://cdn-gcp.marutitech.com/wp-media/2019/08/c69bdf0e-overview-of-our-services.jpg");
+//     background: url("https://cdn-gcp.marutitech.com/wp-media/2019/08/ec921d62-move-your-business-online-using-technology.jpg");
+//     background-color: lightgrey;
+//     width: 585px;
+//     height: 290px;
+//     margin-bottom: 40px;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     border-radius: 5px;
+//     font-family: $primary-font, sans-serif;
+//     font-size: 18px;
+//     font-weight: 500;
+//     font-style: normal;
+//     font-stretch: normal;
+//     line-height: 1.5;
+//     letter-spacing: normal;
+//     text-align: left;
+//     color: $white100;
+//     box-shadow: inset 2px -42px 7px 0px #00000078;
+
+//     p {
+//       position: absolute;
+//       bottom: 38px;
+//       padding-left: 20px;
+//     }
+//   }
+//   .playbtn {
+//     position: absolute;
+//     top: 5.5rem;
+//     left: 15.7rem;
+//     cursor: pointer;
+//   }
+
+.respcontainer {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+}
+
+.respiframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.resource_title_wrapper {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background: url("https://cdn-gcp.new.marutitech.com/blog_shadow3_897acf958b.png") no-repeat 0px -4.978662873399715vw transparent !important;
+  background-color: transparent !important;
+  background-size: cover !important;
+  left: 0px;
+
+  @media screen and (min-width: $breakpoint-xl-1406) {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background: url(https://cdn-gcp.new.marutitech.com/blog_shadow3_897acf958b.png) no-repeat 0px -70px transparent !important;
+    background-color: transparent !important;
+    background-size: cover !important;
+  }
+
+  @media screen and (max-width: $breakpoint-md-767) {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background: url(https://cdn-gcp.new.marutitech.com/blog_shadow3_897acf958b.png) no-repeat 0px 0px transparent !important;
+    background-color: transparent !important;
+    background-size: cover !important;
+  }
+}
+
+.blog_card_title {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2802275960170697vw;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+  padding-left: 1.7780938833570414vw;
+  padding-bottom: 1.422475106685633vw;
+  padding-right: 5.689900426742532vw;
+  padding-top: 1.422475106685633vw;
+
+  @media screen and (min-width: $breakpoint-xl-1406) {
+    font-size: 18px;
+    padding-left: 25px;
+    padding-bottom: 20px;
+    padding-right: 80px;
+    padding-top: 20px;
+  }
+
+  @media screen and (max-width: $breakpoint-md-767) {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.44;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+    padding-left: 14px;
+    padding-bottom: 15px;
+    padding-top: 60px;
+  }
+
+  @media screen and (max-width: $breakpoint-sm-450) {
+    padding-left: 3.888888888888889vw;
+    padding-bottom: 4.166666666666666vw;
+    padding-top: 16.666666666666664vw;
+  }
+}
+
+.container__products {
+  box-shadow: 0 0.42674253200568996vw 0.7112375533428165vw 0 rgb(0 0 0 / 16%);
+  padding: 0 12px !important;
+}
+
+.vidcard__product {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  cursor: pointer;
+  padding: 0;
+  width: clamp(278.328px, 28vw, 508px) !important;
+  height: clamp(191.172px, 24.9vw, 350px) !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  color: $white100;
+  background-size: cover;
+  background-position: center;
+  bottom: 0;
+
+  @media screen and (max-width: $breakpoint-md-767) {
+    width: clamp(70.766px, 85.3vw, 384px) !important;
+    height: clamp(40.438px, 58.69vw, 264px) !important;
+  }
+
+  @media screen and (max-width: $breakpoint-sm-450) {
+    margin-bottom: clamp(2.5px, 0.75vw, 13px) !important;
+  }
+
+  .vidimage__product {
+    height: clamp(50.25px, 6.55vw, 92px);
+    width: clamp(50.25px, 6.55vw, 92px);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    @media screen and (max-width: $breakpoint-md-767) {
+      height: 64px;
+      width: 64px;
+    }
+
+    @media screen and (max-width: $breakpoint-sm-450) {
+      height: clamp(10px, 14vw, 64px);
+      width: clamp(10px, 14vw, 64px);
+    }
+  }
+
+  .titleWithoutDescription {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-left: 20px;
+    font-size: 18px;
+    font-family: $primary-font, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    box-shadow: inset 2px -38px 7px -4px #28262680;
+    background-color: transparent !important;
+    padding-bottom: 10px;
+    width: 100%;
+  }
+
+  .titleWithDescription {
+    padding-left: clamp(5px, 2vw, 25px);
+    font-size: clamp(11.8117px, 1.538vw, 18px);
+    font-family: $primary-font, sans-serif;
+    font-weight: $font-weight700;
+    z-index: 100;
+
+    @media screen and (max-width: $breakpoint-md-767) {
+      padding-left: 0;
+      padding-top: 13px;
+      font-size: 17.5px !important;
+      color: rgb(74, 74, 74);
+    }
+
+    @media only screen and (max-width: $breakpoint-sm-450) {
+      font-size: clamp(2px, 3.859vw, 17.5px) !important;
+      padding-top: clamp(1px, 2.8vw, 13px) !important;
+      padding-left: 0px !important;
+    }
+  }
+
+  .description__products {
+    padding-left: clamp(5px, 2vw, 25px);
+    z-index: 100;
+    font-size: clamp(11.8117px, 1.538vw, 18px);
+    font-family: $primary-font, sans-serif;
+    font-weight: $font-weight500;
+    padding-bottom: clamp(5px, 1.5vw, 25px);
+
+    @media screen and (max-width: $breakpoint-md-767) {
+      font-size: 17.5px !important;
+      padding-left: 0px !important;
+      color: rgb(74, 74, 74);
+    }
+
+    @media only screen and (max-width: $breakpoint-sm-450) {
+      font-size: clamp(2px, 3.859vw, 17.5px) !important;
+      padding-left: 0px !important;
+    }
+  }
+}
+
+.title_desc_div {
+  position: absolute;
+  bottom: 0;
+
+  @media only screen and (max-width: $breakpoint-md-767) {
+    position: inherit;
+    bottom: none;
+    margin-top: calc(clamp(40.438px, 58.69vw, 264px) + 1px);
+  }
+}

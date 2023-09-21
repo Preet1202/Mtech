@@ -1,0 +1,35 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/breakpoints.scss";
+
+.bottom_section {
+  width: 100%;
+  height: 100%;
+}
+
+.main_container {
+  width: inherit;
+  height: inherit;
+}
+
+.single_itembox {
+  display: flex;
+  position: relative;
+  background-size: cover !important;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.play_icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  @media screen and (max-width: $breakpoint-sm) {
+    height: 42px;
+    width: 42px;
+  }
+}

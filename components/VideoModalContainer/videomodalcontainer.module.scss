@@ -1,0 +1,126 @@
+@import "../../styles/variables.scss";
+@import "../../styles/breakpoints.scss";
+@import "../../styles/mixins.scss";
+
+.section_title {
+  font-size: clamp(19.6643px, 2.56vw, 36px);
+  font-family: $primary-font;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: $primary-color-black;
+  text-align: center;
+  // font-size: 36px; [Changes required]
+  padding-top: clamp(42.06px, 5.47vw, 77px);
+  padding-bottom: clamp(34.413px, 4.48vw, 63px);
+
+  @media screen and (max-width: $breakpoint-md-767) {
+    font-size: 35px !important;
+    padding-top: 44px !important;
+    padding-bottom: 50px !important;
+  }
+
+  @media only screen and (max-width: $breakpoint-sm-450) {
+    font-size: clamp(2px, 7.78vw, 35px) !important;
+  }
+}
+
+.for_mobile_low_code {
+  margin: 0px;
+
+  @media screen and (max-width: $breakpoint-md) {
+    display: flex;
+    gap: 30px;
+  }
+}
+
+.default_video {
+  margin: 0px;
+}
+
+.extrapadding {
+  padding: 80px 0px;
+
+  @media screen and (max-width: $breakpoint-sm) {
+    padding: 60px 0px;
+  }
+
+  .resources_vidcard {
+    margin-bottom: 0px;
+  }
+}
+
+.removeExtraSpacing :global {
+  .removeExtraPadding {
+    margin-bottom: 0px;
+
+    @media screen and (max-width: $breakpoint-md) {
+      margin-bottom: 0px !important;
+    }
+  }
+}
+
+.section_title_resources {
+  text-transform: uppercase;
+  font-size: 36px;
+  font-family: $primary-font;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 44px;
+  letter-spacing: normal;
+  color: $brand-color4;
+  text-align: center;
+  // font-size: 36px; [Changes required]
+  padding-bottom: 50px;
+  margin-bottom: 0px;
+
+  @media screen and (max-width: $breakpoint-md) {
+    font-size: 30px !important;
+    padding-top: 0px !important;
+    padding-bottom: 30px;
+    line-height: 36px;
+  }
+}
+
+.videomodal {
+  display: flex;
+  margin: 0 clamp(16.387px, 2.1337vw, 30px) 80px clamp(16.387px, 2.1337vw, 30px) !important;
+  padding: 0px;
+  width: clamp(278.328px, 37.6vw, 508px) !important;
+  height: clamp(191.172px, 24.9vw, 350px) !important;
+
+  @media screen and (max-width: $breakpoint-md-767) {
+    margin-bottom: 110px !important;
+    width: clamp(70.766px, 85.3vw, 384px) !important;
+    height: clamp(40.438px, 58.69vw, 264px) !important;
+  }
+
+  @media screen and (max-width: $breakpoint-sm-450) {
+    margin-bottom: clamp(5.889px, 25vw, 130px) !important;
+  }
+}
+
+// .videomodal_resources {
+//   display: flex;
+// }
+.videomodal_resources {
+  @media only screen and (max-width: $breakpoint-md) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.container_row {
+  display: flex;
+  justify-content: center;
+
+  @media only screen and (max-width: $breakpoint-md-767) {
+    padding-bottom: 9px;
+    flex-direction: column;
+    align-content: center;
+  }
+}

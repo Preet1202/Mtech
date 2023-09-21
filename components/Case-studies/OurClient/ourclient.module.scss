@@ -1,0 +1,89 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/breakpoints.scss";
+.inner_container {
+  @media screen and (max-width: $breakpoint-md) {
+    padding: 0px 16px;
+    gap: 30px;
+    display: grid;
+  }
+}
+
+.left_box {
+  padding: 40px 70px 40px 40px;
+  flex: 1;
+
+  h2 {
+    font-family: $font-family-poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    margin: 0;
+    @media screen and (max-width: $breakpoint-md) {
+      font-size: 30px;
+      line-height: 36px;
+    }
+  }
+
+  .description {
+    font-family: $font-family-raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    margin: 0;
+
+    p:last-child {
+      margin: 0;
+    }
+  }
+  @media screen and (max-width: $breakpoint-md) {
+    padding: 0;
+    gap: 30px;
+  }
+}
+.remove_pad {
+  padding: 0px;
+}
+
+.right_box {
+  padding: 40px 70px 40px 40px;
+  flex: 1;
+
+  h2 {
+    font-family: $font-family-poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    margin: 0;
+    @media screen and (max-width: $breakpoint-md) {
+      font-size: 30px;
+      line-height: 36px;
+    }
+  }
+  @media screen and (max-width: $breakpoint-md) {
+    padding: 0px;
+    gap: 30px;
+  }
+}
+
+.single_box {
+  background: $yellow2;
+  border-radius: 10px;
+  padding: 10px;
+  font-family: $font-family-raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  color: $primary-color-black;
+}
+
+.yellow_bg,
+.orange_bg {
+  .single_box {
+    background: $brand-color4;
+    color: $white100;
+  }
+}

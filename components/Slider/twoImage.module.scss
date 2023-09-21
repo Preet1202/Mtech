@@ -1,0 +1,282 @@
+@import "../../styles/variables.scss";
+@import "../../styles/breakpoints.scss";
+
+.title_container {
+  @media only screen and (max-width: 576px) {
+    padding-left: 1rem;
+  }
+}
+
+.imageBox {
+  padding-top: 34px;
+  position: relative;
+  left: 10px;
+
+  display: flex;
+  justify-content: space-around;
+
+  img {
+    border-radius: 5px;
+    box-shadow: 2px 3px 12px -4px rgba(0, 0, 0, 0.5%);
+    filter: contrast(0.8) brightness(0.89959559);
+  }
+
+  h3 {
+    color: #fff;
+    font-size: 1rem;
+    position: absolute;
+    bottom: 0px;
+    max-width: 470px;
+  }
+}
+
+//content-div
+.twoImageContent {
+  height: 870px;
+  clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 20%, 0% 0);
+  background: $brand-color1;
+  position: relative;
+
+  @media only screen and (max-width: 992px) {
+    height: 770px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    height: 640px;
+  }
+
+  @media only screen and (max-width: $breakpoint-sm-427) {
+    height: 570px;
+  }
+}
+
+.resources__twoImageContent {
+  height: 650px;
+  background: $brand-color1;
+  position: relative;
+
+  @media only screen and (min-width: $breakpoint-xl-1406) {
+    height: 720px;
+  }
+
+  @media only screen and (max-width: 992px) {
+    height: 550px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    height: 520px;
+  }
+
+  @media only screen and (max-width: $breakpoint-sm-427) {
+    height: 390px;
+  }
+}
+
+.secondary__twoImageContent {
+  height: 690px;
+  position: relative;
+  background-image: url("/white-right-leaf-contact.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+
+  @media only screen and (max-width: 992px) {
+    height: 520px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    height: 540px;
+  }
+
+  @media only screen and (max-width: $breakpoint-sm-427) {
+    height: 420px;
+  }
+}
+
+.secondary__other__twoImageContent {
+  position: relative;
+
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  padding-bottom: 2rem;
+}
+
+.service_image_container {
+  z-index: 1;
+  margin-top: -14rem;
+}
+
+.TwoImageContainer {
+  // position: absolute;
+  // margin-top: 3rem;
+  left: 6rem;
+}
+
+.case_study_title {
+  font-size: 2.5604551920341394VW;
+  color: $white100;
+  padding-top: 12rem;
+  padding-bottom: 30px;
+  font-family: $font-family-poppins;
+  font-weight: $font-weight600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+
+  @media only screen and (min-width: $breakpoint-xl-1406) {
+    font-size: 36px;
+    font-weight: 600;
+  }
+
+  @media only screen and (max-width: $breakpoint-md-767) {
+    font-size: 35px;
+    font-weight: 600;
+  }
+
+  @media only screen and (max-width: $breakpoint-sm-450) {
+    font-size: 7.777777777777778VW;
+    font-weight: 600;
+  }
+}
+
+.resources__case_study_title {
+  font-size: 2.5604551920341394VW;
+  color: $white100;
+  padding-top: 5.689900426742532vw;
+  padding-bottom: 2.4893314366998576vw;
+  font-family: $primary-font;
+  font-weight: $font-weight600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+
+  @media only screen and (min-width: $breakpoint-xl-1406) {
+    font-size: 36px;
+    font-weight: 600;
+    padding-top: 80px;
+    padding-bottom: 35px;
+  }
+
+  @media only screen and (max-width: $breakpoint-md-767) {
+    font-size: 35px;
+    font-weight: 600;
+    text-align: left;
+    color: #ffffff;
+    padding-top: 30px;
+    padding-bottom: 5vw;
+  }
+
+  @media only screen and (max-width: $breakpoint-sm-450) {
+    font-size: 7.777777777777778vw;
+    font-weight: 600;
+    text-align: left;
+    color: #ffffff;
+    padding-top: 12vw;
+    padding-bottom: 6vw;
+  }
+}
+
+.case_study_title_secondary {
+  // font-size: clamp(1rem, 4.5vw, 2rem);
+  font-size: 35px;
+  color: $grey600;
+  padding-top: 4rem;
+  padding-bottom: 30px;
+  font-family: $primary-font;
+  font-weight: $font-weight600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+
+  @media only screen and (min-width: $breakpoint-xl-1406) {
+    font-size: 36px;
+    font-weight: 600;
+  }
+
+  @media only screen and (max-width: $breakpoint-md-767) {
+    font-size: 32px;
+    font-weight: 600;
+  }
+}
+
+.img_desktop_title_wrapper {
+  // position: absolute;
+  // width: 100%;
+  // bottom: 0;
+  // background: url($blog-shadow) no-repeat 0px -70px transparent !important;
+  // // background: url($blog-shadow) 0px -70px transparent !important;
+  // // background-repeat: repeat-x !important;
+  // background-color: transparent !important;
+  // border-bottom-left-radius: 5px;
+  // border-bottom-right-radius: 5px;
+  // object-fit: contain;
+
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background: url(https://cdn-gcp.new.marutitech.com/blog_shadow3_897acf958b.png) no-repeat 0px -70px transparent !important;
+  background-color: transparent !important;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.img_desktop_title {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.888888888888889vw;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+  padding-bottom: 2.351351vw;
+  padding-left: 1.209103840682788vw;
+  padding-right: 0.6401137980085349vw;
+  padding-top: 3.422475vw;
+  /*1.422475106685633VW*/
+
+  @media only screen and (min-width: 1406px) {
+    font-size: 18px;
+    padding-bottom: 19px;
+    padding-left: 17px;
+    padding-right: 9px;
+    padding-top: 20px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    font-size: 18px;
+    padding-bottom: 19px;
+    padding-bottom: 0.351351vw;
+  }
+
+  @media only screen and (max-width: 768px) {
+    font-size: 12px;
+    padding-bottom: 2.351351vw;
+    padding-left: 1.209103840682788vw;
+    padding-right: 0.6401137980085349vw;
+    padding-top: 3.422475vw;
+  }
+}
+
+.sliderWrapper {
+  position: relative;
+  display: flex;
+}
+
+// .case_study_card {
+//   width: 38.904694167852064vw;
+//   height: 21.906116642958747vw;
+//   margin-right: 2.204836415362731vw !important; /*2.4893314366998576VW*/
+//   margin-left: 0.21337126600284498vw;
+//   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.16);
+//   // background-color: #ffffff;
+//   cursor: pointer;
+//   position: relative;
+//   border-radius: 10px;
+// }
+.twoSliderImage {
+  cursor: pointer !important;
+}

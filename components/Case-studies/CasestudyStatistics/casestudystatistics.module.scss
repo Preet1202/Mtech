@@ -1,0 +1,109 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/breakpoints.scss";
+
+.statistics_single_item {
+  span {
+    font-family: $font-family-poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 105px;
+    color: $brand-color1;
+  }
+  h4 {
+    font-family: $font-family-raleway;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: $black1;
+    margin: 0;
+    max-width: 200px;
+  }
+  @media screen and (max-width: $breakpoint-md) {
+    flex: 0 1 100% !important;
+    // gap: 60px !important;
+  }
+}
+.inner_container {
+  @media screen and (max-width: $breakpoint-md) {
+    flex-wrap: wrap;
+    gap: 60px !important;
+  }
+}
+
+// two row with 2 items per row
+.two_row_with2 {
+  .inner_container {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .statistics_single_item {
+    flex: 0 1 33%;
+
+    @media screen and (max-width: $breakpoint-xl) {
+      flex: 0 1 40%;
+    }
+
+    @media screen and (max-width: $breakpoint-lg) {
+      flex: 0 1 48%;
+    }
+  }
+}
+
+// two row with 3 items in 1 and 2 items in 2 row
+.two_row_with3 {
+  .inner_container {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .statistics_single_item {
+    flex: 0 1 28%;
+
+    @media screen and (max-width: $breakpoint-xl) {
+      flex: 0 1 32%;
+    }
+    @media screen and (max-width: $breakpoint-lg) {
+      flex: 0 1 32%;
+    }
+  }
+}
+
+// Alignment css
+.align_right {
+  .inner_container {
+    justify-content: flex-end;
+  }
+  .statistics_single_item {
+    align-items: flex-end;
+    text-align: right;
+  }
+}
+
+.align_center {
+  .inner_container {
+    justify-content: center;
+  }
+  .statistics_single_item {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+// BG color css
+.violet_bg,
+.orange_bg {
+  span,
+  h4 {
+    color: $white100;
+  }
+}
+
+.yellow_bg {
+  h4 {
+    color: $black1;
+  }
+  span {
+    color: $brand-color4;
+  }
+}

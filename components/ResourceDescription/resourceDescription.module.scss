@@ -1,0 +1,220 @@
+@import "../../styles/breakpoints.scss";
+@import "../../styles/variables.scss";
+.resource_desc_container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  @media only screen and (max-width: $breakpoint-md-767) {
+    padding: 0 10px;
+  }
+}
+.reviewTitle {
+  font-family: $primary-font;
+  font-size: 2.5604551920341394vw;
+  font-weight: $font-weight600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: $grey600;
+  padding-bottom: 1.422475106685633vw;
+  @media only screen and (min-width: $breakpoint-xl-1406) {
+    font-size: 36px;
+    padding-bottom: 20px;
+  }
+  @media only screen and (max-width: $breakpoint-md-767) {
+    font-size: 4.5604551920341394vw;
+    padding-top: 1.5rem;
+    padding-bottom: 2.422475106685633vw;
+  }
+  @media only screen and (max-width: $breakpoint-sm-450) {
+    font-family: $primary-font, sans-serif;
+    font-size: 20px;
+    font-weight: $font-weight600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: grey600;
+  }
+}
+.text_block {
+  clear: both;
+  line-height: 1.65em;
+}
+.text_block_para {
+  p {
+    font-family: $secondary-font;
+    font-size: 1.1379800853485065vw;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.31;
+    letter-spacing: normal;
+    color: $primary-color-black;
+    margin: 0;
+
+    a {
+      color: $brand-color1;
+      text-decoration: none;
+    }
+    @media only screen and (min-width: $breakpoint-xl-1406) {
+      font-size: 16px;
+    }
+    @media only screen and (max-width: $breakpoint-md-767) {
+      font-family: $secondary-font, sans-serif;
+      font-size: 20px;
+      font-weight: $font-weight500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.75;
+      letter-spacing: normal;
+      color: $grey600;
+    }
+    @media only screen and (max-width: $breakpoint-sm-450) {
+      font-family: $secondary-font, sans-serif;
+      font-size: 4.444444444444445vw;
+      font-weight: $font-weight500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.75;
+      letter-spacing: normal;
+      color: $grey600;
+    }
+  }
+  h3 {
+    font-size: 2.5604551920341394vw;
+    font-weight: 500;
+    font-family: $font-family-poppins;
+    color: #4a4a4a;
+    padding-bottom: 20px;
+    margin-bottom: 8px;
+    strong {
+      font-weight: 600 !important;
+    }
+    @media only screen and (min-width: $breakpoint-xl-1406) {
+      font-size: 36px;
+    }
+
+    @media only screen and (max-width: $breakpoint-md-767) {
+      font-size: 2.5604551920341394vw;
+    }
+
+    @media only screen and (max-width: $breakpoint-sm-450) {
+      font-size: 20px;
+    }
+  }
+  ul {
+    font-family: $secondary-font;
+    font-size: 0.9246088193456615vw;
+    line-height: 1.5em;
+    margin: 0.35561877667140823vw 0 1.0668563300142246vw 2rem;
+    padding: 0;
+    @media only screen and (min-width: $breakpoint-xl-1406) {
+      font-size: 13px;
+      line-height: 1.5em;
+      margin: 5px 0 15px 2rem;
+      padding: 0;
+    }
+
+    @media only screen and (max-width: $breakpoint-md-767) {
+      font-family: $secondary-font;
+      line-height: 1.5em;
+      padding: 0;
+      font-size: 16.25px;
+      margin: 6.25px 0 18.75px 2rem;
+    }
+
+    @media only screen and (max-width: $breakpoint-sm-450) {
+      font-family: $secondary-font;
+      line-height: 1.5em;
+      padding: 0;
+      font-size: 3.6111111111111107vw;
+      margin: 1.3888888888888888vw 0 4.166666666666666vw 2rem;
+    }
+    li:before {
+      content: "•";
+      display: inline-block;
+      color: black;
+      list-style: none;
+      font-size: 40px;
+      margin-left: -1em;
+      padding-right: 8px;
+      position: absolute;
+      top: -26px;
+      font-weight: bold;
+      width: 0.5em;
+      @media only screen and (max-width: 992px) {
+        position: absolute;
+        top: -28px;
+      }
+      @media only screen and (max-width: $breakpoint-md-767) {
+        position: absolute;
+        top: -20px;
+      }
+      @media only screen and (max-width: 350px) {
+        position: absolute;
+        top: -24px;
+      }
+    }
+    li {
+      color: $grey600;
+      font-family: $font-family-raleway;
+      font-size: 1.1379800853485065vw;
+      line-height: 2;
+      display: flex;
+      align-items: center;
+      margin-left: 2.5rem;
+      position: relative;
+
+      @media only screen and (min-width: $breakpoint-xl-1406) {
+        font-size: 16px;
+        line-height: 2;
+      }
+
+      @media only screen and (max-width: $breakpoint-md-767) {
+        line-height: 2;
+        font-size: 20px;
+        font-weight: $font-weight500;
+      }
+
+      @media only screen and (max-width: $breakpoint-sm-450) {
+        font-size: 4.444444444444445vw;
+      }
+    }
+  }
+  ol {
+    padding-left: 75px;
+    li {
+      font-family: $secondary-font;
+      font-size: 1.1379800853485065vw;
+      font-weight: $font-weight600;
+      line-height: 3.31;
+      margin-left: 1em;
+      padding: 3px 0;
+      font-style: normal;
+
+      @media only screen and (min-width: $breakpoint-xl-1406) {
+        font-size: 16px;
+        line-height: 1.5em;
+        margin: 5px 0 15px;
+        font-weight: $font-weight600;
+      }
+
+      @media only screen and (max-width: $breakpoint-md-767) {
+        font-family: $secondary-font;
+        line-height: 1.75;
+        font-size: 16.25px;
+        margin: 6.25px 0 18.75px;
+        font-weight: $font-weight500;
+      }
+
+      @media only screen and (max-width: $breakpoint-sm-450) {
+        font-family: $secondary-font;
+        line-height: 1.75;
+        font-size: 3.6111111111111107vw;
+        margin: 1.3888888888888888vw 0 4.166666666666666vw;
+        font-weight: $font-weight500;
+      }
+    }
+  }
+}

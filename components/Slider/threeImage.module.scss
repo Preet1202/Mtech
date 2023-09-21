@@ -1,0 +1,435 @@
+@import "../../styles/variables.scss";
+@import "../../styles/breakpoints.scss";
+
+.imageBox {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.threerow {
+  margin: 0;
+}
+
+.red_container {
+  background-color: $brand-color1 !important;
+}
+
+.threeimageslider__title {
+  font-family: $primary-font, sans-serif;
+  font-size: clamp(20.2401px, 2.6vw, 36px);
+  font-weight: $font-weight600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: $primary-color-black;
+  padding-top: 80px;
+  padding-bottom: 20px;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+
+  @media only screen and (max-width: $breakpoint-sm) {
+    padding-top: 20px;
+  }
+}
+
+.red_threeimageslider__title {
+  font-family: $primary-font, sans-serif;
+  // font-size: clamp(20px, 7vw, 36px);
+  font-weight: $font-weight600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #fff;
+  padding-top: 80px;
+  padding-bottom: 20px;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  font-size: clamp(20.2401px, 2.6vw, 36px) !important;
+
+  @media only screen and (max-width: $breakpoint-xl) {
+    padding-bottom: 10px;
+    padding-top: 50px;
+  }
+
+  @media only screen and (max-width: $breakpoint-lg) {
+    padding-bottom: 10px;
+  }
+
+  @media screen and (max-width: 767px) {
+    font-size: clamp(8px, 7.6vw, 35px) !important;
+    padding-bottom: 0px;
+    padding-top: 30px;
+  }
+
+  @media only screen and (max-width: $breakpoint-sm) {
+    padding-top: 20px;
+  }
+
+  @media only screen and (max-width: 195px) {
+    font-size: clamp(0.1rem, 7vw, 15.1667px) !important;
+  }
+}
+
+.threeimageslider__desc {
+  font-family: $secondary-font, sans-serif;
+  font-size: clamp(8.99651px, 1.1vw, 16px);
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+
+  line-height: 1.69;
+  letter-spacing: normal;
+  color: $primary-color-black;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 46px;
+  text-align: left;
+
+  @media only screen and (max-width: $breakpoint-md) {
+    padding: 0px 20px;
+  }
+
+  @media only screen and (max-width: $breakpoint-lg) {
+    padding: 0px 20px;
+    padding-bottom: 16px;
+  }
+}
+
+.red_threeimageslider__desc {
+  // font-size: clamp(10px, 4vw, 18px);
+  font-family: $secondary-font, sans-serif;
+  // font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  font-weight: $font-weight500;
+  line-height: 1.69;
+  letter-spacing: normal;
+  color: $white100;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 46px;
+  text-align: left;
+  font-size: clamp(8.99651px, 1.1vw, 16px) !important;
+
+  @media only screen and (max-width: $breakpoint-lg) {
+    padding: 0px 40px;
+    padding-bottom: 35px;
+  }
+
+  @media screen and (max-width: 767px) {
+    // font-size: 34px !important;
+    font-size: 17.5px !important;
+    padding: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 450px) {
+    // font-size: 34px !important;
+    font-size: clamp(1.94px, 3.9vw, 17.5px) !important;
+  }
+}
+
+.threeimageslider {
+  .slick-dots {
+    @media only screen and (max-width: $breakpoint-sm) {
+      position: absolute;
+      bottom: none !important;
+    }
+  }
+}
+
+.testimonial__text {
+  padding: 3.8rem 0rem;
+  background: #262531;
+  background-image: url(https://cdn-gcp.new.marutitech.com/Rectangle_41932cd700.png),
+    url(https://cdn-gcp.new.marutitech.com/background/ai-plant.svg);
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
+  padding-bottom: 6rem;
+}
+
+.testimonial__title {
+  font-family: $font-family-poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 54px;
+  padding-bottom: 24px;
+  text-align: center;
+
+  @media only screen and (max-width: $breakpoint-md) {
+    padding-top: 1rem;
+  }
+
+  @media only screen and (max-width: $breakpoint-sm-450) {
+    font-size: 7.777777777777778vw;
+    font-weight: 600;
+  }
+}
+
+.testimonial__redviolet {
+  padding: 3.8rem 0rem;
+  background: #262531;
+  background: linear-gradient(165deg, $orange 47%, #262531 34%);
+}
+
+.testimonial__whiteviolet {
+  padding: 3.8rem 0rem;
+  background: #262531;
+  background: linear-gradient(165deg, $white100 47%, #262531 34%);
+}
+
+.testimonial__text__slider__div {
+  display: flex;
+  max-width: 900px;
+  margin: 0 auto;
+
+  @media only screen and (max-width: $breakpoint-lg) {
+    max-width: 82vw;
+  }
+}
+
+.text__slider__img {
+  div {
+    img {
+      border-radius: 10px 0px 0px 10px;
+    }
+  }
+}
+
+.slider__text {
+  max-width: 650px;
+  height: 350px;
+  padding: 2rem;
+  background: #fafafa;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 0px 10px 10px 0px;
+
+  font-family: $font-family-raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: clamp(14px, 1.5vw, 20px);
+  line-height: 25px;
+  text-align: justify;
+  color: $black1;
+
+  h4 {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+
+    span {
+      display: block;
+      padding-top: 2rem;
+      font-size: 24px;
+      font-family: $font-family-raleway;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 35px;
+      color: $primary-color-black;
+    }
+  }
+
+  @media only screen and (max-width: $breakpoint-md-850) {
+    // margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+.sm__text {
+  max-width: 500px;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: $breakpoint-md) {
+  .text__slider__img__sm {
+    position: relative;
+    height: 400px;
+    width: 292px;
+
+    div {
+      img {
+        border-radius: 10px 10px 0px 0px !important;
+      }
+    }
+  }
+
+  .slider__text__sm {
+    height: auto;
+    width: 286px;
+    background: #fafafa;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+
+    font-family: $font-family-raleway;
+    font-style: normal;
+    font-weight: 600;
+    font-size: clamp(14px, 1.5vw, 20px);
+    line-height: 25px;
+    color: $black1;
+    padding: 10px;
+    border-radius: 0px 0px 10px 10px;
+
+    h4 {
+      display: flex;
+      align-items: baseline;
+      gap: 2px;
+      flex-wrap: wrap;
+
+      span {
+        display: block;
+        padding-top: 2rem;
+        font-size: 24px;
+        font-family: $font-family-raleway;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 35px;
+        color: $primary-color-black;
+      }
+    }
+  }
+}
+
+.clutch__violet {
+  padding: 5rem 0rem;
+  background: #262531;
+
+  @media only screen and (max-width: $breakpoint-md) {
+    padding: 0px 16px 60px 16px;
+  }
+}
+
+.clutch__white {
+  padding: 5rem 0rem;
+  background: $white100;
+
+  // background: $orange;
+  @media only screen and (max-width: $breakpoint-md) {
+    padding: 60px 16px 60px 16px;
+  }
+}
+
+.clutch__title {
+  font-family: $font-family-poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.5604551920341394vw;
+  line-height: 44px;
+  text-align: center;
+  margin-bottom: 50px;
+
+  @media only screen and (min-width: $breakpoint-xl-1406) {
+    font-size: 36px;
+  }
+
+  @media only screen and (max-width: $breakpoint-md) {
+    font-size: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 0px;
+    line-height: 36px;
+  }
+
+  @media only screen and (max-width: $breakpoint-sm-450) {
+    font-weight: 600;
+
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80vw;
+    line-height: 36px;
+  }
+}
+
+.clutch__desc {
+  font-family: $font-family-raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: clamp(8.99651px, 3.5vw, 16px) !important;
+  line-height: 24px;
+  color: $white100;
+  padding-bottom: 20px;
+
+  @media only screen and (max-width: $breakpoint-md) {
+    padding: 0px 10px 20px 10px;
+  }
+}
+
+// css for clutch widget
+
+.clutchimg__div {
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+
+  @media only screen and (max-width: $breakpoint-sm) {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+.clutchimg__div__threeimage {
+  position: relative;
+  height: 505px;
+  width: 490px;
+
+  div {
+    img {
+      border-radius: 10px;
+    }
+  }
+
+  @media screen and (max-width: $breakpoint-md) {
+    max-width: 26em;
+    margin: 0 auto;
+    padding: 10px;
+    height: 450px;
+  }
+
+  @media screen and (max-width: $breakpoint-sm) {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  @media screen and (max-width: $breakpoint-sm-480) {
+    max-width: 360px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  @media screen and (max-width: $breakpoint-sm-350) {
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 10px;
+    height: 400px;
+  }
+
+  @media screen and (max-width: $breakpoint-sm-350) {
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 10px;
+    height: 400px;
+  }
+}
+
+.clutch__images {
+  width: 966px;
+  margin: 0 auto;
+  height: 704px;
+
+  background: #d9d9d9;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+
+  @media only screen and (max-width: $breakpoint-md) {
+    height: auto;
+  }
+}

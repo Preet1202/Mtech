@@ -1,0 +1,448 @@
+@import "../../styles/variables.scss";
+@import "../../styles/breakpoints.scss";
+
+.display__row {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.primary_one__row {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 25px;
+}
+
+.title {
+  font-family: $primary-font, sans-serif;
+  font-size: 36px;
+  font-weight: $font-weight600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: $primary-color-black;
+  text-align: center;
+  // margin-top: 80px;
+  // margin-bottom: 20px;
+  padding-bottom: 30px;
+
+  @media only screen and (max-width: $breakpoint-sm) {
+    color: $grey600;
+  }
+
+  @media screen and (max-width: 767px) {
+    font-size: 30px !important;
+  }
+}
+
+.text__title {
+  font-family: $primary-font, sans-serif;
+  font-size: clamp(8px, 7.6vw, 36px);
+  font-weight: $font-weight600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: $primary-color-black;
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 10px;
+
+  @media only screen and (max-width: $breakpoint-sm) {
+    padding-top: 20px;
+    color: $grey600;
+  }
+}
+
+.text__title__clientsuccess {
+  font-family: $primary-font, sans-serif;
+  font-size: clamp(8px, 7.6vw, 36px);
+  font-weight: $font-weight600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: $primary-color-black;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 1.422475106685633vw;
+
+  @media only screen and (min-width: 1406px) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  @media only screen and (max-width: 767px) {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  @media only screen and (max-width: $breakpoint-sm) {
+    color: $grey600;
+  }
+
+  @media only screen and (max-width: $breakpoint-sm-450) {
+    // padding-top: 11.11111111111111vw;
+    padding-bottom: 2.7777777777777777vw;
+  }
+}
+
+.description {
+  font-family: $secondary-font, sans-serif;
+  font-size: clamp(2px, 3vw, 16px);
+  font-weight: $font-weight500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.69;
+  letter-spacing: normal;
+  color: $brand-color4;
+  padding-bottom: 40px;
+  padding-top: 20px;
+  max-width: 985px;
+  margin: 0 auto;
+
+  @media only screen and (max-width: $breakpoint-md) {
+    padding: 1.2em 1.2em;
+    text-align: center;
+    color: $grey600;
+  }
+
+  @media only screen and (max-width: $breakpoint-sm-450) {
+    font-size: 14px;
+  }
+}
+
+.description__clientsuccess {
+  font-family: $secondary-font, sans-serif;
+  font-size: clamp(2px, 3.9vw, 16px);
+  font-weight: $font-weight500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.69;
+  letter-spacing: normal;
+  color: $grey800;
+  padding-top: 20px;
+  max-width: 985px;
+  margin: 0 auto;
+  // padding-right: 8.677098150782362vw;
+  padding-right: 4.267425320056899vw;
+  padding-left: 4.267425320056899vw;
+  padding-bottom: 5.689900426742532vw;
+
+  @media only screen and (min-width: 1406px) {
+    // padding-right: 122px;
+    padding-right: 60px;
+    padding-left: 60px;
+    padding-bottom: 80px;
+  }
+
+  @media only screen and (max-width: 767px) {
+    padding-right: 21.25px;
+    padding-left: 21.25px;
+    padding-bottom: 62.25px;
+    text-align: center;
+    color: $grey600;
+  }
+
+  @media only screen and (max-width: $breakpoint-sm-450) {
+    padding-right: 4.722222222222222vw;
+    padding-left: 4.722222222222222vw;
+    padding-bottom: 13.88888888888889vw;
+  }
+}
+
+.display__image {
+  margin: 0 auto;
+}
+
+.primary_one_description {
+  font-family: $secondary-font, sans-serif;
+  // font-size: clamp(10px, 2vw, 16px);
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.69;
+  letter-spacing: normal;
+  color: $primary-color-black;
+  padding-bottom: 60px;
+  padding-top: 20px;
+  max-width: 985px;
+  margin: 0 auto;
+  font-size: clamp(8.99651px, 1.1vw, 16px) !important;
+
+  @media only screen and (max-width: $breakpoint-md) {
+    text-align: center;
+    padding: 1.2em 16px;
+  }
+
+  @media screen and (max-width: 767px) {
+    // font-size: 34px !important;
+    font-size: 17.5px !important;
+  }
+
+  @media screen and (max-width: 450px) {
+    // font-size: 34px !important;
+    font-size: clamp(1.94px, 3.9vw, 17.5px) !important;
+  }
+}
+
+.display__white__singleimage__background {
+  background-image: url(https://cdn-gcp.new.marutitech.com/rightside_leaf_fdc6bd9af0.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+.display__violet__background {
+  background-image: url(https://cdn-gcp.new.marutitech.com/leafleftside_689bb87842.png),
+    url(https://cdn-gcp.new.marutitech.com/rightside_leaf_fdc6bd9af0.png);
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
+
+  background-color: $brand-color4;
+
+  .display__violettext {
+    font-family: $font-family-raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 35px;
+    color: $white100;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: auto;
+    padding-bottom: 80px;
+
+    padding-left: 16px;
+    padding-right: 16px;
+
+    @media screen and (max-width: $breakpoint-md) {
+      height: auto;
+    }
+  }
+}
+
+.display__white__background {
+  background-image: url(https://cdn-gcp.new.marutitech.com/leafleftside_689bb87842.png),
+    url(https://cdn-gcp.new.marutitech.com/rightside_leaf_fdc6bd9af0.png);
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
+
+  background-color: $white100;
+
+  .display__whitetext {
+    font-family: $font-family-raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 35px;
+    color: #383838;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: auto;
+    padding-bottom: 80px;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    @media screen and (max-width: $breakpoint-md) {
+      height: auto;
+    }
+  }
+}
+
+//careers page banner
+.text__center__title {
+  font-family: $primary-font, sans-serif;
+  font-size: clamp(17px, 2.27vw, 32px);
+  font-weight: $font-weight600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: $grey600;
+  text-align: center;
+  padding-top: clamp(10px, 1.42vw, 20px);
+  padding-bottom: clamp(10px, 1.42vw, 20px);
+  margin-bottom: 14px;
+  max-width: 74vw;
+  margin: 0 auto;
+
+  // padding-top: 80px;
+  @media only screen and (max-width: $breakpoint-sm) {
+    max-width: 74vw;
+    margin: 0 auto;
+  }
+
+  @media only screen and (max-width: $breakpoint-sm) {
+    padding: 10px;
+    padding-top: 20px;
+  }
+
+  @media only screen and (max-width: $breakpoint-md-767) {
+    text-align: left;
+    padding: 20px 0px;
+    font-size: clamp(17px, 5.56vw, 25px);
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+
+.text__center__description {
+  font-family: $secondary-font, sans-serif;
+  font-size: clamp(14px, 2vw, 16px);
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.69;
+  letter-spacing: normal;
+  color: $primary-color-black;
+  max-width: 70vw;
+  margin: 0 auto;
+  padding: 0px 20px;
+  // font-size: clamp(8.99651px, 1.1vw, 16px) !important; font size changed for ticket 204.
+  font-size: clamp(8px, 1.1vw, 16px) !important;
+  margin-top: clamp(7px, 0.96vw, 13.6px) !important;
+  margin-bottom: clamp(7px, 0.96vw, 13.6px) !important;
+
+  @media screen and (max-width: $breakpoint-md-767) {
+    // font-size: 34px !important;
+    font-size: 17.5px !important;
+    padding: 0px;
+    margin-top: clamp(7px, 3.3vw, 14.875px) !important;
+    margin-bottom: clamp(7px, 3.3vw, 14.875px) !important;
+  }
+
+  @media screen and (max-width: $breakpoint-sm-450) {
+    // font-size: 34px !important;
+    font-size: clamp(1.94px, 3.9vw, 17.5px) !important;
+  }
+
+  @media screen and (max-width: $breakpoint-md) {
+    max-width: 70vw;
+    margin: 0 auto;
+    padding: 0px 0px;
+  }
+
+  @media screen and (max-width: $breakpoint-sm) {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+
+.display__primary_text_center {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  @media only screen and (max-width: $breakpoint-md-767) {
+    padding: 50px 20px;
+  }
+}
+
+.display__primary_one {
+  padding-top: 50px;
+}
+
+.title__primary_one {
+  font-family: $primary-font, sans-serif;
+  font-size: 36px;
+  font-weight: $font-weight600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: $primary-color-black;
+  text-align: center;
+  margin-top: 75px;
+  margin-bottom: 20px;
+
+  @media only screen and (max-width: $breakpoint-xl-1406) {
+    margin-top: clamp(40px, 5.33vw, 75px) !important;
+  }
+
+  @media only screen and (max-width: $breakpoint-sm) {
+    color: $grey600;
+    font-size: clamp(20.2401px, 2.6vw, 36px) !important;
+  }
+
+  @media screen and (max-width: 767px) {
+    font-size: clamp(8px, 7.6vw, 35px) !important;
+  }
+
+  @media only screen and (max-width: 195px) {
+    font-size: clamp(0.1rem, 7vw, 15.1667px) !important;
+  }
+}
+
+.onlytext__title {
+  font-family: $font-family-poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: clamp(26px, 6vw, 36px);
+  line-height: 46px;
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  padding-top: 100px;
+
+  @media screen and (max-width: $breakpoint-sm) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  @media screen and (max-width: $breakpoint-sm-450) {
+    text-align: left;
+    padding: 60px 16px 0px 16px;
+  }
+}
+
+.onlytext__desc {
+  font-family: $font-family-raleway;
+  max-width: 964px;
+  margin: 0 auto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+
+  @media screen and (max-width: $breakpoint-sm) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  @media screen and (max-width: $breakpoint-sm-450) {
+    text-align: left;
+    padding: 0px 16px 0px 16px;
+  }
+}
+
+.for_casestudy {
+  padding: 0 16px;
+  .title {
+    font-size: 36px;
+    line-height: 44px;
+    color: $brand-color4;
+  }
+  .description {
+    font-size: 16px;
+    line-height: 28px;
+    color: $brand-color4;
+    padding: 0;
+    padding-bottom: 50px;
+    max-width: 100%;
+    p:last-child {
+      margin: 0;
+    }
+  }
+  @media only screen and (max-width: $breakpoint-md) {
+    .title {
+      text-align: left;
+      font-size: 30px;
+      line-height: 36px;
+      text-align: center;
+    }
+    .description {
+      padding-bottom: 30px;
+      text-align: left;
+    }
+  }
+}

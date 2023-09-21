@@ -1,0 +1,106 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/breakpoints.scss";
+
+.main_container {
+  background-size: cover !important;
+  @media screen and (max-width: $breakpoint-md) {
+    padding: 0px 16px;
+    min-height: 611px;
+    display: flex;
+    align-items: end;
+  }
+}
+
+.inner_container {
+  justify-content: center;
+}
+
+.top_label {
+  background: $yellow2;
+  border-radius: 3px;
+  padding: 5px;
+  color: $brand-color4;
+  font-family: $font-family-raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.section_items {
+  @media screen and (max-width: $breakpoint-md) {
+    gap: 30px;
+  }
+}
+
+.section_top {
+  h1 {
+    font-family: $font-family-poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 68px;
+    color: $white100;
+    margin: 0px;
+    @media screen and (max-width: $breakpoint-md) {
+      font-size: 30px;
+      line-height: 36px;
+    }
+  }
+  @media screen and (max-width: $breakpoint-md) {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.banner_button {
+  button {
+    margin-top: 0px;
+  }
+}
+
+.single_item {
+  h2 {
+    font-family: $font-family-poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    color: $white100;
+    margin: 0px;
+  }
+}
+
+.single_box {
+  background: $white100;
+  border-radius: 10px;
+  padding: 10px;
+  font-family: $font-family-raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.statistics_single_item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  span {
+    font-family: $font-family-poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 105px;
+    color: $yellow2;
+  }
+  h4 {
+    font-family: $font-family-raleway;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: $white100;
+  }
+}

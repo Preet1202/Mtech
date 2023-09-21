@@ -1,0 +1,185 @@
+@import "../../styles/variables.scss";
+@import "../../styles/breakpoints.scss";
+@import "../../styles/mixins.scss";
+
+.inaction__container__fluid {
+  background-image: url(https://cdn-gcp.new.marutitech.com/contact_right_leaf_b57ecad8b2.png);
+  background-attachment: scroll;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+
+.inaction__container {
+  .inaction__container__title {
+    text-align: center;
+    font-size: clamp(19.6643px, 2.56vw, 36px) !important;
+    font-weight: $font-weight600;
+    font-family: $primary-font;
+    color: $white100;
+    padding-top: clamp(43.698px, 5.69vw, 80px);
+  }
+
+  .inaction__container__desc {
+    font-size: clamp(8.73969px, 1.138vw, 16px) !important;
+    font-family: $secondary-font, sans-serif;
+    @include descFonts();
+    font-weight: $font-weight500 !important;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.69 !important;
+    letter-spacing: normal;
+    color: $white100;
+    padding-top: clamp(10.925px, 1.4225vw, 20px);
+    padding-right: clamp(65.548px, 8.534vw, 120px);
+    padding-bottom: clamp(57.354px, 7.468vw, 105px);
+    padding-left: clamp(65.548px, 8.534vw, 120px);
+  }
+}
+
+.inaction__container__row {
+  margin: 0 auto;
+  max-width: clamp(698px, 93.1vw, 1240px);
+  padding-bottom: clamp(109.246px, 14.2248vw, 200px);
+  display: flex !important;
+  justify-content: space-between;
+}
+
+.actions_background {
+  margin: 0 auto;
+  object-fit: contain;
+  border-radius: 3px;
+  display: block;
+  position: relative;
+  text-align: center;
+  background-color: $action_image_background;
+  height: clamp(103.781px, 13.515vw, 190px) !important;
+  width: clamp(98.313px, 12.8vw, 180px) !important;
+}
+
+.actionTitle {
+  margin: 16px auto 0px auto !important;
+  font-size: clamp(8.73969px, 1.138vw, 16px) !important;
+  width: clamp(98.313px, 12.8vw, 180px) !important;
+  height: 46px;
+  text-align: center;
+  color: $white100;
+  font-family: $secondary-font, sans-serif;
+  font-weight: $font-weight600;
+}
+
+.arrowRight {
+  width: clamp(28.156px, 4.34vw, 61px) !important;
+  height: clamp(24.578px, 3.1vw, 45px) !important;
+  margin: calc(clamp(103.781px, 10.5vw, 190px)/2.5) 0 0 0 !important;
+}
+
+.flex_mobile_view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.arrowDown {
+  display: inline-block;
+  transform: rotate(90deg) !important;
+  margin: 25px 0 6.250px 0;
+
+  @media only screen and (max-width: $breakpoint-sm-450) {
+    margin: clamp(4.667px, 5.556vw, 25px) 0 clamp(3.667px, 5.389vw, 18.250px) 0;
+    width: clamp(7.500px, 12.50vw, 56.250px);
+    height: clamp(7.500px, 12.50vw, 56.250px);
+  }
+}
+
+
+
+.inaction__container__mobileView {
+  @media only screen and (max-width: $breakpoint-md) {
+    padding: 0 clamp(8.328px, 7.5vw, 57.531px) !important;
+  }
+
+  .inaction__container__title__mobileView {
+    font-size: 35px;
+    font-weight: $font-weight600;
+    font-family: $primary-font;
+    color: $white100;
+    padding-top: 62.500px;
+
+    @media only screen and (max-width: $breakpoint-md) {
+      padding-top: 62.500px;
+    }
+
+    @media only screen and (max-width: $breakpoint-sm-450) {
+      padding-top: clamp(7.500px, 13.88vw, 62.500px);
+    }
+
+    @media screen and (max-width: $breakpoint-sm-450) {
+      font-size: clamp(2px, 7.778vw, 35px) !important;
+    }
+
+  }
+
+  .inaction__container__desc__mobileView {
+    font-family: $secondary-font, sans-serif;
+    text-align: left;
+    font-size: 17.5px;
+    @include descFonts();
+    font-weight: $font-weight500 !important;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.69 !important;
+    letter-spacing: normal;
+    color: $white100;
+    padding: 12.5px 6.250px 125px 0;
+
+
+    @media screen and (max-width: $breakpoint-sm-450) {
+      // font-size: 34px !important;
+      font-size: clamp(2px, 3.9vw, 17.5px) !important;
+      padding-top: clamp(1px, 3.17vw, 12.5px);
+      padding-right: clamp(0.5px, 1.39vw, 6.250px);
+      padding-bottom: clamp(1px, 27.78vw, 125px);
+    }
+  }
+}
+
+.flex_mobile_view {
+  padding-bottom: 62.500px;
+
+  @media only screen and (max-width: $breakpoint-sm-450) {
+    padding-bottom: clamp(7px, 13.89vw, 62.500px);
+  }
+}
+
+.actions_background__mobileView {
+  width: clamp(48.016px, 36.11vw, 162.500px);
+  height: clamp(48.016px, 36.11vw, 162.500px);
+  background-color: $action_image_background;
+  object-fit: contain;
+  text-align: center;
+  padding: auto 0;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.actions_img {
+  display: inline-block;
+}
+
+.actionTitle__mobileView {
+  display: block;
+  width: calc(clamp(48.016px, 36.11vw, 162.500px) + 15px);
+  text-align: center;
+  margin: 0px auto;
+  padding-top: 12.500px;
+  color: $white100;
+  font-family: $secondary-font, sans-serif;
+  font-size: 20px;
+  font-weight: $font-weight600;
+
+  @media screen and (max-width: $breakpoint-sm-450) {
+    font-size: clamp(2px, 4.4445vw, 20px) !important;
+    padding-top: clamp(2px, 3.8888vw, 17.500px);
+  }
+}

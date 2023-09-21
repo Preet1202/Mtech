@@ -1,0 +1,105 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/breakpoints.scss";
+
+.inner_container {
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: $breakpoint-md) {
+    padding: 0px 16px;
+  }
+}
+
+.without_clientimg {
+  .testimonial,
+  .testimonial h3,
+  .clientname {
+    font-family: $font-family-poppins;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 35px;
+    text-align: center;
+    color: $brand-color4;
+    margin: 0px;
+
+    p:last-child {
+      margin: 0px;
+    }
+    @media screen and (max-width: $breakpoint-md) {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+}
+
+.with_clientimg {
+  max-width: 800px;
+
+  .imgbox {
+    justify-content: center;
+    align-items: center;
+    min-width: 190px;
+
+    img {
+      border-radius: 50%;
+    }
+
+    h4 {
+      font-family: $font-family-raleway;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 30px;
+      margin: 0;
+      color: $brand-color4;
+    }
+    p {
+      font-family: $font-family-raleway;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      margin: 0;
+      color: $black1;
+
+      @media screen and (max-width: $breakpoint-md) {
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+  }
+  .client_details {
+    align-items: center;
+  }
+
+  .testimonial,
+  .testimonial h3 {
+    font-family: $font-family-raleway;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: $black1;
+    margin: 0px;
+
+    p:last-child {
+      margin: 0px;
+    }
+  }
+  @media screen and (max-width: $breakpoint-md) {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+.violet_bg,
+.orange_bg {
+  .imgbox h4,
+  .imgbox p,
+  .testimonial,
+  .testimonial h3,
+  .clientname {
+    color: $white100;
+  }
+}

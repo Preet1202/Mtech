@@ -1,0 +1,99 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/breakpoints.scss";
+
+.main_container {
+  padding-bottom: 30px;
+  @media screen and (max-width: $breakpoint-md) {
+    padding-bottom: 20px;
+  }
+}
+.inner_container {
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: $breakpoint-md) {
+    padding: 0px 16px;
+    display: grid;
+    gap: 30px;
+  }
+
+  h2 {
+    font-family: $font-family-poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    margin: 0;
+    text-align: center;
+    color: $primary-color-black;
+    @media screen and (max-width: $breakpoint-md) {
+      font-size: 30px;
+      line-height: 36px;
+    }
+  }
+}
+
+.imgbox {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  margin-bottom: 50px;
+  height: 150px;
+  @media screen and (max-width: $breakpoint-md) {
+    margin-bottom: 40px;
+  }
+}
+
+.section_button {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  @media screen and (max-width: $breakpoint-md) {
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+
+  button {
+    margin: 0;
+    width: auto !important;
+    padding: 0 15px !important;
+    &:hover {
+      &::after {
+        top: 350%;
+      }
+    }
+  }
+}
+
+// variant CSS
+.violet_bg,
+.orange_bg {
+  h2,
+  .description {
+    color: $white100;
+  }
+}
+
+.yellow_bg {
+  button {
+    border-color: $brand-color4 !important;
+    &:hover {
+      color: $brand-color4;
+    }
+    &::after {
+      background-color: $brand-color4 !important;
+    }
+  }
+}
+.orange_bg {
+  button {
+    border-color: $white100 !important;
+    color: $brand-color1;
+    &:hover {
+      color: $white100;
+    }
+    &::after {
+      background-color: $white100 !important;
+    }
+  }
+}
