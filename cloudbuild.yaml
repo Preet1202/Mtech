@@ -1,18 +1,10 @@
 steps:
-# This step builds the container image.
-- name: 'gcr.io/cloud-builders/docker'
-  id: Build
-  args:
-  - 'build'
-  - '-t'
-  - 'gcr.io/fair-melody-396111/github.com/preet1202/new-1:v1'
-  - '.'
-
-# This step pushes the image to Artifact Registry
-# The PROJECT_ID and SHORT_SHA variables are automatically
-# replaced by Cloud Build.
-- name: 'gcr.io/cloud-builders/docker'
-  id: Push
-  args:
-  - 'push'
-  - 'gcr.io/fair-melody-396111/github.com/preet1202/new-1:v1'
+  # Docker Build
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'europe-west2-docker.pkg.dev/fair-melody-396111/mtech/my-app:${SHORT_SHA}','.']
+  # Docker push to Google Artifact Registry
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 'europe-west2-docker.pkg.dev/fair-melody-396111/mtech/my-app: +{SHORT_SHA}']
+# Store images in Google Artifact Registry 
+images:
+  - europe-west2-docker.pkg.dev/fair-melody-396111/mtech/my-app:${SHORT_SHA}
