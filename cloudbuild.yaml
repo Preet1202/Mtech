@@ -1,7 +1,7 @@
 steps:
   # Docker Build
-  - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'europe-west2-docker.pkg.dev/fair-melody-396111/mtech/my-app:${SHORT_SHA}', '-f', '.docker/Dockerfile', '.']
+  # - name: 'gcr.io/cloud-builders/docker'
+  #   args: ['build', '-t', 'europe-west2-docker.pkg.dev/fair-melody-396111/mtech/my-app:${SHORT_SHA}', '-f', '.docker/Dockerfile', '.']
   # Docker push to Google Artifact Registry
   - name: 'gcr.io/cloud-builders/docker'
     args: ['push', 'europe-west2-docker.pkg.dev/fair-melody-396111/mtech/my-app: ${SHORT_SHA}']
