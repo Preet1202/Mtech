@@ -1,0 +1,15 @@
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'gcr.io/fair-melody-396111/mtech:$COMMIT_SHA', '.']
+    dir: /workspace/Dockerfile
+
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 'gcr.io/fair-melody-396111/mtech:$COMMIT_SHA']
+
+substitutions:
+  _Dockerfile: '/workspace/Dockerfile'
+  _GitHubRepo: 'github.com/Preet1202/Mtech.git'
+
+images:
+  - 'gcr.io/fair-melody-396111/mtech:$COMMIT_SHA'
+

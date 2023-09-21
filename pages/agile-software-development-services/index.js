@@ -27,6 +27,7 @@ import LibrarySection from "../../components/LibrarySection";
 import SEO from "../../components/SEO";
 import FooterNew from "../../components/FooterNew";
 import OutcomesWeDeliver from "../../components/OutcomesWeDeliver";
+import Slider from '../../components/Slider';
 
 const index = (props) => {
   const drawRef = useRef(null);
