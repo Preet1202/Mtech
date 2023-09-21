@@ -1,8 +1,8 @@
 steps:
   - name: 'gcr.io/cloud-builders/gke-deploy
     args:
-	    - run
-	    - --filename=.k8s/deployment.yaml
-	    - --image=europe-west2-docker.pkg.dev/fair-melody-396111/mtech/my-app: ${SHORT_SHA}
-	    - --location=europe-west2-a
-	    - --cluster=cluster-2
+      - run
+      - --filename=.k8s/deployment.yaml
+      - --image=europe-west2-docker.pkg.dev/fair-melody-396111/mtech/my-app: ${SHORT_SHA}
+      - --location=europe-west2-a
+      - --cluster=cluster-2
