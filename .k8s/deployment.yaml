@@ -15,7 +15,7 @@ spec: # Dictionary
     spec:
       containers: # List
         - name: maruti-nextjs-container
-          image: 'europe-west2-docker.pkg.dev/fair-melody-396111/mtech/my-app:b129c47e4c8b'  #<image-name:image-version>
+          image: 'europe-west2-docker.pkg.dev/fair-melody-396111/mtech/my-app/b129c47e4c8b'  #<image-name:image-version>
           ports: 
             - containerPort: 80  
           env:
