@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: #Dictionary
+  name: maruti-nextjs-deployment
+spec: # Dictionary
+  replicas: 2
+  selector:
+    matchLabels:
+      app: maruti-nextjs
+  template:  
+    metadata: # Dictionary
+      name: maruti-nextjs-pod
+      labels: # Dictionary
+        app: maruti-nextjs # Key value pairs
+    spec:
+      containers: # List
+        - name: maruti-nextjs-container
+          image: gcr.io/fair-melody-396111/new:v1  #<image-name:image-version>
+          ports: 
+            - containerPort: 80  
+          env:
+            - name: PORT
+              value: "80"
+          imagePullPolicy: Always
+
+# imagePullSecrets:
+  # - name: regcred

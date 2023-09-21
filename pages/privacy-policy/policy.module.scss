@@ -1,0 +1,177 @@
+@import "../../styles/breakpoints.scss";
+@import "../../styles/variables.scss";
+
+.container {
+  max-width: 1310px;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  clear: both;
+  padding: 0 50px;
+  // @media only screen and (max-width: $breakpoint-md-767) {
+  //   padding: 0px;
+  // }
+
+  // @media only screen and (min-width: $breakpoint-md-767) {
+  //   // padding-left: clamp(51px, 4vw, 94px);
+  //   // padding-right: clamp(51px, 4vw, 94px);
+  //   padding: 0 50px;
+  // }
+
+  @media only screen and (max-width: $breakpoint-sm-450) {
+    padding: 0px 10px;
+  }
+
+  @media only screen and (max-width: $breakpoint-md-767) {
+    // padding-left: clamp(51px, 4vw, 94px);
+    // padding-right: clamp(51px, 4vw, 94px);
+    // margin-left: clamp(3.75px, 8vw, 57.531px) !important;
+    margin-right: clamp(3.75px, 8vw, 57.531px) !important;
+    // padding: 0;
+  }
+
+  @media only screen and (min-width: $breakpoint-xl-1406) {}
+}
+
+.innerContainer {
+  padding: 50px 0;
+
+  @media only screen and (max-width: $breakpoint-sm-450) {
+    padding: 0px 15px;
+  }
+}
+
+// .headDescription {
+//   @media only screen and (min-width: $breakpoint-md-767) {
+//     padding-left: clamp(51px, 1vw, 94px);
+//     padding-right: clamp(51px, 1vw, 94px);
+//   }
+
+//   @media only screen and (min-width: $breakpoint-xl-1406) {
+//     padding: 0 94px;
+//   }
+// }
+
+.heading {
+  font-size: 34px;
+  font-family: Arial, Helvetica, Verdana, sans-serif;
+  text-align: center;
+  font-stretch: 100%;
+  font-style: normal;
+  margin: 0px;
+  color: #222;
+
+  @media only screen and (max-width: $breakpoint-sm-450) {
+    margin-top: 50px;
+  }
+}
+
+// .desc {
+//   font-family: "Raleway, sans-serif";
+// }
+
+.smallHeader {
+  text-align: center;
+  font-family: Arial, Helvetica, Verdana, sans-serif;
+  display: block;
+  margin-bottom: 0px;
+  margin-top: 50px;
+  padding-bottom: 10px;
+  // margin-block-start: 1.33em;
+  // margin-block-end: 1.33em;
+  // margin-inline-start: 0px;
+  // margin-inline-end: 0px;
+  font-size: 18px;
+  line-height: 1.1em;
+  color: #222;
+}
+
+.description {
+  font-family: "Raleway", sans-serif;
+  // font-size: 16px;
+  font-size: clamp(8px, 1.13vw, 16px);
+  margin-top: clamp(7px, 0.959vw, 13.6px);
+  margin-bottom: clamp(7px, 0.959vw, 13.6px);
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.31;
+  letter-spacing: normal;
+  color: #000000;
+
+  a {
+    text-decoration: none;
+  }
+
+  @media only screen and (min-width: $breakpoint-xl-1406) {
+    // font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.31;
+    letter-spacing: normal;
+    color: #000000;
+  }
+
+  @media only screen and (max-width: $breakpoint-md-767) {
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.75;
+    letter-spacing: normal;
+    color: #4a4a4a;
+    margin: 17px 0;
+  }
+
+  @media only screen and (max-width: $breakpoint-sm-450) {
+    font-family: "Raleway", sans-serif;
+    font-size: 4.444444444444445vw !important;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.75;
+    letter-spacing: normal;
+    color: #4a4a4a;
+  }
+}
+
+// .description {
+//   font-family: "Raleway", sans-serif;
+//   font-size: 1.1379800853485065vw;
+//   font-weight: normal;
+//   font-style: normal;
+//   font-stretch: normal;
+//   line-height: 2.31;
+//   letter-spacing: normal;
+//   color: #000000;
+//   @media only screen and (min-width: $breakpoint-xl-1406) {
+//     font-size: 16px;
+//     font-weight: normal;
+//     font-style: normal;
+//     font-stretch: normal;
+//     line-height: 2.31;
+//     letter-spacing: normal;
+//     color: #000000;
+//   }
+//   @media only screen and (max-width: $breakpoint-md-767) {
+//     font-family: "Raleway", sans-serif;
+//     font-size: 20px;
+//     font-weight: 500;
+//     font-style: normal;
+//     font-stretch: normal;
+//     line-height: 1.75;
+//     letter-spacing: normal;
+//     color: #4a4a4a;
+//   }
+//   @media only screen and (max-width: $breakpoint-sm-450) {
+//     font-family: "Raleway", sans-serif;
+//     font-size: 4.444444444444445vw;
+//     font-weight: 500;
+//     font-style: normal;
+//     font-stretch: normal;
+//     line-height: 1.75;
+//     letter-spacing: normal;
+//     color: #4a4a4a;
+//   }
+// }

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="122" height="14" viewBox="0 0 122 14">
+    <g fill="#F05444" fill-rule="evenodd">
+        <path stroke="#F05444" d="M115.454 1.18a.597.597 0 0 0-.856 0 .609.609 0 0 0 0 .853l4.343 4.36H104.61a.605.605 0 1 0 0 1.213h14.332l-4.343 4.353a.619.619 0 0 0 0 .86c.24.241.617.241.856 0l5.372-5.393a.609.609 0 0 0 0-.852l-5.372-5.393z"/>
+        <text font-family="Poppins, sans-serif" font-size="16" font-weight="600" transform="translate(-1 -5)">
+            <tspan x=".428" y="17"></tspan>
+        </text>
+    </g>
+</svg>

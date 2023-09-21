@@ -1,0 +1,89 @@
+// COMMON CSS classes
+@import "../styles/variables.scss";
+@import "../styles/breakpoints.scss";
+
+.flex_col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.flex_row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+// flex item gaps
+.gap_10 {
+  gap: 10px;
+}
+.gap_20 {
+  gap: 20px;
+}
+.gap_30 {
+  gap: 30px;
+}
+.gap_40 {
+  gap: 40px;
+}
+.gap_50 {
+  gap: 50px;
+}
+.gap_60 {
+  gap: 60px;
+}
+.gap_70 {
+  gap: 70px;
+}
+.gap_80 {
+  gap: 80px;
+}
+.gap_100 {
+  gap: 100px;
+}
+
+// padding top bottom
+.pad_tb_80 {
+  padding: 80px 0px;
+  @media screen and (max-width: $breakpoint-md) {
+    padding: 60px 0px;
+  }
+}
+.pad_tb_100 {
+  padding: 100px 0px;
+  @media screen and (max-width: $breakpoint-md) {
+    padding: 60px 0px;
+  }
+}
+
+// variant based class
+.white_bg {
+  background: $white100;
+  color: $primary-color-black;
+}
+
+.violet_bg {
+  background: $brand-color4;
+  color: $white100;
+}
+
+.yellow_bg {
+  background: $yellow2;
+  color: $primary-color-black;
+}
+
+.orange_bg {
+  background: $brand-color1;
+  color: $white100;
+}
+
+.with_plant_bg {
+  background-image: url(https://cdn-gcp.new.marutitech.com/bg_leaf_img_top_91737b5b5d.png),
+    url(https://cdn-gcp.new.marutitech.com/bg_leaf_img_bottom_1056d77c29.png);
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
+
+  @media screen and (max-width: $breakpoint-md) {
+    background-size: 150px;
+  }
+}

@@ -1,0 +1,127 @@
+@import "../../styles/breakpoints.scss";
+@import "../../styles/variables.scss";
+
+.thankyou__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding-top: 153px;
+  padding-bottom: 153px;
+  @media screen and (max-width: $breakpoint-xl-1024) {
+    padding-top: 10vw;
+    padding-bottom: 50px;
+  }
+}
+.thankyou__image {
+  width: 220px;
+  height: 220px;
+  padding: 0px;
+  display: block;
+
+  @media screen and (max-width: $breakpoint-xl-1024) {
+    height: 145px;
+    width: 145px;
+  }
+  @media screen and (max-width: $breakpoint-md) {
+    height: 200px;
+    width: 200px;
+    padding-top: 2.5vw;
+  }
+  @media screen and (max-width: $breakpoint-sm) {
+    height: 36vw;
+    width: 36vw;
+    padding-top: 1.5em;
+  }
+}
+.thankyou__title {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: $primary-font, sans-serif;
+  color: #222222;
+
+  padding-top: 38px;
+  padding-bottom: 20px;
+  h1 {
+    font-size: 32px;
+    letter-spacing: 1px;
+    font-weight: $font-weight600;
+  }
+}
+.thankyou__description {
+  p {
+    font-family: $font-family-raleway;
+    font-size: clamp(10px, 1.5vw, 20px);
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: $grey600;
+    margin-top: 0;
+    margin-bottom: 2px;
+  }
+}
+.thankyou__description__small {
+  font-family: $font-family-raleway;
+  font-size: clamp(12px, 4vw, 18px);
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: $grey600;
+  margin-top: 0;
+  margin-bottom: 2px;
+  display: none;
+}
+
+@media screen and (max-width: $breakpoint-md-767) {
+  .thankyou__description__small {
+    display: block;
+  }
+  .thankyou__description {
+    display: none;
+  }
+}
+.resources_back_link {
+  color: $orange;
+  font-weight: $font-weight600;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+
+  a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+
+    .homepagetext {
+      font-size: clamp(8px, 4.2vw, 16px);
+      color: $orange;
+      font-weight: $font-weight600;
+      font-family: $font-family-poppins;
+    }
+  }
+  .arrow_right {
+    margin-right: 8px;
+    display: flex;
+    transition: all 0.3s;
+  }
+}
+.back_link:hover > .homepagetext {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.back_link:hover > .arrow_right {
+  transform: translate(-3px);
+}
+.arrow {
+  color: $orange;
+  font-size: 18px;
+  font-weight: $font-weight600;
+
+  transition: all 0.3s;
+}

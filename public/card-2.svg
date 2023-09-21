@@ -1,0 +1,18 @@
+<svg class="card-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="168" height="177" viewBox="0 0 168 177">
+    <defs>
+        <rect id="a" width="148" height="157" rx="3"/>
+        <filter id="b" width="124.3%" height="122.9%" x="-12.2%" y="-7.6%" filterUnits="objectBoundingBox">
+            <feOffset dy="6" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="5"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.157976676 0"/>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(10 4)">
+        <mask id="c" fill="#fff">
+            <use xlink:href="#a"/>
+        </mask>
+        <use fill="#000" filter="url(#b)" xlink:href="#a"/>
+        <use class="backgroung-color" fill="#FFF" xlink:href="#a"/>
+        <circle class="shape-color" cx="132" cy="11" r="58" fill="#F05444" mask="url(#c)"/>
+    </g>
+</svg>

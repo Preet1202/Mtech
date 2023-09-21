@@ -1,0 +1,65 @@
+@mixin titleFonts() {
+  @media only screen and (min-width: 1400px) {
+    font-size: 36px;
+    font-weight: 600;
+  }
+  @media only screen and (max-width: 1400px) {
+    font-size: 32.9px;
+    font-weight: 600;
+  }
+  @media only screen and (max-width: 1200px) {
+    font-size: 28px;
+    font-weight: 600;
+  }
+  @media only screen and (max-width: 992px) {
+    font-size: 22.4px;
+    font-weight: 600;
+  }
+  @media only screen and (max-width: 768px) {
+    font-size: 31px;
+    font-weight: 600;
+  }
+  @media only screen and (max-width: 450px) {
+    // font-size: calc((7.777778 * 450) / 100) * 1px;
+    font-size: 7.777777777777778vw;
+    font-weight: 600;
+  }
+}
+@mixin descFonts() {
+  // @media only screen and (min-width: 1400px) {
+  //   font-size: 16px;
+  // }
+  // @media only screen and (max-width: 1400px) {
+  //   font-size: 18px;
+  // }
+  // @media only screen and (max-width: 1200px) {
+  //   font-size: 12px;
+  // }
+  // @media only screen and (max-width: 992px) {
+  //   font-size: 10px;
+  // }
+  // @media only screen and (max-width: 768px) {
+  //   font-size: 17.5px;
+  // }
+
+  @media only screen and (min-width: 1400px) {
+    font-size: 16px;
+  }
+
+  @media only screen and (max-width: 1400px) {
+    font-size: 14.7936px;
+  }
+  @media only screen and (max-width: 1200px) {
+    font-size: 13.9385px;
+  }
+  @media only screen and (max-width: 992px) {
+    font-size: 11.6428px;
+  }
+  @media only screen and (max-width: 767px) {
+    font-size: 17.5px;
+  }
+  @media only screen and (max-width: 450px) {
+    // font-size: calc((3.888888888888889 * 450) / 100) * 1px;
+    font-size: 3.888888888888889vw;
+  }
+}

@@ -1,0 +1,68 @@
+// FONTS
+
+// Google imports
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600%7CRaleway:200,300,400,500,700%7COpen+Sans:600%7CMontserrat");
+
+$primary-font: Poppins;
+$secondary-font: Raleway;
+$font-stack: Helvetica, sans-serif;
+
+$size-primary: 36px;
+$size-secondary: 16px;
+$size-tertiary: 14px;
+
+// Color Variables
+$brand-color1: #f05444;
+$brand-color2: #423f56;
+$brand-color3: #3f3d56;
+
+// background
+$banner-primary: "https://cdn-gcp.new.marutitech.com/background/bannerbackground1.png";
+$blog-shadow: "https://cdn-gcp.new.marutitech.com/background/blogShadow.png";
+$library-banner-1: "https://cdn-gcp.new.marutitech.com/background/libraryBanner1.jpg";
+$library-banner-2: "https://cdn-gcp.new.marutitech.com/background/libraryBanner2.jpg";
+$library-banner-3: "https://cdn-gcp.new.marutitech.com/background/libraryBanner3.jpg";
+$library-banner-4: "https://cdn-gcp.new.marutitech.com/background/libraryBanner4.jpg";
+$library-banner-5: "https://cdn-gcp.new.marutitech.com/background/libraryBanner5.jpg";
+
+//cards and their copies on card component
+$card1: "https://cdn-gcp.new.marutitech.com/background/card-1.svg";
+$card1Copy: "https://cdn-gcp.new.marutitech.com/background/card-1-Copy.svg";
+$card2: "https://cdn-gcp.new.marutitech.com/background/card-2.svg";
+$card2Copy: "https://cdn-gcp.new.marutitech.com/background/card-2-Copy.svg";
+$card3: "https://cdn-gcp.new.marutitech.com/background/card-3.svg";
+$card3Copy: "https://cdn-gcp.new.marutitech.com/background/card-3-Copy.svg";
+$card4: "https://cdn-gcp.new.marutitech.com/background/card-4.svg";
+$card4Copy: "https://cdn-gcp.new.marutitech.com/background/card-4-Copy.svg";
+$redText: "https://cdn-gcp.new.marutitech.com/background/know-more-red-text.svg";
+$redArrow: "https://cdn-gcp.new.marutitech.com/background/know-more-red-arrow.svg";
+$whiteText: "https://cdn-gcp.new.marutitech.com/background/know-more-white-text.svg";
+$whiteArrow: "https://cdn-gcp.new.marutitech.com/background/know-more-white-arrow.svg";
+
+$primary-color-black: #000000;
+$heading-color: #2d2e2d;
+
+$blog-secondary: #383838;
+$brand-color4: #262531;
+
+$white100: #fff;
+$white200: #f3f2f2;
+$white300: #f5f5f5;
+
+$grey100: #c0bfbf;
+$grey200: #999999;
+$grey300: #637178;
+$grey400: #9b9b9b;
+$grey500: #444444;
+$grey600: #4a4a4a;
+$grey700: #5d5f65;
+$grey800: #5f5f5f;
+
+$yellow-border: #e0b13a;
+
+@mixin theme($theme: white) {
+  background: $theme;
+  box-shadow: 0 6px 10px 0 rgb(0 0 0 / 6%);
+  color: #fff;
+}
