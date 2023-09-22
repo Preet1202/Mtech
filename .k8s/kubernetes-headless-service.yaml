@@ -4,7 +4,7 @@ metadata:
   name: myapp1-headless-service
 spec:
   #type: ClusterIP # ClusterIP, # NodePort, # LoadBalancer, # ExternalName
-  clusterIP: None
+  clusterIP: 172.16.0.2
   selector:
     app: myapp1
   ports: 
