@@ -19,3 +19,5 @@ steps:
   - 'CLOUDSDK_COMPUTE_REGION=europe-west2'
   - 'CLOUDSDK_COMPUTE_ZONE=europe-west2-a'  
   - 'CLOUDSDK_CONTAINER_CLUSTER=cluster-1' # Provide GKE Cluster Name
+options:
+  logging: CLOUD_LOGGING_ONLY
