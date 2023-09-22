@@ -1,8 +1,21 @@
+# steps:
+#   - name: 'gcr.io/cloud-builders/gke-deploy'
+#     args:
+#       - 'run'
+#       - '--filename=.k8s/deployment.yaml'
+#       - '--image=europe-west2-docker.pkg.dev/fair-melody-396111/mtech/my-app:${SHORT_SHA}'
+#       - '--location=europe-west2'
+#       - '--cluster=cluster-1'
 steps:
-  - name: 'gcr.io/cloud-builders/gke-deploy'
-    args:
-      - 'run'
-      - '--filename=.k8s/deployment.yaml'
-      - '--image=europe-west2-docker.pkg.dev/fair-melody-396111/mtech/my-app:${SHORT_SHA}'
-      - '--location=europe-west2'
-      - '--cluster=cluster-1'
+# This step deploys the new version of our container image
+# in the "standard-cluster-private-1" Google Kubernetes Engine cluster.
+- name: 'gcr.io/cloud-builders/kubectl'
+  id: Deploy
+  args:
+  - 'apply'
+  - '-f'
+  - '.k8s/kubernetes.yaml'
+  env:
+  - 'CLOUDSDK_COMPUTE_REGION=europe-west2'
+  #- 'CLOUDSDK_COMPUTE_ZONE=europe-west2-a'  
+  - 'CLOUDSDK_CONTAINER_CLUSTER=cluster-1' # Provide GKE Cluster Name
