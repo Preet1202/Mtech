@@ -3,6 +3,6 @@ steps:
     args:
       - 'run'
       - '--filename=.k8s/deployment.yaml'
-      - '--image=europe-west2-docker.pkg.dev/fair-melody-396111/mtech/my-app:${SHORT_SHA}'
+      - '--image=europe-west2-docker.pkg.dev/fair-melody-396111/mtech/my-app:late'
       - '--location=europe-west2-a'
       - '--cluster=cluster-2'
