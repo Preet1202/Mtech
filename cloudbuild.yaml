@@ -6,6 +6,8 @@
 #       - '--image=europe-west2-docker.pkg.dev/fair-melody-396111/mtech/my-app:${SHORT_SHA}'
 #       - '--location=europe-west2'
 #       - '--cluster=cluster-1'
+options:
+  logging: CLOUD_LOGGING_ONLY
 steps:
 # This step deploys the new version of our container image
 # in the "standard-cluster-private-1" Google Kubernetes Engine cluster.
@@ -19,5 +21,3 @@ steps:
   - 'CLOUDSDK_COMPUTE_REGION=europe-west2'
   - 'CLOUDSDK_COMPUTE_ZONE=europe-west2-a'  
   - 'CLOUDSDK_CONTAINER_CLUSTER=cluster-1' # Provide GKE Cluster Name
-options:
-  logging: CLOUD_LOGGING_ONLY
