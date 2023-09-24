@@ -1,10 +1,10 @@
 steps:
   # Docker Build
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'europe-west2-docker.pkg.dev/fair-melody-396111/mtech/new:cloudbuild_1', '-f', '.docker/Dockerfile', '.']
+    args: ['build', '-t', 'europe-west2-docker.pkg.dev/fair-melody-396111/mtech/new:${SHORT_SHA}', '-f', '.docker/Dockerfile', '.']
   # Docker push to Google Artifact Registry
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'europe-west2-docker.pkg.dev/fair-melody-396111/mtech/new:cloudbuild_1']
+    args: ['push', 'europe-west2-docker.pkg.dev/fair-melody-396111/mtech/new:${SHORT_SHA}']
 #   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
 #     id: 'Authorize Cloud Build'
 #     entrypoint: 'bash'
