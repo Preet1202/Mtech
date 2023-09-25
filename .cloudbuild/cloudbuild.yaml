@@ -40,9 +40,9 @@ steps:
       - -c
       - |
         apt-get install dnsutils -y &&
-        cloudbuild_external_ip=$(dig @resolver4.opendns.com myip.opendns.com +short) &&
-        gcloud container clusters update cluster-1 --region=europe-west2 --master-authorized-networks $cloudbuild_external_ip/32 &&
-        echo "Removed IP $cloudbuild_external_ip from master authorized networks"
+        ip=61.12.85.170 &&
+        gcloud container clusters update cluster-1 --region=europe-west2 --enable-master-authorized-networks --master-authorized-networks $ip/32 
+        
 
 # # Store images in Google Artifact Registry 
 # images:
