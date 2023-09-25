@@ -10,11 +10,14 @@ steps:
     args:
       - -c
       - |
-        git rev-parse --short new
+        branch_or_commit=new  # Replace 'new' with the actual branch or commit hash
+        tag=$(git rev-parse --short "$branch_or_commit")
+        echo "Short tag: $tag"
+
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'europe-west2-docker.pkg.dev/fair-melody-396111/mtech/new:$SHORT_SHA', '-f', '.docker/Dockerfile', '.']
+    args: ['build', '-t', 'europe-west2-docker.pkg.dev/fair-melody-396111/mtech/new:$tag', '-f', '.docker/Dockerfile', '.']
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'europe-west2-docker.pkg.dev/fair-melody-396111/mtech/new:$SHORT_SHA']
+    args: ['push', 'europe-west2-docker.pkg.dev/fair-melody-396111/mtech/new:$tag']
 #   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
 #     id: 'Authorize Cloud Build'
 #     entrypoint: 'bash'
