@@ -23,7 +23,7 @@ steps:
         echo $cloudbuild_external_ip
   - name: 'bash'
     script: |
-      sudo apt-get update && sudo apt-get install sed && sed -i 's@TAG_NAME@'"V1"'@' .k8s/deployment.yaml
+      apt-get update && apt-get install sed && sed -i 's@TAG_NAME@'"V1"'@' .k8s/deployment.yaml
   - name: 'gcr.io/cloud-builders/gke-deploy'
     args:
       - 'run'
