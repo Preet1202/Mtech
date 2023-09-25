@@ -38,8 +38,10 @@ steps:
       - -c
       - |
         apt-get install dnsutils -y &&
-        ip=61.12.85.170 &&
-        gcloud container clusters update cluster-1 --region=europe-west2 --enable-master-authorized-networks 
+        maruti_ip=$(61.12.85.170/32) &&
+        gcloud container clusters update cluster-1 --region=europe-west2 --enable-master-authorized-networks && 
+        gcloud container clusters update cluster-1 --region=europe-west2 --enable-master-authorized-networks --master-authorized-networks $maruti_ip 
+         
         
 
 # # Store images in Google Artifact Registry 
