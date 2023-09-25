@@ -41,7 +41,7 @@ steps:
       - |
         apt-get install dnsutils -y &&
         ip=61.12.85.170 &&
-        gcloud container clusters update cluster-1 --region=europe-west2 --enable-master-authorized-networks --master-authorized-networks $ip/32 
+        gcloud container clusters update cluster-1 --region=europe-west2 --enable-master-authorized-networks 
         
 
 # # Store images in Google Artifact Registry 
