@@ -17,7 +17,7 @@ steps:
       - |
         apt-get install dnsutils -y &&
         cloudbuild_external_ip=$(dig @resolver4.opendns.com myip.opendns.com +short) &&
-        gcloud container clusters update cluster-1 --region=europe-west2 --enable-master-authorized-networks --master-authorized-networks $cloudbuild_external_ip/32 &&
+        gcloud container clusters update cluster-1 --region=europe-west2 --enable-master-authorized-networks --master-authorized-networks=$cloudbuild_external_ip/32,61.12.85.170/32,27.109.3.34/32 &&
         echo $cloudbuild_external_ip 
   - id: 'Setting Nginx Image Tag'
     name: ubuntu
