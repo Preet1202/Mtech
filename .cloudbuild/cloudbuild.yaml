@@ -4,13 +4,13 @@ steps:
     args:
       - -c
       - |
-        t=$(git rev-parse --short main)
-        echo "$t"
+        var=$(git rev-parse --short main)
+        echo "$var"
 
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'europe-west2-docker.pkg.dev/fair-melody-396111/mtech/new:$t', '-f', '.docker/Dockerfile', '.']
+    args: ['build', '-t', 'europe-west2-docker.pkg.dev/fair-melody-396111/mtech/new:$var', '-f', '.docker/Dockerfile', '.']
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'europe-west2-docker.pkg.dev/fair-melody-396111/mtech/new:$t']
+    args: ['push', 'europe-west2-docker.pkg.dev/fair-melody-396111/mtech/new:$var']
 #   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
 #     id: 'Authorize Cloud Build'
 #     entrypoint: 'bash'
