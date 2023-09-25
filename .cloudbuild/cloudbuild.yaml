@@ -34,7 +34,7 @@ steps:
     - '--image=europe-west2-docker.pkg.dev/fair-melody-396111/mtech/new:$tag'
     - '--location=europe-west2'
     - '--cluster=cluster-1'
-- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
     id: 'Remove Authorized IP'
     entrypoint: 'bash'
     args:
