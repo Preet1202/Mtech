@@ -39,7 +39,7 @@ steps:
       - |
         apt-get install dnsutils -y &&
         #maruti_ip=$(61.12.85.170/32) &&
-        gcloud container clusters update cluster-1 --region=europe-west2 --enable-master-authorized-networks --master-authorized-networks=61.12.85.170/32,27.109.3.34 
+        gcloud container clusters update cluster-1 --region=europe-west2 --enable-master-authorized-networks --master-authorized-networks='61.12.85.170/32','27.109.3.32' 
         #gcloud container clusters update cluster-1 --region=europe-west2 --enable-master-authorized-networks --master-authorized-networks $maruti_ip 
          
         
