@@ -30,6 +30,17 @@ steps:
       - '--image=europe-west2-docker.pkg.dev/fair-melody-396111/mtech/new'
       - '--location=europe-west2'
       - '--cluster=cluster-1'
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+    id: 'Remove Authorized IP'
+    entrypoint: 'bash'
+    args:
+      - -c
+      - |
+        apt-get install dnsutils -y &&
+        cloudbuild_external_ip=$(dig @resolver4.opendns.com myip.opendns.com +short) &&
+        gcloud container clusters update cluster-1 --region=europe-west2 --remove-master-authorized-networks $cloudbuild_external_ip/32 &&
+        echo "Removed IP $cloudbuild_external_ip from master authorized networks"
+
 # # Store images in Google Artifact Registry 
 # images:
 #   - europe-west2-docker.pkg.dev/fair-melody-396111/mtech/new
