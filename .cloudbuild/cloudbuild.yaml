@@ -7,10 +7,10 @@ steps:
   #       var=$(git rev-parse --short main)
   #       echo "$var"
 
-  - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'europe-west2-docker.pkg.dev/fair-melody-396111/mtech/new:$SHORT_SHA', '-f', '.docker/Dockerfile', '.']
-  - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'europe-west2-docker.pkg.dev/fair-melody-396111/mtech/new:$SHORT_SHA']
+  # - name: 'gcr.io/cloud-builders/docker'
+  #   args: ['build', '-t', 'europe-west2-docker.pkg.dev/fair-melody-396111/mtech/new:$SHORT_SHA', '-f', '.docker/Dockerfile', '.']
+  # - name: 'gcr.io/cloud-builders/docker'
+  #   args: ['push', 'europe-west2-docker.pkg.dev/fair-melody-396111/mtech/new:$SHORT_SHA']
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
     id: 'Authorize Cloud Build'
     entrypoint: 'bash'
@@ -23,10 +23,10 @@ steps:
         echo $cloudbuild_external_ip
   - name: 'gcr.io/cloud-builders/gke-deploy'
     args:
-      - sed -i 's@TAG@'"$SHORT_SHA"'@' .k8s/deployment.yaml
+      - sed -i 's@TAG@'"V1"'@' .k8s/deployment.yaml
       - 'run'
       - '--filename=.k8s/deployment.yaml'
-      - '--image=europe-west2-docker.pkg.dev/fair-melody-396111/mtech/new:${SHORT_SHA}'
+      - '--image=europe-west2-docker.pkg.dev/fair-melody-396111/mtech/new:$TAG'
       - '--location=europe-west2'
       - '--cluster=cluster-1'
 # Store images in Google Artifact Registry 
