@@ -1,10 +1,16 @@
 steps:
+  # - name: 'gcr.io/cloud-builders/git'
+  #   args:
+  #     - 'rev-parse'
+  #     - '--short'
+  #     - 'new'
+  #   id: get-tag
   - name: 'gcr.io/cloud-builders/git'
+    entrypoint: /bin/bash
     args:
-      - 'rev-parse'
-      - '--short'
-      - 'new'
-    id: get-tag
+      - -c
+      - |
+        git rev-parse --short new
   - name: 'gcr.io/cloud-builders/docker'
     args: ['build', '-t', 'europe-west2-docker.pkg.dev/fair-melody-396111/mtech/new:$SHORT_SHA', '-f', '.docker/Dockerfile', '.']
   - name: 'gcr.io/cloud-builders/docker'
