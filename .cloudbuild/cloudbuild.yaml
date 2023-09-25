@@ -8,9 +8,9 @@ steps:
         echo $tag
 
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'europe-west2-docker.pkg.dev/fair-melody-396111/mtech/new:$tag', '-f', '.docker/Dockerfile', '.']
+    args: ['build', '-t', 'europe-west2-docker.pkg.dev/fair-melody-396111/mtech/new:${tag}', '-f', '.docker/Dockerfile', '.']
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'europe-west2-docker.pkg.dev/fair-melody-396111/mtech/new:$tag']
+    args: ['push', 'europe-west2-docker.pkg.dev/fair-melody-396111/mtech/new:${tag}']
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
     id: 'Authorize Cloud Build'
     entrypoint: 'bash'
