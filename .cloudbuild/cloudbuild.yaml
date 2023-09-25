@@ -4,13 +4,13 @@ steps:
   #   args:
   #     - -c
   #     - |
-  #       var=$(git rev-parse --short main)
-  #       echo "$var"
+  #       ne=$(git rev-parse --short main)
+  #       echo $ne
 
   # - name: 'gcr.io/cloud-builders/docker'
-  #   args: ['build', '-t', 'europe-west2-docker.pkg.dev/fair-melody-396111/mtech/new:$SHORT_SHA', '-f', '.docker/Dockerfile', '.']
+  #   args: ['build', '-t', 'europe-west2-docker.pkg.dev/fair-melody-396111/mtech/new:$ne', '-f', '.docker/Dockerfile', '.']
   # - name: 'gcr.io/cloud-builders/docker'
-  #   args: ['push', 'europe-west2-docker.pkg.dev/fair-melody-396111/mtech/new:$SHORT_SHA']
+  #   args: ['push', 'europe-west2-docker.pkg.dev/fair-melody-396111/mtech/new:$ne']
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
     id: 'Authorize Cloud Build'
     entrypoint: 'bash'
@@ -24,10 +24,10 @@ steps:
   - name: 'gcr.io/cloud-builders/gke-deploy'
     args:
      
-      #   && gke-deploy run --filename=.k8s/deployment.yaml --image=europe-west2-docker.pkg.dev/fair-melody-396111/mtech/new --location=europe-west2 --cluster=cluster-1
+      #   && gke-deploy run --filename=.k8s/deployment.yaml --image=europe-west2-docker.pkg.dev/fair-melody-396111/mtech/new:$ne --location=europe-west2 --cluster=cluster-1
       - 'run'
       - '--filename=.k8s/deployment.yaml'
-      - '--image=europe-west2-docker.pkg.dev/fair-melody-396111/mtech/new'
+      - '--image=europe-west2-docker.pkg.dev/fair-melody-396111/mtech/new:$ne'
       - '--location=europe-west2'
       - '--cluster=cluster-1'
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
