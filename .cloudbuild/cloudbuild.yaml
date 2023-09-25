@@ -1,21 +1,12 @@
 steps:
-  # - name: 'gcr.io/cloud-builders/git'
-  #   args:
-  #     - 'rev-parse'
-  #     - '--short'
-  #     - 'main'
-  #   id: get-tag
-  # Docker Build
-  - name: 'Pull SHORT_SHA'
-    entrypoint: 'bash'
+  - name: 'gcr.io/cloud-builders/git'
     args:
-      - -c
-      - |
-        SHORT_SHA=$(git rev-parse --short development)
-        echo $SHORT_SHA
+      - 'rev-parse'
+      - '--short'
+      - 'new'
+    id: get-tag
   - name: 'gcr.io/cloud-builders/docker'
     args: ['build', '-t', 'europe-west2-docker.pkg.dev/fair-melody-396111/mtech/new:$SHORT_SHA', '-f', '.docker/Dockerfile', '.']
-  # Docker push to Google Artifact Registry
   - name: 'gcr.io/cloud-builders/docker'
     args: ['push', 'europe-west2-docker.pkg.dev/fair-melody-396111/mtech/new:$SHORT_SHA']
 #   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
