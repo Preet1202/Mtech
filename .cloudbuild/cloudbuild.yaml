@@ -11,7 +11,7 @@ steps:
     args:
       - -c
       - |
-        SHORT_SHA=$(git rev-parse --short development)
+        SHORT_SHA=$(git rev-parse --short main)
         echo $SHORT_SHA
   - name: 'gcr.io/cloud-builders/docker'
     args: ['build', '-t', 'europe-west2-docker.pkg.dev/fair-melody-396111/mtech/new:$SHORT_SHA', '-f', '.docker/Dockerfile', '.']
