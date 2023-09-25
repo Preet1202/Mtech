@@ -11,7 +11,7 @@ steps:
       - -c
       - |
         branch_or_commit=new  # Replace 'new' with the actual branch or commit hash
-        tag=$(git rev-parse --short "$branch_or_commit")
+        tag=$(git rev-parse "$branch_or_commit")
         echo "Short tag: $tag"
 
   - name: 'gcr.io/cloud-builders/docker'
