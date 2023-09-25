@@ -20,18 +20,17 @@ steps:
         apt-get install dnsutils -y &&
         cloudbuild_external_ip=$(dig @resolver4.opendns.com myip.opendns.com +short) &&
         gcloud container clusters update cluster-1 --region=europe-west2 --enable-master-authorized-networks --master-authorized-networks $cloudbuild_external_ip/32 &&
-        echo $cloudbuild_external_ip
+        echo $cloudbuild_external_ip && apt-get update && apt-get install sed && sed -i 's@TAG_NAME@'"V1"'@' .k8s/deployment.yaml
   - name: 'gcr.io/cloud-builders/gke-deploy'
-    entrypoint: 'bash'
     args:
-      - -c
-      - |
-        apt-get update && apt-get install sed && sed -i 's@TAG_NAME@'"V1"'@' .k8s/deployment.yaml && gke-deploy run --filename=.k8s/deployment.yaml --image=europe-west2-docker.pkg.dev/fair-melody-396111/mtech/new --location=europe-west2 --cluster=cluster-1
-      # - 'run'
-      # - '--filename=.k8s/deployment.yaml'
-      # - '--image=europe-west2-docker.pkg.dev/fair-melody-396111/mtech/new'
-      # - '--location=europe-west2'
-      # - '--cluster=cluster-1'
+     
+      #   && gke-deploy run --filename=.k8s/deployment.yaml --image=europe-west2-docker.pkg.dev/fair-melody-396111/mtech/new --location=europe-west2 --cluster=cluster-1
+      - 'run'
+      - '--filename=.k8s/deployment.yaml'
+      - '--image=europe-west2-docker.pkg.dev/fair-melody-396111/mtech/new'
+      - '--location=europe-west2'
+      - '--cluster=cluster-1'
 # # Store images in Google Artifact Registry 
 # images:
 #   - europe-west2-docker.pkg.dev/fair-melody-396111/mtech/new
+ 
