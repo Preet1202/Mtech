@@ -23,13 +23,11 @@ steps:
         echo $cloudbuild_external_ip
   - name: 'gcr.io/cloud-builders/gke-deploy'
     args:
-      - sudo apt-get update && sudo apt-get install sed
-      - sed -i 's@TAG_NAME@'"V1"'@' .k8s/deployment.yaml
       - 'run'
       - '--filename=.k8s/deployment.yaml'
-      - '--image=europe-west2-docker.pkg.dev/fair-melody-396111/mtech/new:$TAG_NAME'
+      - '--image=europe-west2-docker.pkg.dev/fair-melody-396111/mtech/new'
       - '--location=europe-west2'
       - '--cluster=cluster-1'
 # # Store images in Google Artifact Registry 
 # images:
-#   - europe-west2-docker.pkg.dev/fair-melody-396111/mtech/new:$TAG_NAME
+#   - europe-west2-docker.pkg.dev/fair-melody-396111/mtech/new
