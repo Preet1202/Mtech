@@ -1,14 +1,14 @@
 steps:
-  - name: 'gcr.io/cloud-builders/git'
-    entrypoint: /bin/bash
-    args:
-      - -c
-      - |
-        SHORT_SHA=$(git rev-parse --short main)
-  - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'europe-west2-docker.pkg.dev/fair-melody-396111/mtech/new:${SHORT_SHA}', '-f', '.docker/Dockerfile', '.']
-  - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'europe-west2-docker.pkg.dev/fair-melody-396111/mtech/new:${SHORT_SHA}']
+  # - name: 'gcr.io/cloud-builders/git'
+  #   entrypoint: /bin/bash
+  #   args:
+  #     - -c
+  #     - |
+  #       SHORT_SHA=$(git rev-parse --short main)
+  # - name: 'gcr.io/cloud-builders/docker'
+  #   args: ['build', '-t', 'europe-west2-docker.pkg.dev/fair-melody-396111/mtech/new:${SHORT_SHA}', '-f', '.docker/Dockerfile', '.']
+  # - name: 'gcr.io/cloud-builders/docker'
+  #   args: ['push', 'europe-west2-docker.pkg.dev/fair-melody-396111/mtech/new:${SHORT_SHA}']
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
     id: 'Authorize Cloud Build'
     entrypoint: 'bash'
