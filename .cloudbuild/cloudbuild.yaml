@@ -5,12 +5,12 @@ steps:
       - -c
       - |
         git checkout -b new &&
-        SHORT_SHA=$(git rev-parse --short new)
-        echo $SHORT_SHA
+        new=$(git rev-parse --short new)
+        echo $new
   # - name: 'gcr.io/cloud-builders/docker'
-  #   args: ['build', '-t', 'europe-west2-docker.pkg.dev/fair-melody-396111/mtech/new:${SHORT_SHA}', '-f', '.docker/Dockerfile', '.']
+  #   args: ['build', '-t', 'europe-west2-docker.pkg.dev/fair-melody-396111/mtech/new:${new}', '-f', '.docker/Dockerfile', '.']
   # - name: 'gcr.io/cloud-builders/docker'
-  #   args: ['push', 'europe-west2-docker.pkg.dev/fair-melody-396111/mtech/new:${SHORT_SHA}']
+  #   args: ['push', 'europe-west2-docker.pkg.dev/fair-melody-396111/mtech/new:${new}']
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
     id: 'Authorize Cloud Build'
     entrypoint: 'bash'
