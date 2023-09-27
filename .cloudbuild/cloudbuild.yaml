@@ -5,7 +5,7 @@ steps:
       - -c
       - |
         git checkout -b new &&
-        new=$(git rev-parse new)
+        new=$(git rev-parse --short new)
         echo $new
   # - name: 'gcr.io/cloud-builders/docker'
   #   args: ['build', '-t', 'europe-west2-docker.pkg.dev/fair-melody-396111/mtech/new:${new}', '-f', '.docker/Dockerfile', '.']
