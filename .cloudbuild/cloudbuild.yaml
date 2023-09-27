@@ -1,6 +1,6 @@
 steps:
   # - name: 'gcr.io/cloud-builders/git'
-  #   args:
+  # #  args:
   #     - 'rev-parse'
   #     - '--short'
   #     - 'main'
