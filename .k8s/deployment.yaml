@@ -1,26 +1,31 @@
 apiVersion: apps/v1
 kind: Deployment
-metadata: #Dictionary
+metadata:
   name: maruti-nextjs
-  namespace: dev
-spec: # Dictionary
+spec: 
   replicas: 2
   selector:
     matchLabels:
       app: maruti-nextjs
   template:  
-    metadata: # Dictionary
-      name: maruti-nextjs-pod
-      labels: # Dictionary
-        app: maruti-nextjs # Key value pairs
+    metadata:
+      name: maruti-nextjs
+      labels:
+        app: maruti-nextjs
     spec:
-      containers: # List
-        - name: maruti-nextjs-container
-          # image: 'europe-west2-docker.pkg.dev/fair-melody-396111/mtech/new:$TAG_NAME'  #<image-name:image-version>
-          image: IMAGE_NAME
-          ports: 
-            - containerPort: 80  
-          env:
-            - name: PORT
-              value: "80"
-          imagePullPolicy: Always
+      containers:
+      - name: maruti-nextjs
+        image: IMAGE_NAME
+        env:
+        - name: PORT
+          value: "3000"
+        ports:
+        - containerPort: 3000
+        resources:
+          requests:
+            cpu: 100m
+            memory: 250Mi
+          limits:
+            cpu: 500m
+            memory: 1000Mi
+        imagePullPolicy: IfNotPresent
