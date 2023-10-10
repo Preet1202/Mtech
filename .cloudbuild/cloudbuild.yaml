@@ -1,41 +1,41 @@
 steps:
   - id: Build Image
     name: gcr.io/cloud-builders/docker
-    args: ['build', '-t', 'europe-west2-docker.pkg.dev/marutitech-website-production/maruti-nextjs/development:$SHORT_SHA', '-f', '.docker/Dockerfile', '.']
+    args: ['build', '-t', 'europe-west2-docker.pkg.dev/fair-melody-396111/slack/notification:$SHORT_SHA', '-f', '.docker/Dockerfile', '.']
   
   - id: Push Image
     name: gcr.io/cloud-builders/docker
-    args: ['push', 'europe-west2-docker.pkg.dev/marutitech-website-production/maruti-nextjs/development:$SHORT_SHA']
+    args: ['push', 'europe-west2-docker.pkg.dev/fair-melody-396111/slack/notification:$SHORT_SHA']
   
-  - id: Allow Cloud build to access Artifact Registry
-    name: gcr.io/google.com/cloudsdktool/cloud-sdk
-    entrypoint: 'bash'
-    args:
-      - -c
-      - |
-        apt-get install dnsutils -y &&
-        cloudbuild_external_ip=$(dig @resolver4.opendns.com myip.opendns.com +short) &&
-        gcloud container clusters update mtech-cluster --region=europe-west2 --enable-master-authorized-networks --master-authorized-networks=$cloudbuild_external_ip/32,61.12.85.170/32,27.109.3.34/32 &&
-        echo "Added $cloudbuild_external_ip IP."
+  # - id: Allow Cloud build to access Artifact Registry
+  #   name: gcr.io/google.com/cloudsdktool/cloud-sdk
+  #   entrypoint: 'bash'
+  #   args:
+  #     - -c
+  #     - |
+  #       apt-get install dnsutils -y &&
+  #       cloudbuild_external_ip=$(dig @resolver4.opendns.com myip.opendns.com +short) &&
+  #       gcloud container clusters update mtech-cluster --region=europe-west2 --enable-master-authorized-networks --master-authorized-networks=$cloudbuild_external_ip/32,61.12.85.170/32,27.109.3.34/32 &&
+  #       echo "Added $cloudbuild_external_ip IP."
   
-  - id: Set Image Tag
-    name: ubuntu
-    args: ['bash','-c','sed -i "s,IMAGE_NAME,europe-west2-docker.pkg.dev/marutitech-website-production/maruti-nextjs/development:$SHORT_SHA," .k8s/deployment.yml']
+  # - id: Set Image Tag
+  #   name: ubuntu
+  #   args: ['bash','-c','sed -i "s,IMAGE_NAME,europe-west2-docker.pkg.dev/marutitech-website-production/maruti-nextjs/development:$SHORT_SHA," .k8s/deployment.yml']
   
-  - id: Deploy to Kubernetes
-    name: gcr.io/cloud-builders/kubectl
-    args: ['apply', '-f', '.k8s/deployment.yml', '-n', 'development']
-    env:
-    - 'CLOUDSDK_COMPUTE_ZONE=europe-west2'
-    - 'CLOUDSDK_CONTAINER_CLUSTER=mtech-cluster'
+  # - id: Deploy to Kubernetes
+  #   name: gcr.io/cloud-builders/kubectl
+  #   args: ['apply', '-f', '.k8s/deployment.yml', '-n', 'development']
+  #   env:
+  #   - 'CLOUDSDK_COMPUTE_ZONE=europe-west2'
+  #   - 'CLOUDSDK_CONTAINER_CLUSTER=mtech-cluster'
 
-  - id: Remove Cloud build access from Artifact Registry
-    name: gcr.io/google.com/cloudsdktool/cloud-sdk
-    entrypoint: 'bash'
-    args:
-      - -c
-      - |
-        apt-get install dnsutils -y &&
-        cloudbuild_external_ip=$(dig @resolver4.opendns.com myip.opendns.com +short) &&
-        gcloud container clusters update mtech-cluster --region=europe-west2 --enable-master-authorized-networks --master-authorized-networks=61.12.85.170/32,27.109.3.34/32  &&
-        echo "Removed $cloudbuild_external_ip IP."
+  # - id: Remove Cloud build access from Artifact Registry
+  #   name: gcr.io/google.com/cloudsdktool/cloud-sdk
+  #   entrypoint: 'bash'
+  #   args:
+  #     - -c
+  #     - |
+  #       apt-get install dnsutils -y &&
+  #       cloudbuild_external_ip=$(dig @resolver4.opendns.com myip.opendns.com +short) &&
+  #       gcloud container clusters update mtech-cluster --region=europe-west2 --enable-master-authorized-networks --master-authorized-networks=61.12.85.170/32,27.109.3.34/32  &&
+  #       echo "Removed $cloudbuild_external_ip IP."
